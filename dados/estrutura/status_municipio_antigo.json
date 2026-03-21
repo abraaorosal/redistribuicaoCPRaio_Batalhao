@@ -1,4 +1,5 @@
 [
+    { "municipio": "Fortaleza", "status": "SEDE" },
     { "municipio": "Caucaia", "status": "SEDE" },
     { "municipio": "Caucaia", "status": "COMPANHIA" },
     { "municipio": "São Gonçalo do Amarante", "status": "PELOTAO" },

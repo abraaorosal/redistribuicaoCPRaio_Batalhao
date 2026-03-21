@@ -38,7 +38,7 @@
     "cenario_eusebio": {
       "id": "cenario_eusebio",
       "titulo": "Cenário com Batalhão em Eusébio",
-      "descricao": "Cria novo batalhão metropolitano em Eusébio, mantendo batalhões fixos e promovidos obrigatórios.",
+      "descricao": "Cria novo batalhão metropolitano em Eusébio, mantendo Caucaia e Eusébio restritos à Região Metropolitana e preservando os batalhões fixos e promovidos obrigatórios.",
       "modo_alocacao": "otimizado_rodoviario",
       "batalhoes_ativos": [
         "Caucaia",
@@ -62,34 +62,6 @@
         "Crateús"
       ],
       "batalhao_metropolitano_escolhido": "Eusébio"
-    },
-    "cenario_horizonte": {
-      "id": "cenario_horizonte",
-      "titulo": "Cenário com Batalhão em Horizonte",
-      "descricao": "Cria novo batalhão metropolitano em Horizonte, mantendo batalhões fixos e promovidos obrigatórios.",
-      "modo_alocacao": "otimizado_rodoviario",
-      "batalhoes_ativos": [
-        "Caucaia",
-        "Russas",
-        "Sobral",
-        "Juazeiro do Norte",
-        "Quixadá",
-        "Itapipoca",
-        "Crateús",
-        "Horizonte"
-      ],
-      "batalhoes_fixos": [
-        "Caucaia",
-        "Russas",
-        "Sobral",
-        "Juazeiro do Norte"
-      ],
-      "batalhoes_promovidos": [
-        "Quixadá",
-        "Itapipoca",
-        "Crateús"
-      ],
-      "batalhao_metropolitano_escolhido": "Horizonte"
     }
   }
 }

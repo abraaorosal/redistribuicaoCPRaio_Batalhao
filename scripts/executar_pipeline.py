@@ -7,6 +7,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 SCRIPTS = [
+    "atualizar_populacao_ibge.py",
     "normalizar_dados.py",
     "geocodificar_complementares.py",
     "gerar_matriz_osrm.py",

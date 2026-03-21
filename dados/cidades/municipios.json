@@ -156,6 +156,12 @@
       "longitude": -40.263733
     },
     {
+        "nome": "Fortaleza",
+        "id_municipio": 0,
+        "latitude": -3.7319,
+        "longitude": -38.5267
+      },
+    {
       "nome": "Granja",
       "id_municipio": 684,
       "latitude": -3.120289,

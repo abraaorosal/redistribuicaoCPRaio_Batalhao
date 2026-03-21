@@ -1,4 +1,3 @@
 scenario_id,titulo,batalhao_metropolitano_escolhido,total_distance_km,average_distance_km,p90_distance_km,max_distance_km,centralidade_operacional_km,compactacao_territorial_km,casos_fragmentados,municipios_redistribuidos,ganho_total_vs_atual_km,ganhos_significativos,distancias_criticas,recomendado
-cenario_atual,Cenário Atual,,9589.309,114.158,270.184,441.595,108.616,69.636,4,0,0,0,18,False
-cenario_eusebio,Cenário com Batalhão em Eusébio,Eusébio,5640.899,67.154,133.821,174.603,62.74,35.133,0,36,3949.404,29,3,False
-cenario_horizonte,Cenário com Batalhão em Horizonte,Horizonte,5523.729,65.759,133.821,174.603,63.925,35.953,0,34,4066.574,30,3,True
+cenario_atual,Cenário Atual,,9589.309,112.815,270.184,441.595,86.893,55.709,1,0,0,0,18,False
+cenario_eusebio,Cenário com Batalhão em Eusébio,Eusébio,5786.342,68.075,133.821,174.603,60.377,34.325,3,39,3810.546,26,3,True

@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
     <link rel="stylesheet" href="scripts/dashboard.css"/>
-    <script src="scripts/dashboard.js"></script>
+    <script src="scripts/dashboard.js?v=20260321-2"></script>
     
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
@@ -1432,42 +1432,68 @@
         }
 
         .dashboard-top {
+            position: relative;
             display: grid;
-            grid-template-columns: minmax(0, 1.75fr) minmax(500px, 0.85fr);
-            align-items: start;
-            gap: 16px;
-            padding: 16px 20px;
+            grid-template-columns: minmax(0, 1.55fr) minmax(520px, 0.95fr);
+            align-items: center;
+            gap: 20px;
+            padding: 18px 22px;
             border: 1px solid var(--line);
             border-radius: 28px;
             background:
                 linear-gradient(180deg, rgba(255, 255, 255, 0.97) 0%, rgba(246, 250, 253, 0.94) 100%);
             backdrop-filter: blur(14px);
             box-shadow: var(--shadow);
+            overflow: hidden;
+        }
+
+        .dashboard-top::before {
+            content: "";
+            position: absolute;
+            width: 280px;
+            height: 280px;
+            left: -92px;
+            top: -122px;
+            border-radius: 999px;
+            background: radial-gradient(circle, rgba(173, 213, 236, 0.22) 0%, rgba(173, 213, 236, 0) 72%);
+            pointer-events: none;
+        }
+
+        .dashboard-top > * {
+            position: relative;
+            z-index: 1;
         }
 
         .institution-header {
             min-width: 0;
             display: grid;
             grid-template-columns: auto minmax(0, 1fr);
-            gap: 16px;
+            gap: 18px;
             align-items: start;
         }
 
         .institution-logo-wrap {
-            width: 86px;
-            height: 86px;
+            width: 92px;
+            height: 92px;
             display: grid;
             place-items: center;
-            border-radius: 18px;
+            border-radius: 22px;
             border: 1px solid #d9e6dc;
             background: linear-gradient(160deg, #fdfefe 0%, #eef6f1 100%);
             box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.92);
         }
 
         .institution-logo {
-            width: 68px;
-            height: 68px;
+            width: 72px;
+            height: 72px;
             object-fit: contain;
+        }
+
+        .title-block {
+            min-width: 0;
+            display: grid;
+            align-content: start;
+            gap: 8px;
         }
 
         .title-block .eyebrow {
@@ -1480,26 +1506,29 @@
         }
 
         .title-block h1 {
-            margin: 4px 0 4px;
+            margin: 0;
             font-family: "Space Grotesk", "Segoe UI", sans-serif;
-            font-size: clamp(1.26rem, 1.12rem + 1.04vw, 1.84rem);
+            font-size: clamp(1.34rem, 1.08rem + 1.18vw, 2.02rem);
             font-weight: 800;
-            line-height: 1.04;
+            line-height: 1.02;
+            letter-spacing: -0.03em;
             max-width: none;
         }
 
         .title-block .subtitle {
             margin: 0;
-            font-size: 0.88rem;
+            font-size: 0.9rem;
+            line-height: 1.45;
             color: var(--ink-soft);
-            max-width: 62ch;
+            max-width: 68ch;
         }
 
         .institution-meta {
-            margin-top: 10px;
-            display: flex;
-            flex-wrap: wrap;
-            gap: 6px 8px;
+            margin-top: 2px;
+            display: grid;
+            grid-template-columns: repeat(2, minmax(230px, 1fr));
+            gap: 8px;
+            max-width: 920px;
         }
 
         .institution-meta p {
@@ -1507,10 +1536,11 @@
             font-size: 0.76rem;
             line-height: 1.35;
             color: #2f4a55;
-            padding: 6px 9px;
-            border-radius: 12px;
-            background: rgba(242, 247, 251, 0.94);
-            border: 1px solid rgba(21, 48, 71, 0.06);
+            padding: 8px 11px;
+            border-radius: 14px;
+            background: linear-gradient(180deg, rgba(245, 249, 252, 0.96) 0%, rgba(240, 246, 250, 0.92) 100%);
+            border: 1px solid rgba(21, 48, 71, 0.07);
+            box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.85);
         }
 
         .institution-meta strong {
@@ -1519,10 +1549,10 @@
 
         .top-kpis {
             display: grid;
-            grid-template-columns: repeat(5, minmax(0, 1fr));
-            gap: 10px;
+            grid-template-columns: repeat(5, minmax(92px, 1fr));
+            gap: 12px;
             width: 100%;
-            align-self: stretch;
+            align-self: start;
             align-content: start;
             min-width: 0;
         }
@@ -1531,8 +1561,11 @@
             position: relative;
             background: var(--panel-strong);
             border: 1px solid var(--line);
-            border-radius: 18px;
-            padding: 10px 10px 9px;
+            border-radius: 20px;
+            padding: 12px 10px 11px;
+            min-height: 96px;
+            display: grid;
+            align-content: center;
             text-align: center;
             box-shadow: var(--shadow-soft);
         }
@@ -1541,37 +1574,50 @@
             content: "";
             position: absolute;
             inset: 0 0 auto 0;
-            height: 3px;
-            border-radius: 18px 18px 0 0;
+            height: 4px;
+            border-radius: 20px 20px 0 0;
             background: linear-gradient(90deg, #1a5f95 0%, #4f88b1 100%);
         }
 
         .kpi-mini span {
             display: block;
             font-family: "Space Grotesk", "Segoe UI", sans-serif;
-            font-size: 1.2rem;
+            font-size: 1.42rem;
             font-weight: 800;
             line-height: 1.1;
+            letter-spacing: -0.02em;
             color: var(--accent);
         }
 
         .kpi-mini small {
             display: block;
-            margin-top: 4px;
+            margin: 6px auto 0;
             color: var(--ink-soft);
-            font-size: 0.72rem;
+            font-size: 0.68rem;
+            line-height: 1.28;
             text-transform: uppercase;
             letter-spacing: 0.06em;
             font-weight: 700;
+            max-width: 11ch;
         }
 
         .kpi-disclaimer {
-            margin: 8px 0 0;
+            margin: 2px 0 0;
+            width: fit-content;
+            max-width: min(100%, 64ch);
+            padding: 8px 12px;
+            border-radius: 14px;
+            border: 1px solid rgba(21, 48, 71, 0.08);
+            background: rgba(241, 247, 251, 0.88);
+            box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.88);
             font-size: 0.74rem;
-            line-height: 1.35;
+            line-height: 1.4;
             color: #355261;
-            text-align: right;
-            width: 100%;
+            text-align: left;
+        }
+
+        .kpi-disclaimer strong {
+            color: #17324a;
         }
 
         .dashboard-main {
@@ -2894,6 +2940,7 @@
             .dashboard-top {
                 grid-template-columns: 1fr;
                 padding: 14px;
+                gap: 14px;
             }
 
             .institution-header {
@@ -2922,22 +2969,18 @@
             }
 
             .institution-meta {
-                display: grid;
                 grid-template-columns: 1fr;
             }
 
             .top-kpis {
                 width: 100%;
-                grid-template-columns: repeat(2, 1fr);
+                grid-template-columns: repeat(3, 1fr);
                 gap: 8px;
-            }
-
-            .top-kpis .kpi-mini:last-child {
-                grid-column: 1 / -1;
             }
 
             .kpi-mini {
                 padding: 10px 8px 9px;
+                min-height: 86px;
             }
 
             .kpi-mini span {
@@ -3125,11 +3168,11 @@
             }
 
             .top-kpis {
-                grid-template-columns: 1fr;
+                grid-template-columns: repeat(2, 1fr);
             }
 
             .top-kpis .kpi-mini:last-child {
-                grid-column: auto;
+                grid-column: 1 / -1;
             }
 
             .scenario-summary-stats {
@@ -3173,6 +3216,7 @@
                     <p class="eyebrow">Polícia Militar do Ceará</p>
                     <h1>Comando de Policiamento de Rondas de Ações Intensivas e Ostensivas - CPRaio</h1>
                     <p class="subtitle">Painel estratégico da proposta territorial com distância rodoviária real via OSRM.</p>
+                    <p class="kpi-disclaimer"><strong>Base metodológica:</strong> distâncias calculadas por rota rodoviária real via OpenStreetMap/OSRM.</p>
                     <div class="institution-meta">
                         <p><strong>Setor responsável:</strong> Seção de Estatística e Análise Operacional - SEAO - P/3 - CPRaio</p>
                         <p><strong>Coordenação:</strong> P/3 CPRaio</p>
@@ -3188,22 +3232,21 @@
                 </div>
                 <div class="kpi-mini">
                     <span id="kpi-batalhoes">--</span>
-                    <small id="kpi-batalhoes-label">Batalhões Ativos</small>
+                    <small id="kpi-batalhoes-label">Batalhões</small>
                 </div>
                 <div class="kpi-mini">
                     <span id="kpi-independentes">--</span>
-                    <small id="kpi-independentes-label">Companhias Ativas</small>
+                    <small id="kpi-independentes-label">Companhias</small>
                 </div>
                 <div class="kpi-mini">
                     <span id="kpi-efetivo-geral">--</span>
-                    <small id="kpi-efetivo-label">Efetivo Geral</small>
+                    <small id="kpi-efetivo-label">Efetivo Total</small>
                 </div>
                 <div class="kpi-mini">
                     <span id="kpi-realocado">--</span>
-                    <small id="kpi-realocado-label">Efetivo Realocado</small>
+                    <small id="kpi-realocado-label">Efetivo Redistribuído</small>
                 </div>
             </div>
-            <p class="kpi-disclaimer"><strong>Observação:</strong> distâncias calculadas por rota rodoviária real via OpenStreetMap/OSRM.</p>
         </header>
 
         <main class="dashboard-main">
@@ -3216,7 +3259,7 @@
                     </div>
                     <div class="toolbar-actions">
                         <div class="toolbar-filter-group">
-                            <div class="toolbar-filter-label">Cenário</div>
+                            <div class="toolbar-filter-label">Estrutura</div>
                             <div class="filters filters-compact" id="mode-filters"></div>
                         </div>
                         <div class="toolbar-filter-group">
@@ -3224,7 +3267,7 @@
                             <div class="filters" id="batalhao-filters"></div>
                         </div>
                     </div>
-                    <div class="scenario-caption" id="scenario-caption">Carregando cenários operacionais...</div>
+                    <div class="scenario-caption" id="scenario-caption">Carregando proposta operacional consolidada...</div>
                 </div>
                 <div class="map-wrap">
                     <div class="folium-map" id="map_475b15caff0728b3dc42d0d1917fd2d6"></div>
@@ -3255,7 +3298,7 @@
                     <button type="button" class="side-panel-toggle" id="side-panel-toggle" title="Abrir painel analítico">
                         <i class="fa-solid fa-chevron-left" id="side-panel-toggle-icon"></i>
                     </button>
-                    <button type="button" class="side-panel-tab is-active" data-side-tab="comparativo" title="Quadro comparativo">
+                    <button type="button" class="side-panel-tab is-active" data-side-tab="analitico" title="Quadro analítico">
                         <span class="side-panel-tab-content">
                             <i class="fa-solid fa-chart-column"></i>
                             <span>Quadro</span>
@@ -3281,15 +3324,15 @@
                     </button>
                 </div>
                 <div class="side-panel-content">
-                <section class="side-panel-section is-active" data-side-section="comparativo">
+                <section class="side-panel-section is-active" data-side-section="analitico">
                     <div class="side-panel-header">
                         <span class="side-panel-caption">Quadro Analítico</span>
                         <button type="button" class="side-panel-close" data-side-close title="Recolher painel">
                             <i class="fa-solid fa-chevron-right"></i>
                         </button>
                     </div>
-                    <h2 class="section-title">Quadro Comparativo da Proposta</h2>
-                    <p class="muted-text">Comparação técnica entre Eusébio, Horizonte e a proposta final, com distribuição estrutural e métricas logísticas.</p>
+                    <h2 class="section-title">Resumo Analítico da Proposta</h2>
+                    <p class="muted-text">Leitura consolidada da proposta final, sem comparação paralela de alternativas, com estrutura já fechada e métricas logísticas finais.</p>
                     <div class="effective-grid" id="efetivo-grid"></div>
                 </section>
 

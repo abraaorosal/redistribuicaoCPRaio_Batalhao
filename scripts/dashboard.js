@@ -2,22 +2,19 @@ window.__CPRAIO_SKIP_LEGACY_DASHBOARD__ = true;
 
 window.CPRaioDashboard = (() => {
   const MUNICIPAL_GEOJSON_FILE = "dados/ceara_municipios.geojson";
-  const EFETIVO_MARKDOWN_FILE = "dados/efetivo/efetivo_municipio_simplificado.md";
+  const EFETIVO_JSON_FILE = "dados/efetivo/efetivo_21_03_2026.json";
+  const LEGACY_EFETIVO_MARKDOWN_FILE = "dados/efetivo/efetivo_municipio_simplificado.md";
+  const FORTALEZA_KEY = "FORTALEZA";
+  const ISOLATED_BATTALION_TYPE = "BATALHAO_ISOLADO";
 
   const OUTPUT_FILES = {
-    cenario_atual: "output/cenario_atual_avaliado.json",
-    cenario_eusebio: "output/cenario_eusebio_avaliado.json",
-    cenario_horizonte: "output/cenario_horizonte_avaliado.json",
     comparativo: "output/comparativo_cenarios.json",
     estrutura_final: "output/estrutura_sugerida_final.json",
     relatorio: "output/relatorio_analitico.json",
   };
 
-  const SCENARIO_ORDER = [
-    { id: "cenario_eusebio", label: "Proposta Eusébio" },
-    { id: "cenario_horizonte", label: "Proposta Horizonte" },
-    { id: "final_recomendado", label: "Proposta Final" },
-  ];
+  const PROPOSAL_VIEW = [{ id: "final_recomendado", label: "Proposta Final Consolidada" }];
+  const PREFERRED_BATTALION_ORDER = ["FORTALEZA", "CAUCAIA", "RUSSAS", "SOBRAL", "JUAZEIRO DO NORTE"];
 
   const BATTALION_COLORS = {
     "Caucaia": "#1f77b4",
@@ -29,6 +26,7 @@ window.CPRaioDashboard = (() => {
     "Crateús": "#8c564b",
     "Eusébio": "#e377c2",
     "Horizonte": "#bcbd22",
+    Fortaleza: "#9a3412",
   };
 
   const state = {
@@ -49,11 +47,13 @@ window.CPRaioDashboard = (() => {
     activeScenarioId: "final_recomendado",
     activeBatalhao: "Todos",
     selectedMunicipioKey: null,
-    activeSideTab: "comparativo",
+    activeSideTab: "analitico",
     sidePanelOpen: false,
     sidePanelBound: false,
     viewportBucket: null,
     resizeBound: false,
+    fortalezaValidationLogged: false,
+    fortalezaMarkerLogged: false,
   };
 
   function normalizeName(value) {
@@ -121,10 +121,22 @@ window.CPRaioDashboard = (() => {
       }, {});
   }
 
+  function parseEfetivoJson(payload) {
+    if (!Array.isArray(payload)) return {};
+    return payload.reduce((acc, item) => {
+      const municipio = item?.municipio;
+      if (!municipio) return acc;
+      const efetivo = toNumber(item?.efetivo);
+      acc[normalizeName(municipio)] = efetivo === null ? 0 : efetivo;
+      return acc;
+    }, {});
+  }
+
   function formatStatusLabel(value) {
     const normalized = normalizeName(value).replace(/_/g, " ");
     const map = {
       BATALHAO: "Batalhão",
+      "BATALHAO ISOLADO": "Batalhão Isolado",
       COMPANHIA: "Companhia",
       "CIA INDEPENDENTE": "Cia Independente",
       PELOTAO: "Pelotão",
@@ -178,8 +190,39 @@ window.CPRaioDashboard = (() => {
     return rows.reduce((acc, row) => acc + (isRedistributed(row) ? getMunicipioEfetivo(row?.municipio) : 0), 0);
   }
 
+  function isFortalezaName(value) {
+    return normalizeName(value) === FORTALEZA_KEY;
+  }
+
+  function isIsolatedRow(row) {
+    return Boolean(row?.is_fortaleza) || normalizeName(row?.tipo_especial) === ISOLATED_BATTALION_TYPE || isFortalezaName(row?.municipio);
+  }
+
   function getBattalionColor(name) {
     return BATTALION_COLORS[name] || "#4f6d7a";
+  }
+
+  function compareBattalionNames(a, b) {
+    const aKey = normalizeName(a);
+    const bKey = normalizeName(b);
+    const aRank = PREFERRED_BATTALION_ORDER.indexOf(aKey);
+    const bRank = PREFERRED_BATTALION_ORDER.indexOf(bKey);
+
+    if (aRank !== -1 || bRank !== -1) {
+      if (aRank === -1) return 1;
+      if (bRank === -1) return -1;
+      if (aRank !== bRank) return aRank - bRank;
+    }
+
+    return String(a || "").localeCompare(String(b || ""), "pt-BR");
+  }
+
+  function sortBattalionNames(names) {
+    return [...new Set((names || []).filter(Boolean))].sort(compareBattalionNames);
+  }
+
+  function sortBattalionStructures(items) {
+    return [...(items || [])].sort((a, b) => compareBattalionNames(a?.batalhao, b?.batalhao));
   }
 
   function hexToRgb(hex) {
@@ -222,6 +265,7 @@ window.CPRaioDashboard = (() => {
 
   function getTextureType(row) {
     if (!row) return "pelotao";
+    if (isIsolatedRow(row)) return "batalhao";
     const battalion = getAssignedBatalhao(row);
     const status = normalizeName(getSuggestedStatus(row));
     if (row.municipio === battalion || status === "BATALHAO") return "batalhao";
@@ -246,6 +290,7 @@ window.CPRaioDashboard = (() => {
     feature.properties.cpraio_polo = getAssignedBatalhao(row);
     feature.properties.cpraio_tipo_unidade = formatStatusLabel(getSuggestedStatus(row));
     feature.properties.cpraio_distancia_km = getTargetDistance(row);
+    feature.properties.cpraio_tipo_especial = row.tipo_especial || null;
   }
 
   function styleBatalhao(feature, options = {}) {
@@ -277,12 +322,17 @@ window.CPRaioDashboard = (() => {
     }
 
     const baseColor = getBattalionColor(polo);
+    const isIsolated = isIsolatedRow(row);
     const isBatalhao = tipoUnidade === "BATALHAO" || normalizeName(getFeatureMunicipioName(feature)) === normalizeName(polo);
     const isCompanhia = tipoUnidade === "COMPANHIA" || tipoUnidade === "CIA INDEPENDENTE";
-    const fillOpacity = !visible ? 0.08 : isBatalhao ? 0.9 : isCompanhia ? 0.6 : 0.3;
-    const weight = !visible ? 1 : isBatalhao ? 4.8 : isCompanhia ? 2.9 : 2.1;
+    const fillOpacity = !visible ? 0.08 : isIsolated ? 0.82 : isBatalhao ? 0.9 : isCompanhia ? 0.6 : 0.3;
+    const weight = !visible ? 1 : isIsolated ? 5.2 : isBatalhao ? 4.8 : isCompanhia ? 2.9 : 2.1;
     const fillColor = baseColor;
-    const borderColor = isBatalhao ? blendColor(baseColor, -0.34) : blendColor(baseColor, -0.46);
+    const borderColor = isIsolated
+      ? blendColor(baseColor, -0.44)
+      : isBatalhao
+        ? blendColor(baseColor, -0.34)
+        : blendColor(baseColor, -0.46);
 
     return {
       color: !visible ? "#d4dee6" : borderColor,
@@ -290,8 +340,10 @@ window.CPRaioDashboard = (() => {
       opacity: !visible ? 0.18 : 0.98,
       fillColor,
       fillOpacity,
-      dashArray: null,
-      className: row?.mudar_batalhao ? "municipio-redistribuido" : "",
+      dashArray: !visible ? null : isIsolated ? "14 4 3 4" : null,
+      className: [row?.mudar_batalhao ? "municipio-redistribuido" : "", isIsolated ? "municipio-batalhao-isolado" : ""]
+        .filter(Boolean)
+        .join(" "),
     };
   }
 
@@ -582,9 +634,33 @@ window.CPRaioDashboard = (() => {
     return counts;
   }
 
-  function buildStructureBreakdownHtml(rows) {
-    const counts = getScenarioStructureCounts(rows);
-    const total = rows.length || 1;
+  function getFilteredStructureBattalions() {
+    const battalions = sortBattalionStructures(state.raw.estrutura_final?.batalhoes || []);
+    if (state.activeBatalhao === "Todos") return battalions;
+    return battalions.filter((item) => item.batalhao === state.activeBatalhao);
+  }
+
+  function getFinalStructureCounts(respectFilter = true) {
+    const battalions = respectFilter
+      ? getFilteredStructureBattalions()
+      : sortBattalionStructures(state.raw.estrutura_final?.batalhoes || []);
+    if (!battalions.length) return null;
+    return {
+      batalhao: battalions.length,
+      companhia: battalions.reduce((acc, item) => acc + (item.companhias?.length || 0), 0),
+      pelotao: battalions.reduce(
+        (acc, item) =>
+          acc +
+          (item.pelotoes_diretos_batalhao?.length || 0) +
+          (item.companhias || []).reduce((companyAcc, cia) => companyAcc + (cia.pelotoes?.length || 0), 0),
+        0,
+      ),
+    };
+  }
+
+  function buildStructureBreakdownHtml(rows, countsOverride = null) {
+    const counts = countsOverride || getScenarioStructureCounts(rows);
+    const total = counts.batalhao + counts.companhia + counts.pelotao || 1;
     const entries = [
       { key: "batalhao", label: "Batalhões", value: counts.batalhao },
       { key: "companhia", label: "Companhias", value: counts.companhia },
@@ -719,6 +795,8 @@ window.CPRaioDashboard = (() => {
       municipio: row.municipio,
       latitude: row.latitude,
       longitude: row.longitude,
+      populacao_ibge: row.populacao_ibge,
+      populacao_ano_referencia: row.populacao_ano_referencia,
       status_atual: row.status_atual,
       status_sugerido_pre_hierarquia: row.status_sugerido_pre_hierarquia || row.status_atual,
       batalhao_atual: row.batalhao_atual,
@@ -734,6 +812,8 @@ window.CPRaioDashboard = (() => {
       ganho_significativo: parseBooleanFlag(row.ganho_significativo),
       melhor_batalhao_disponivel: row.melhor_batalhao_disponivel,
       observacoes: row.observacoes,
+      tipo_especial: row.tipo_especial || null,
+      is_fortaleza: parseBooleanFlag(row.is_fortaleza),
     };
   }
 
@@ -742,6 +822,8 @@ window.CPRaioDashboard = (() => {
       municipio: row.municipio,
       latitude: row.latitude,
       longitude: row.longitude,
+      populacao_ibge: row.populacao_ibge,
+      populacao_ano_referencia: row.populacao_ano_referencia,
       status_atual: row.status_atual,
       status_sugerido: row.status_sugerido,
       batalhao_atual: row.batalhao_atual,
@@ -756,6 +838,8 @@ window.CPRaioDashboard = (() => {
       classificacao_analitica: row.classificacao_analitica,
       ganho_significativo: parseBooleanFlag(row.ganho_significativo),
       criterio_companhia: row.criterio_companhia,
+      tipo_especial: row.tipo_especial || null,
+      is_fortaleza: parseBooleanFlag(row.is_fortaleza),
     };
   }
 
@@ -779,10 +863,12 @@ window.CPRaioDashboard = (() => {
     const rows = finalStructure.municipios.map(normalizeFinalRow);
     return {
       id: "final_recomendado",
-      title: "Final Recomendado",
+      title: "Proposta Final Consolidada",
       summary: {
         ...summary,
-        titulo: "Final Recomendado",
+        titulo: "Proposta Final Consolidada",
+        descricao:
+          "Estrutura operacional consolidada após roteamento rodoviário, restrição metropolitana Caucaia/Eusébio e reconstrução final das companhias.",
       },
       rows,
       battalions: finalStructure.batalhoes || [],
@@ -843,32 +929,22 @@ window.CPRaioDashboard = (() => {
   function getBatalhoesForActiveScenario() {
     const scenario = getActiveScenario();
     if (!scenario) return [];
-    return [...new Set(scenario.rows.map((row) => getAssignedBatalhao(row)))].sort((a, b) =>
-      a.localeCompare(b, "pt-BR"),
-    );
+    if (state.activeScenarioId === "final_recomendado" && state.raw.estrutura_final?.batalhoes?.length) {
+      return getFilteredStructureBattalions().map((item) => item.batalhao);
+    }
+    return sortBattalionNames(scenario.rows.map((row) => getAssignedBatalhao(row)));
   }
 
   function renderScenarioButtons() {
     const container = getById("mode-filters");
     if (!container) return;
-    container.innerHTML = SCENARIO_ORDER.map((option) => {
-      const isActive = option.id === state.activeScenarioId;
-      return `
-        <button type="button" class="dashboard-filter-button ${isActive ? "is-active" : ""}" data-scenario-id="${option.id}">
+    container.innerHTML = PROPOSAL_VIEW.map(
+      (option) => `
+        <button type="button" class="dashboard-filter-button is-active" aria-disabled="true" disabled>
           ${escapeHtml(option.label)}
         </button>
-      `;
-    }).join("");
-
-    container.querySelectorAll("[data-scenario-id]").forEach((button) => {
-      button.addEventListener("click", () => {
-        state.activeScenarioId = button.dataset.scenarioId;
-        state.activeBatalhao = "Todos";
-        state.selectedMunicipioKey = null;
-        render();
-        fitBoundsForRows(getFilteredRows());
-      });
-    });
+      `,
+    ).join("");
   }
 
   function renderBatalhaoButtons() {
@@ -914,9 +990,6 @@ window.CPRaioDashboard = (() => {
     const rows = getFilteredRows();
     const stats = buildDistanceStats(rows);
     const recommended = state.raw.comparativo.recomendacao_final;
-    const eusebio = state.raw.comparativo.cenarios.cenario_eusebio;
-    const horizonte = state.raw.comparativo.cenarios.cenario_horizonte;
-    const technicalDelta = Math.abs(eusebio.total_distance_km - horizonte.total_distance_km);
     const isFullScope = state.activeBatalhao === "Todos";
     const scopeLabel = isFullScope ? "Malha completa do estado" : `Recorte em ${state.activeBatalhao}`;
     const scopeTotalDistance =
@@ -928,28 +1001,12 @@ window.CPRaioDashboard = (() => {
     const scopeRedistributed = rows.filter((row) => isRedistributed(row)).length;
     const criticalShare = stats.count ? formatPercent((stats.critical / stats.count) * 100) : "0,0%";
     const battalionCount = new Set(rows.map((row) => getAssignedBatalhao(row))).size;
-    const gainLabel = scopeGain >= 0 ? "Ganho vs atual" : "Perda vs atual";
+    const gainLabel = scopeGain >= 0 ? "Redução vs base atual" : "Aumento vs base atual";
     const recommendedMetro = recommended.batalhao_metropolitano_escolhido;
-    const activeMetro =
-      summary.batalhao_metropolitano_escolhido ||
-      (state.activeScenarioId === "cenario_eusebio"
-        ? "Eusébio"
-        : state.activeScenarioId === "cenario_horizonte"
-          ? "Horizonte"
-          : recommendedMetro);
-    const competingMetro = activeMetro === "Horizonte" ? "Eusébio" : "Horizonte";
-    const isRecommendedScenario = state.activeScenarioId === "final_recomendado" || state.activeScenarioId === recommended.scenario_id;
-    const recommendationText =
-      recommendedMetro === "Horizonte"
-        ? `Horizonte ficou ${formatKm(technicalDelta)} melhor que Eusébio na comparação metropolitana.`
-        : `${recommendedMetro} ficou ${formatKm(technicalDelta)} melhor que ${competingMetro}.`;
+    const recommendationText = "Restrição administrativa aplicada: Caucaia e Eusébio atendem exclusivamente a Região Metropolitana.";
     const description = isFullScope
-      ? state.activeScenarioId === "final_recomendado"
-        ? `Proposta consolidada com ${recommendedMetro} como melhor solução metropolitana para a malha estadual.`
-        : isRecommendedScenario
-          ? `Cenário vencedor entre as alternativas metropolitanas, com menor custo rodoviário agregado.`
-          : `Cenário alternativo mantido para comparação técnica com a proposta vencedora.`
-      : `Recorte operacional de ${state.activeBatalhao} dentro de ${scenario.title}, com leitura específica do batalhão selecionado.`;
+      ? `Proposta consolidada com ${recommendedMetro} como polo metropolitano complementar, mantendo a divisão exclusiva da RM entre Caucaia e Eusébio.`
+      : `Recorte operacional de ${state.activeBatalhao} dentro da proposta final consolidada, com leitura específica do batalhão selecionado.`;
     const note = isFullScope
       ? recommendationText
       : `${scopeRedistributed} redistribuições no recorte, com centralidade média de ${formatKm(scopeCentrality)}.`;
@@ -981,10 +1038,10 @@ window.CPRaioDashboard = (() => {
         ];
     el.innerHTML = `
       <div class="scenario-summary-head">
-        <div class="scenario-summary-kicker">Cenário em foco</div>
+        <div class="scenario-summary-kicker">Estrutura consolidada</div>
         <div class="scenario-summary-title-row">
           <strong>${escapeHtml(scenario.title)}</strong>
-          <span class="scenario-summary-badge">Referência: ${escapeHtml(recommendedMetro)}</span>
+          <span class="scenario-summary-badge">Metropolitano: ${escapeHtml(recommendedMetro)}</span>
         </div>
         <div class="scenario-summary-description">${escapeHtml(description)}</div>
       </div>
@@ -1011,8 +1068,10 @@ window.CPRaioDashboard = (() => {
     const scenario = getActiveScenario();
     if (!scenario) return;
     const rows = getFilteredRows();
-    const batalhoesAtivos = new Set(rows.map((row) => getAssignedBatalhao(row))).size;
-    const companhiasAtivas = rows.filter((row) => getTextureType(row) === "companhia").length;
+    const structureCounts = state.activeScenarioId === "final_recomendado" ? getFinalStructureCounts() : null;
+    const batalhoesAtivos = structureCounts?.batalhao ?? new Set(rows.map((row) => getAssignedBatalhao(row))).size;
+    const companhiasAtivas =
+      structureCounts?.companhia ?? rows.filter((row) => getTextureType(row) === "companhia").length;
     const efetivoTotal = getRowsEfetivoTotal(rows);
     const efetivoRealocado = getRowsEfetivoRealocado(rows);
     setText("kpi-municipios", String(rows.length));
@@ -1021,43 +1080,26 @@ window.CPRaioDashboard = (() => {
     setText("kpi-efetivo-geral", formatInteger(efetivoTotal));
     setText("kpi-realocado", formatInteger(efetivoRealocado));
     setText("kpi-municipios-label", "Municípios");
-    setText("kpi-batalhoes-label", "Batalhões Ativos");
-    setText("kpi-independentes-label", "Companhias Ativas");
-    setText("kpi-efetivo-label", state.activeBatalhao === "Todos" ? "Efetivo Geral" : "Efetivo do Recorte");
-    setText("kpi-realocado-label", "Efetivo Realocado");
+    setText("kpi-batalhoes-label", "Batalhões");
+    setText("kpi-independentes-label", "Companhias");
+    setText("kpi-efetivo-label", state.activeBatalhao === "Todos" ? "Efetivo Total" : "Efetivo do Recorte");
+    setText("kpi-realocado-label", "Efetivo Redistribuído");
   }
 
   function renderScenarioCards() {
     const container = getById("efetivo-grid");
     if (!container) return;
     const comparison = state.raw.comparativo;
-    const recommendedId = state.recommendedScenarioId;
-    container.innerHTML = SCENARIO_ORDER.map((option) => {
+    const counts = state.activeScenarioId === "final_recomendado" ? getFinalStructureCounts(false) : null;
+    container.innerHTML = PROPOSAL_VIEW.map((option) => {
       const scenario = state.scenarios[option.id];
       const summary = scenario.summary;
-      const isRecommended = option.id === "final_recomendado" || option.id === recommendedId;
-      const isActive = option.id === state.activeScenarioId;
-      const other =
-        option.id === "cenario_eusebio"
-          ? state.scenarios.cenario_horizonte.summary
-          : option.id === "cenario_horizonte"
-            ? state.scenarios.cenario_eusebio.summary
-            : state.scenarios[recommendedId].summary;
-      const distanceDelta = Math.abs((summary.total_distance_km || 0) - (other.total_distance_km || 0));
-      const footerText =
-        option.id === "final_recomendado"
-          ? `Escolha final baseada em distância total, coerência territorial e hierarquia sugerida.`
-          : option.id === recommendedId
-            ? `Melhor proposta metropolitana: ${distanceDelta.toFixed(1).replace(".", ",")} km a menos que a concorrente.`
-            : `Cenário alternativo: centralidade ${formatKm(summary.centralidade_operacional_km)}, mas distância total maior.`;
-      const metro = summary.batalhao_metropolitano_escolhido || state.raw.comparativo.recomendacao_final.batalhao_metropolitano_escolhido;
-      const tagLabel =
-        option.id === "final_recomendado"
-          ? "Consolidado"
-          : option.id === recommendedId
-            ? "Vencedor"
-            : metro;
-      const structureBreakdown = buildStructureBreakdownHtml(scenario.rows);
+      const isActive = true;
+      const isRecommended = true;
+      const footerText = "Estrutura final consolidada com restrição metropolitana aplicada à dupla Caucaia/Eusébio.";
+      const metro = summary.batalhao_metropolitano_escolhido || comparison.recomendacao_final.batalhao_metropolitano_escolhido;
+      const tagLabel = "Final";
+      const structureBreakdown = buildStructureBreakdownHtml(scenario.rows, counts);
       return `
         <article class="comparison-card ${isActive ? "is-active" : ""} ${isRecommended ? "is-recommended" : ""}" data-scenario-card="${option.id}">
           <div class="comparison-card-head">
@@ -1081,16 +1123,6 @@ window.CPRaioDashboard = (() => {
         </article>
       `;
     }).join("");
-
-    container.querySelectorAll("[data-scenario-card]").forEach((card) => {
-      card.addEventListener("click", () => {
-        state.activeScenarioId = card.dataset.scenarioCard;
-        state.activeBatalhao = "Todos";
-        state.selectedMunicipioKey = null;
-        render();
-        fitBoundsForRows(getFilteredRows());
-      });
-    });
   }
 
   function buildDistanceStats(rows) {
@@ -1115,6 +1147,7 @@ window.CPRaioDashboard = (() => {
   }
 
   function getOperationalReferenceLabel(row) {
+    if (isIsolatedRow(row)) return "Unidade própria (sem subordinados)";
     const batalhao = getAssignedBatalhao(row);
     const texture = getTextureType(row);
     const companhia = row.companhia_sugerida || row.companhia_atual || "";
@@ -1129,6 +1162,16 @@ window.CPRaioDashboard = (() => {
         <div class="municipio-hover-card">
           <div class="municipio-hover-title">${escapeHtml(fallbackName)}</div>
           <div class="municipio-hover-line"><strong>Situação:</strong> fora da proposta operacional atual</div>
+        </div>
+      `;
+    }
+    if (isIsolatedRow(row)) {
+      return `
+        <div class="municipio-hover-card">
+          <div class="municipio-hover-title">${escapeHtml(row.municipio)}</div>
+          <div class="municipio-hover-line"><strong>Status:</strong> Batalhão isolado</div>
+          <div class="municipio-hover-line"><strong>Efetivo:</strong> ${escapeHtml(formatInteger(getMunicipioEfetivo(row.municipio)))}</div>
+          <div class="municipio-hover-line"><strong>Vinculação:</strong> não participa da redistribuição</div>
         </div>
       `;
     }
@@ -1162,7 +1205,7 @@ window.CPRaioDashboard = (() => {
     const battalion = getAssignedBatalhao(row);
     const gain = getGain(row);
     const impactClass = gain && gain > 0 ? "impact-positive" : gain && gain < 0 ? "impact-negative" : "impact-neutral";
-    const operationLabel = isRedistributed(row) ? "Redistribuído" : "Mantido";
+    const operationLabel = isIsolatedRow(row) ? "Isolado" : isRedistributed(row) ? "Redistribuído" : "Mantido";
     const companhiaLabel = row.companhia_sugerida || row.companhia_atual || "";
     const currentStatusLabel = formatStatusLabel(row.status_atual);
     const suggestedStatusLabel = formatStatusLabel(getSuggestedStatus(row));
@@ -1444,7 +1487,7 @@ window.CPRaioDashboard = (() => {
     if (!scenario) return;
 
     if (state.activeScenarioId === "final_recomendado") {
-      const battalions = state.raw.estrutura_final.batalhoes.filter(
+      const battalions = sortBattalionStructures(state.raw.estrutura_final.batalhoes).filter(
         (item) => state.activeBatalhao === "Todos" || item.batalhao === state.activeBatalhao,
       );
       container.innerHTML = battalions
@@ -1532,7 +1575,7 @@ window.CPRaioDashboard = (() => {
     });
 
     container.innerHTML = Object.entries(grouped)
-      .sort(([a], [b]) => a.localeCompare(b, "pt-BR"))
+      .sort(([a], [b]) => compareBattalionNames(a, b))
       .map(([batalhao, rows]) => {
         const changed = rows.filter((row) => isRedistributed(row)).length;
         const structure = getScenarioStructureCounts(rows);
@@ -1590,10 +1633,6 @@ window.CPRaioDashboard = (() => {
       .slice(0, 5)
       .map((row) => `${row.municipio} (${formatKm(getTargetDistance(row))})`)
       .join(", ");
-    const eusebio = state.raw.comparativo.cenarios.cenario_eusebio;
-    const horizonte = state.raw.comparativo.cenarios.cenario_horizonte;
-    const totalDelta = Math.abs(eusebio.total_distance_km - horizonte.total_distance_km);
-    const centralityDelta = Math.abs(eusebio.centralidade_operacional_km - horizonte.centralidade_operacional_km);
     target.innerHTML = `
       ${
         selectedRow
@@ -1605,22 +1644,22 @@ window.CPRaioDashboard = (() => {
           : ""
       }
       <div class="summary-highlight">
-        <strong>Escolha técnica:</strong> ${escapeHtml(recommendation.batalhao_metropolitano_escolhido)} como novo batalhão metropolitano.
+        <strong>Definição metropolitana:</strong> ${escapeHtml(recommendation.batalhao_metropolitano_escolhido)} como batalhão complementar da RM, ao lado de Caucaia.
       </div>
       <div class="summary-line">
         <strong>Critério principal</strong>
-        <span>Horizonte fechou com ${formatKm(totals.total_km_cenario_horizonte)} contra ${formatKm(totals.total_km_cenario_eusebio)} em Eusébio, vantagem de ${formatKm(totalDelta)} na malha proposta.</span>
+        <span>A proposta final consolidada trabalha apenas com Eusébio como nova alternativa metropolitana, mantendo Caucaia e Eusébio restritos à Região Metropolitana.</span>
       </div>
       <div class="summary-line">
         <strong>Critério complementar</strong>
-        <span>A centralidade média ficou muito próxima entre as alternativas, com diferença de apenas ${formatKm(centralityDelta)}; por isso prevaleceu o menor custo rodoviário total.</span>
+        <span>O roteamento considera distância rodoviária real e impede que municípios fora da Região Metropolitana sejam alocados em Caucaia ou Eusébio.</span>
       </div>
       <div class="summary-line">
         <strong>Ganho agregado</strong>
-        <span>${formatKm(recommendation.ganho_total_vs_atual_km)} frente ao cenário atual, equivalente a ${formatPercent(recommendation.ganho_percentual_vs_atual)}.</span>
+        <span>${formatKm(recommendation.ganho_total_vs_atual_km)} de redução logística sobre a base atual, equivalente a ${formatPercent(recommendation.ganho_percentual_vs_atual)}.</span>
       </div>
       <div class="summary-line">
-        <strong>Cenário em foco</strong>
+        <strong>Proposta em foco</strong>
         <span>${escapeHtml(active.title)} com ${active.summary.municipios_redistribuidos} redistribuições, ${active.summary.distancias_criticas} casos críticos e ${formatPercent(active.summary.percentual_manutencao_estrutura)} de manutenção estrutural.</span>
       </div>
       <div class="summary-line">
@@ -1645,11 +1684,31 @@ window.CPRaioDashboard = (() => {
         </div>
       `;
     }
+    if (isIsolatedRow(row)) {
+      const efetivo = getMunicipioEfetivo(row.municipio);
+      return `
+        <div class="popup-shell">
+          <div class="popup-head">
+            <div class="popup-title">${escapeHtml(row.municipio)}</div>
+            <span class="popup-badge" style="background:${escapeHtml(rgba(getBattalionColor(row.municipio), 0.14))}; color:${escapeHtml(getBattalionColor(row.municipio))};">Batalhão isolado</span>
+          </div>
+          <div class="popup-note">Fortaleza não vincula outros municípios e foi removida da disputa de redistribuição territorial.</div>
+          <div class="popup-section-title">Dados operacionais</div>
+          <div class="popup-grid">
+            <div class="popup-item"><small>Município</small><strong>${escapeHtml(row.municipio)}</strong></div>
+            <div class="popup-item"><small>Efetivo</small><strong>${escapeHtml(formatInteger(efetivo))}</strong></div>
+            <div class="popup-item"><small>Status</small><strong>Batalhão isolado</strong></div>
+            <div class="popup-item"><small>Observação</small><strong>Não vincula outros municípios</strong></div>
+          </div>
+        </div>
+      `;
+    }
     const battalion = getAssignedBatalhao(row);
     const status = getSuggestedStatus(row);
     const gain = getGain(row);
     const gainClass = gain && gain > 0 ? "impact-positive" : gain && gain < 0 ? "impact-negative" : "impact-neutral";
-    const population = getLegacyField(row, "População");
+    const officialPopulation = toNumber(row.populacao_ibge);
+    const population = officialPopulation === null ? getLegacyField(row, "População") : null;
     const idh = getLegacyField(row, "IDH");
     const pib = getLegacyField(row, "PIB per capita");
     const density = getLegacyField(row, "Densidade");
@@ -1672,6 +1731,12 @@ window.CPRaioDashboard = (() => {
         <div class="popup-note">${escapeHtml(getObservationText(row))}</div>
         <div class="popup-section-title">Proposta operacional</div>
         <div class="popup-grid">
+          ${
+            officialPopulation !== null
+              ? `<div class="popup-item"><small>População IBGE ${escapeHtml(row.populacao_ano_referencia || "atual")}</small><strong>${escapeHtml(formatInteger(officialPopulation))}</strong></div>`
+              : ""
+          }
+          <div class="popup-item"><small>Efetivo</small><strong>${escapeHtml(formatInteger(getMunicipioEfetivo(row.municipio)))}</strong></div>
           <div class="popup-item"><small>Movimento</small><strong>${escapeHtml(movementLabel)}</strong></div>
           <div class="popup-item"><small>Ganho logístico</small><strong class="${gainClass}">${formatKm(gain)}</strong></div>
           <div class="popup-item"><small>Batalhão atual</small><strong>${escapeHtml(row.batalhao_atual || "—")}</strong></div>
@@ -1807,23 +1872,28 @@ window.CPRaioDashboard = (() => {
       const seatEntry = state.layerIndex[normalizeName(batalhao)];
       const seatCenter = getLayerCenter(seatEntry?.layer, seatRow);
       if (!seatCenter) return;
+      const isIsolatedSeat = isFortalezaName(batalhao);
       L.circleMarker(seatCenter, {
-        radius: 15,
+        radius: isIsolatedSeat ? 18 : 15,
         color: rgba("#ffffff", 0.9),
-        weight: 2,
+        weight: isIsolatedSeat ? 2.8 : 2,
         fillColor: getBattalionColor(batalhao),
-        fillOpacity: 0.22,
+        fillOpacity: isIsolatedSeat ? 0.3 : 0.22,
       }).addTo(state.markerLayer);
       L.circleMarker(seatCenter, {
-        radius: 10,
+        radius: isIsolatedSeat ? 11.5 : 10,
         color: "#ffffff",
-        weight: 2.8,
+        weight: isIsolatedSeat ? 3.6 : 2.8,
         fillColor: getBattalionColor(batalhao),
         fillOpacity: 1,
       })
-        .bindTooltip(`Sede de batalhão: ${batalhao}`, { direction: "top" })
+        .bindTooltip(isIsolatedSeat ? `Batalhão isolado: ${batalhao}` : `Sede de batalhão: ${batalhao}`, { direction: "top" })
         .on("click", () => focusBatalhao(batalhao))
         .addTo(state.markerLayer);
+      if (isIsolatedSeat && !state.fortalezaMarkerLogged) {
+        console.info("Fortaleza exibida como batalhão isolado");
+        state.fortalezaMarkerLogged = true;
+      }
     });
 
     filteredRows.forEach((row) => {
@@ -1854,52 +1924,79 @@ window.CPRaioDashboard = (() => {
       const node = getById(id);
       if (node) node.innerHTML = html;
     });
-    setText("scenario-caption", "Falha ao carregar os cenários operacionais.");
+    setText("scenario-caption", "Falha ao carregar a proposta operacional consolidada.");
     console.error("Falha no dashboard dinâmico:", error);
   }
 
   async function loadAllData() {
-    const [
-      municipiosGeoJson,
-      efetivoMarkdown,
-      cenarioAtual,
-      cenarioEusebio,
-      cenarioHorizonte,
-      comparativo,
-      estruturaFinal,
-      relatorio,
-    ] = await Promise.all([
+    const [municipiosGeoJson, efetivoPorMunicipio, comparativo, estruturaFinal, relatorio] = await Promise.all([
       fetchJson(MUNICIPAL_GEOJSON_FILE),
-      fetchText(EFETIVO_MARKDOWN_FILE),
-      fetchJson(OUTPUT_FILES.cenario_atual),
-      fetchJson(OUTPUT_FILES.cenario_eusebio),
-      fetchJson(OUTPUT_FILES.cenario_horizonte),
+      loadEfetivoData(),
       fetchJson(OUTPUT_FILES.comparativo),
       fetchJson(OUTPUT_FILES.estrutura_final),
       fetchJson(OUTPUT_FILES.relatorio),
     ]);
 
-    const efetivoPorMunicipio = parseEfetivoMarkdown(efetivoMarkdown);
+    const sortedEstruturaFinal = {
+      ...estruturaFinal,
+      batalhoes: sortBattalionStructures(estruturaFinal.batalhoes || []),
+    };
 
     state.raw = {
       municipios_geojson: municipiosGeoJson,
       efetivo_por_municipio: efetivoPorMunicipio,
-      cenario_atual: cenarioAtual,
-      cenario_eusebio: cenarioEusebio,
-      cenario_horizonte: cenarioHorizonte,
       comparativo,
-      estrutura_final: estruturaFinal,
+      estrutura_final: sortedEstruturaFinal,
       relatorio,
     };
     state.municipiosGeoJson = municipiosGeoJson;
     state.efetivoByMunicipio = efetivoPorMunicipio;
     state.recommendedScenarioId = comparativo.recomendacao_final.scenario_id;
     state.scenarios = {
-      cenario_atual: makeScenarioModel("cenario_atual", cenarioAtual),
-      cenario_eusebio: makeScenarioModel("cenario_eusebio", cenarioEusebio),
-      cenario_horizonte: makeScenarioModel("cenario_horizonte", cenarioHorizonte),
+      final_recomendado: makeFinalModel(),
     };
-    state.scenarios.final_recomendado = makeFinalModel();
+    logFortalezaValidation();
+  }
+
+  async function loadEfetivoData() {
+    try {
+      return parseEfetivoJson(await fetchJson(EFETIVO_JSON_FILE));
+    } catch (error) {
+      console.warn("Falha ao carregar o JSON atualizado de efetivo; tentando fallback legado.", error);
+      try {
+        return parseEfetivoMarkdown(await fetchText(LEGACY_EFETIVO_MARKDOWN_FILE));
+      } catch (legacyError) {
+        console.error("Falha ao carregar os dados de efetivo; seguindo com efetivo zerado no dashboard.", legacyError);
+        return {};
+      }
+    }
+  }
+
+  function logFortalezaValidation() {
+    if (state.fortalezaValidationLogged) return;
+    const finalScenario = state.scenarios.final_recomendado;
+    const fortalezaRow = finalScenario?.rowsByKey?.[FORTALEZA_KEY];
+    const fortalezaEfetivo = state.efetivoByMunicipio[FORTALEZA_KEY];
+
+    if (!fortalezaRow) {
+      console.warn("Fortaleza não foi encontrada na proposta carregada.");
+      return;
+    }
+
+    console.info("Fortaleza carregada com sucesso", {
+      municipio: fortalezaRow.municipio,
+      efetivo: fortalezaEfetivo ?? 0,
+      tipo: fortalezaRow.tipo_especial || "BATALHAO_ISOLADO",
+    });
+
+    const recebeMunicipios = finalScenario.rows.some(
+      (row) => !isFortalezaName(row.municipio) && getAssignedBatalhao(row) === fortalezaRow.municipio,
+    );
+    if (!recebeMunicipios) {
+      console.info("Fortaleza removida da lista de polos de redistribuição");
+    }
+
+    state.fortalezaValidationLogged = true;
   }
 
   function render() {

@@ -1,11 +1,13 @@
 {
   "metadata": {
-    "generated_at": "2026-03-20T21:22:09+00:00",
-    "total_municipios": 84,
+    "generated_at": "2026-03-21T13:52:18+00:00",
+    "total_municipios": 85,
     "fontes": {
       "estrutura_atual": "index.html::distribuicaoOficialAtual",
       "coordenadas_base": "dados/cidades/municipios.json",
-      "coordenadas_complementares": "output/coordenadas_complementares.json"
+      "coordenadas_complementares": "output/coordenadas_complementares.json",
+      "populacao_ibge": "dados/populacao/ibge_estimativa_populacao_ce_2025.json",
+      "efetivo": "dados/efetivo/efetivo_21_03_2026.json"
     },
     "geocodificacao_complementar": {
       "municipios_consultados": [],
@@ -27,7 +29,13 @@
       "companhia_atual": "Acaraú",
       "observacoes": "Companhia Litoral (Acaraú) para coordenação regional do setor costeiro.",
       "fonte_estrutura": "index.html::distribuicaoOficialAtual",
-      "fonte_coordenadas": "dados/cidades/municipios.json"
+      "fonte_coordenadas": "dados/cidades/municipios.json",
+      "populacao_ibge": 69317.0,
+      "populacao_ano_referencia": 2025,
+      "fonte_populacao": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "efetivo": 24,
+      "tipo_especial": null,
+      "is_fortaleza": false
     },
     {
       "nome": "Acopiara",
@@ -43,7 +51,13 @@
       "companhia_atual": "Iguatu",
       "observacoes": "Pelotão atualmente subordinado a Iguatu.",
       "fonte_estrutura": "index.html::distribuicaoOficialAtual",
-      "fonte_coordenadas": "dados/cidades/municipios.json"
+      "fonte_coordenadas": "dados/cidades/municipios.json",
+      "populacao_ibge": 45937.0,
+      "populacao_ano_referencia": 2025,
+      "fonte_populacao": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "efetivo": 29,
+      "tipo_especial": null,
+      "is_fortaleza": false
     },
     {
       "nome": "Amontada",
@@ -59,7 +73,13 @@
       "companhia_atual": "Acaraú",
       "observacoes": "Pelotão atualmente subordinado a Acaraú.",
       "fonte_estrutura": "index.html::distribuicaoOficialAtual",
-      "fonte_coordenadas": "dados/cidades/municipios.json"
+      "fonte_coordenadas": "dados/cidades/municipios.json",
+      "populacao_ibge": 44584.0,
+      "populacao_ano_referencia": 2025,
+      "fonte_populacao": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "efetivo": 29,
+      "tipo_especial": null,
+      "is_fortaleza": false
     },
     {
       "nome": "Aquiraz",
@@ -75,7 +95,13 @@
       "companhia_atual": "Aquiraz",
       "observacoes": "Companhia atual da estrutura em vigor.",
       "fonte_estrutura": "index.html::distribuicaoOficialAtual",
-      "fonte_coordenadas": "dados/cidades/municipios.json"
+      "fonte_coordenadas": "dados/cidades/municipios.json",
+      "populacao_ibge": 85316.0,
+      "populacao_ano_referencia": 2025,
+      "fonte_populacao": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "efetivo": 52,
+      "tipo_especial": null,
+      "is_fortaleza": false
     },
     {
       "nome": "Aracati",
@@ -91,7 +117,13 @@
       "companhia_atual": "Aracati",
       "observacoes": "Companhia atual da estrutura em vigor.",
       "fonte_estrutura": "index.html::distribuicaoOficialAtual",
-      "fonte_coordenadas": "dados/cidades/municipios.json"
+      "fonte_coordenadas": "dados/cidades/municipios.json",
+      "populacao_ibge": 79205.0,
+      "populacao_ano_referencia": 2025,
+      "fonte_populacao": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "efetivo": 33,
+      "tipo_especial": null,
+      "is_fortaleza": false
     },
     {
       "nome": "Aracoiaba",
@@ -107,7 +139,13 @@
       "companhia_atual": "Quixadá",
       "observacoes": "Pelotão atualmente subordinado a Quixadá.",
       "fonte_estrutura": "index.html::distribuicaoOficialAtual",
-      "fonte_coordenadas": "dados/cidades/municipios.json"
+      "fonte_coordenadas": "dados/cidades/municipios.json",
+      "populacao_ibge": 26752.0,
+      "populacao_ano_referencia": 2025,
+      "fonte_populacao": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "efetivo": 23,
+      "tipo_especial": null,
+      "is_fortaleza": false
     },
     {
       "nome": "Aurora",
@@ -123,7 +161,13 @@
       "companhia_atual": "Brejo Santo",
       "observacoes": "Subordinação à Companhia de Brejo Santo (eixo BR-116 / integração territorial).",
       "fonte_estrutura": "index.html::distribuicaoOficialAtual",
-      "fonte_coordenadas": "dados/cidades/municipios.json"
+      "fonte_coordenadas": "dados/cidades/municipios.json",
+      "populacao_ibge": 24244.0,
+      "populacao_ano_referencia": 2025,
+      "fonte_populacao": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "efetivo": 22,
+      "tipo_especial": null,
+      "is_fortaleza": false
     },
     {
       "nome": "Barbalha",
@@ -139,7 +183,13 @@
       "companhia_atual": "Barbalha",
       "observacoes": "Companhia atual da estrutura em vigor.",
       "fonte_estrutura": "index.html::distribuicaoOficialAtual",
-      "fonte_coordenadas": "dados/cidades/municipios.json"
+      "fonte_coordenadas": "dados/cidades/municipios.json",
+      "populacao_ibge": 81441.0,
+      "populacao_ano_referencia": 2025,
+      "fonte_populacao": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "efetivo": 35,
+      "tipo_especial": null,
+      "is_fortaleza": false
     },
     {
       "nome": "Baturité",
@@ -155,7 +205,13 @@
       "companhia_atual": "Quixadá",
       "observacoes": "Pelotão atualmente subordinado a Quixadá.",
       "fonte_estrutura": "index.html::distribuicaoOficialAtual",
-      "fonte_coordenadas": "dados/cidades/municipios.json"
+      "fonte_coordenadas": "dados/cidades/municipios.json",
+      "populacao_ibge": 37147.0,
+      "populacao_ano_referencia": 2025,
+      "fonte_populacao": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "efetivo": 31,
+      "tipo_especial": null,
+      "is_fortaleza": false
     },
     {
       "nome": "Beberibe",
@@ -171,7 +227,13 @@
       "companhia_atual": "Aracati",
       "observacoes": "Pelotão atualmente subordinado a Aracati.",
       "fonte_estrutura": "index.html::distribuicaoOficialAtual",
-      "fonte_coordenadas": "dados/cidades/municipios.json"
+      "fonte_coordenadas": "dados/cidades/municipios.json",
+      "populacao_ibge": 55977.0,
+      "populacao_ano_referencia": 2025,
+      "fonte_populacao": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "efetivo": 30,
+      "tipo_especial": null,
+      "is_fortaleza": false
     },
     {
       "nome": "Bela Cruz",
@@ -187,7 +249,13 @@
       "companhia_atual": "Acaraú",
       "observacoes": "Pelotão atualmente subordinado a Acaraú.",
       "fonte_estrutura": "index.html::distribuicaoOficialAtual",
-      "fonte_coordenadas": "dados/cidades/municipios.json"
+      "fonte_coordenadas": "dados/cidades/municipios.json",
+      "populacao_ibge": 34613.0,
+      "populacao_ano_referencia": 2025,
+      "fonte_populacao": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "efetivo": 18,
+      "tipo_especial": null,
+      "is_fortaleza": false
     },
     {
       "nome": "Boa Viagem",
@@ -203,7 +271,13 @@
       "companhia_atual": "Quixeramobim",
       "observacoes": "Distância mitigada via subordinação operacional à Cia Quixeramobim, otimizando recursos.",
       "fonte_estrutura": "index.html::distribuicaoOficialAtual",
-      "fonte_coordenadas": "dados/cidades/municipios.json"
+      "fonte_coordenadas": "dados/cidades/municipios.json",
+      "populacao_ibge": 52133.0,
+      "populacao_ano_referencia": 2025,
+      "fonte_populacao": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "efetivo": 28,
+      "tipo_especial": null,
+      "is_fortaleza": false
     },
     {
       "nome": "Brejo Santo",
@@ -219,7 +293,13 @@
       "companhia_atual": "Brejo Santo",
       "observacoes": "Companhia atual da estrutura em vigor.",
       "fonte_estrutura": "index.html::distribuicaoOficialAtual",
-      "fonte_coordenadas": "dados/cidades/municipios.json"
+      "fonte_coordenadas": "dados/cidades/municipios.json",
+      "populacao_ibge": 54192.0,
+      "populacao_ano_referencia": 2025,
+      "fonte_populacao": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "efetivo": 30,
+      "tipo_especial": null,
+      "is_fortaleza": false
     },
     {
       "nome": "Camocim",
@@ -235,7 +315,13 @@
       "companhia_atual": "Camocim",
       "observacoes": "Companhia atual da estrutura em vigor.",
       "fonte_estrutura": "index.html::distribuicaoOficialAtual",
-      "fonte_coordenadas": "dados/cidades/municipios.json"
+      "fonte_coordenadas": "dados/cidades/municipios.json",
+      "populacao_ibge": 65251.0,
+      "populacao_ano_referencia": 2025,
+      "fonte_populacao": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "efetivo": 33,
+      "tipo_especial": null,
+      "is_fortaleza": false
     },
     {
       "nome": "Campos Sales",
@@ -251,7 +337,13 @@
       "companhia_atual": "Tauá",
       "observacoes": "Pelotão atualmente subordinado a Tauá.",
       "fonte_estrutura": "index.html::distribuicaoOficialAtual",
-      "fonte_coordenadas": "dados/cidades/municipios.json"
+      "fonte_coordenadas": "dados/cidades/municipios.json",
+      "populacao_ibge": 26049.0,
+      "populacao_ano_referencia": 2025,
+      "fonte_populacao": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "efetivo": 22,
+      "tipo_especial": null,
+      "is_fortaleza": false
     },
     {
       "nome": "Canindé",
@@ -267,7 +359,13 @@
       "companhia_atual": "Canindé",
       "observacoes": "Companhia atual da estrutura em vigor.",
       "fonte_estrutura": "index.html::distribuicaoOficialAtual",
-      "fonte_coordenadas": "dados/cidades/municipios.json"
+      "fonte_coordenadas": "dados/cidades/municipios.json",
+      "populacao_ibge": 77376.0,
+      "populacao_ano_referencia": 2025,
+      "fonte_populacao": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "efetivo": 49,
+      "tipo_especial": null,
+      "is_fortaleza": false
     },
     {
       "nome": "Caririaçu",
@@ -283,7 +381,13 @@
       "companhia_atual": "Barbalha",
       "observacoes": "Subordinação à Companhia de Barbalha (integração metropolitana do Cariri).",
       "fonte_estrutura": "index.html::distribuicaoOficialAtual",
-      "fonte_coordenadas": "dados/cidades/municipios.json"
+      "fonte_coordenadas": "dados/cidades/municipios.json",
+      "populacao_ibge": 27532.0,
+      "populacao_ano_referencia": 2025,
+      "fonte_populacao": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "efetivo": 23,
+      "tipo_especial": null,
+      "is_fortaleza": false
     },
     {
       "nome": "Cascavel",
@@ -299,7 +403,13 @@
       "companhia_atual": "Aquiraz",
       "observacoes": "Pelotão atualmente subordinado a Aquiraz.",
       "fonte_estrutura": "index.html::distribuicaoOficialAtual",
-      "fonte_coordenadas": "dados/cidades/municipios.json"
+      "fonte_coordenadas": "dados/cidades/municipios.json",
+      "populacao_ibge": 76866.0,
+      "populacao_ano_referencia": 2025,
+      "fonte_populacao": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "efetivo": 36,
+      "tipo_especial": null,
+      "is_fortaleza": false
     },
     {
       "nome": "Caucaia",
@@ -315,7 +425,13 @@
       "companhia_atual": "Caucaia",
       "observacoes": "Sede atual do batalhão.",
       "fonte_estrutura": "index.html::distribuicaoOficialAtual",
-      "fonte_coordenadas": "dados/cidades/municipios.json"
+      "fonte_coordenadas": "dados/cidades/municipios.json",
+      "populacao_ibge": 378406.0,
+      "populacao_ano_referencia": 2025,
+      "fonte_populacao": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "efetivo": 144,
+      "tipo_especial": null,
+      "is_fortaleza": false
     },
     {
       "nome": "Cedro",
@@ -331,7 +447,13 @@
       "companhia_atual": "Iguatu",
       "observacoes": "Pelotão atualmente subordinado a Iguatu.",
       "fonte_estrutura": "index.html::distribuicaoOficialAtual",
-      "fonte_coordenadas": "dados/cidades/municipios.json"
+      "fonte_coordenadas": "dados/cidades/municipios.json",
+      "populacao_ibge": 22564.0,
+      "populacao_ano_referencia": 2025,
+      "fonte_populacao": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "efetivo": 23,
+      "tipo_especial": null,
+      "is_fortaleza": false
     },
     {
       "nome": "Chorozinho",
@@ -347,7 +469,13 @@
       "companhia_atual": "Horizonte",
       "observacoes": "Pelotão atualmente subordinado a Horizonte.",
       "fonte_estrutura": "index.html::distribuicaoOficialAtual",
-      "fonte_coordenadas": "dados/cidades/municipios.json"
+      "fonte_coordenadas": "dados/cidades/municipios.json",
+      "populacao_ibge": 20808.0,
+      "populacao_ano_referencia": 2025,
+      "fonte_populacao": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "efetivo": 23,
+      "tipo_especial": null,
+      "is_fortaleza": false
     },
     {
       "nome": "Crateús",
@@ -363,7 +491,13 @@
       "companhia_atual": "Crateús",
       "observacoes": "Outlier por distância crítica (Análise de Outliers do 5º BPRAIO).",
       "fonte_estrutura": "index.html::distribuicaoOficialAtual",
-      "fonte_coordenadas": "dados/cidades/municipios.json"
+      "fonte_coordenadas": "dados/cidades/municipios.json",
+      "populacao_ibge": 80130.0,
+      "populacao_ano_referencia": 2025,
+      "fonte_populacao": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "efetivo": 31,
+      "tipo_especial": null,
+      "is_fortaleza": false
     },
     {
       "nome": "Crato",
@@ -379,7 +513,13 @@
       "companhia_atual": "Crato",
       "observacoes": "Companhia atual da estrutura em vigor.",
       "fonte_estrutura": "index.html::distribuicaoOficialAtual",
-      "fonte_coordenadas": "dados/cidades/municipios.json"
+      "fonte_coordenadas": "dados/cidades/municipios.json",
+      "populacao_ibge": 139027.0,
+      "populacao_ano_referencia": 2025,
+      "fonte_populacao": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "efetivo": 38,
+      "tipo_especial": null,
+      "is_fortaleza": false
     },
     {
       "nome": "Cruz",
@@ -395,7 +535,13 @@
       "companhia_atual": "Acaraú",
       "observacoes": "Pelotão atualmente subordinado a Acaraú.",
       "fonte_estrutura": "index.html::distribuicaoOficialAtual",
-      "fonte_coordenadas": "dados/cidades/municipios.json"
+      "fonte_coordenadas": "dados/cidades/municipios.json",
+      "populacao_ibge": 32288.0,
+      "populacao_ano_referencia": 2025,
+      "fonte_populacao": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "efetivo": 0,
+      "tipo_especial": null,
+      "is_fortaleza": false
     },
     {
       "nome": "Eusébio",
@@ -411,7 +557,13 @@
       "companhia_atual": "Eusébio",
       "observacoes": "Companhia atual da estrutura em vigor.",
       "fonte_estrutura": "index.html::distribuicaoOficialAtual",
-      "fonte_coordenadas": "dados/cidades/municipios.json"
+      "fonte_coordenadas": "dados/cidades/municipios.json",
+      "populacao_ibge": 82016.0,
+      "populacao_ano_referencia": 2025,
+      "fonte_populacao": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "efetivo": 40,
+      "tipo_especial": null,
+      "is_fortaleza": false
     },
     {
       "nome": "Forquilha",
@@ -427,7 +579,35 @@
       "companhia_atual": "Sobral",
       "observacoes": "Pelotão atualmente subordinado a Sobral.",
       "fonte_estrutura": "index.html::distribuicaoOficialAtual",
-      "fonte_coordenadas": "dados/cidades/municipios.json"
+      "fonte_coordenadas": "dados/cidades/municipios.json",
+      "populacao_ibge": 25298.0,
+      "populacao_ano_referencia": 2025,
+      "fonte_populacao": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "efetivo": 22,
+      "tipo_especial": null,
+      "is_fortaleza": false
+    },
+    {
+      "nome": "Fortaleza",
+      "nome_normalizado": "FORTALEZA",
+      "latitude": -3.7319,
+      "longitude": -38.5267,
+      "id_municipio": 0,
+      "tipo_atual": "batalhao",
+      "status_atual": "batalhao",
+      "subordinacao_atual": "Fortaleza",
+      "batalhao_codigo_atual": "BATALHAO ISOLADO",
+      "batalhao_atual": "Fortaleza",
+      "companhia_atual": "Fortaleza",
+      "observacoes": "Batalhão isolado com atuação própria; não participa da redistribuição territorial e não vincula outros municípios.",
+      "fonte_estrutura": "dados/cidades/municipios.json::fortaleza_batalhao_isolado",
+      "fonte_coordenadas": "dados/cidades/municipios.json",
+      "populacao_ibge": 2578483.0,
+      "populacao_ano_referencia": 2025,
+      "fonte_populacao": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "efetivo": 573,
+      "tipo_especial": "batalhao_isolado",
+      "is_fortaleza": true
     },
     {
       "nome": "Granja",
@@ -443,7 +623,13 @@
       "companhia_atual": "Camocim",
       "observacoes": "Pelotão atualmente subordinado a Camocim.",
       "fonte_estrutura": "index.html::distribuicaoOficialAtual",
-      "fonte_coordenadas": "dados/cidades/municipios.json"
+      "fonte_coordenadas": "dados/cidades/municipios.json",
+      "populacao_ibge": 55809.0,
+      "populacao_ano_referencia": 2025,
+      "fonte_populacao": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "efetivo": 26,
+      "tipo_especial": null,
+      "is_fortaleza": false
     },
     {
       "nome": "Guaiúba",
@@ -459,7 +645,13 @@
       "companhia_atual": "Maranguape",
       "observacoes": "Pelotão atualmente subordinado a Maranguape.",
       "fonte_estrutura": "index.html::distribuicaoOficialAtual",
-      "fonte_coordenadas": "dados/cidades/municipios.json"
+      "fonte_coordenadas": "dados/cidades/municipios.json",
+      "populacao_ibge": 25158.0,
+      "populacao_ano_referencia": 2025,
+      "fonte_populacao": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "efetivo": 25,
+      "tipo_especial": null,
+      "is_fortaleza": false
     },
     {
       "nome": "Guaraciaba do Norte",
@@ -475,7 +667,13 @@
       "companhia_atual": "Tianguá",
       "observacoes": "Pelotão atualmente subordinado a Tianguá.",
       "fonte_estrutura": "index.html::distribuicaoOficialAtual",
-      "fonte_coordenadas": "dados/cidades/municipios.json"
+      "fonte_coordenadas": "dados/cidades/municipios.json",
+      "populacao_ibge": 44565.0,
+      "populacao_ano_referencia": 2025,
+      "fonte_populacao": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "efetivo": 24,
+      "tipo_especial": null,
+      "is_fortaleza": false
     },
     {
       "nome": "Horizonte",
@@ -491,7 +689,13 @@
       "companhia_atual": "Horizonte",
       "observacoes": "Companhia atual da estrutura em vigor.",
       "fonte_estrutura": "index.html::distribuicaoOficialAtual",
-      "fonte_coordenadas": "dados/cidades/municipios.json"
+      "fonte_coordenadas": "dados/cidades/municipios.json",
+      "populacao_ibge": 81161.0,
+      "populacao_ano_referencia": 2025,
+      "fonte_populacao": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "efetivo": 40,
+      "tipo_especial": null,
+      "is_fortaleza": false
     },
     {
       "nome": "Ibiapina",
@@ -507,7 +711,13 @@
       "companhia_atual": "Tianguá",
       "observacoes": "Pelotão atualmente subordinado a Tianguá.",
       "fonte_estrutura": "index.html::distribuicaoOficialAtual",
-      "fonte_coordenadas": "dados/cidades/municipios.json"
+      "fonte_coordenadas": "dados/cidades/municipios.json",
+      "populacao_ibge": 24689.0,
+      "populacao_ano_referencia": 2025,
+      "fonte_populacao": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "efetivo": 22,
+      "tipo_especial": null,
+      "is_fortaleza": false
     },
     {
       "nome": "Icapuí",
@@ -523,7 +733,13 @@
       "companhia_atual": "Aracati",
       "observacoes": "Pelotão atualmente subordinado a Aracati.",
       "fonte_estrutura": "index.html::distribuicaoOficialAtual",
-      "fonte_coordenadas": "dados/cidades/municipios.json"
+      "fonte_coordenadas": "dados/cidades/municipios.json",
+      "populacao_ibge": 22562.0,
+      "populacao_ano_referencia": 2025,
+      "fonte_populacao": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "efetivo": 23,
+      "tipo_especial": null,
+      "is_fortaleza": false
     },
     {
       "nome": "Icó",
@@ -539,7 +755,13 @@
       "companhia_atual": "Iguatu",
       "observacoes": "Pelotão atualmente subordinado a Iguatu.",
       "fonte_estrutura": "index.html::distribuicaoOficialAtual",
-      "fonte_coordenadas": "dados/cidades/municipios.json"
+      "fonte_coordenadas": "dados/cidades/municipios.json",
+      "populacao_ibge": 64745.0,
+      "populacao_ano_referencia": 2025,
+      "fonte_populacao": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "efetivo": 31,
+      "tipo_especial": null,
+      "is_fortaleza": false
     },
     {
       "nome": "Iguatu",
@@ -555,7 +777,13 @@
       "companhia_atual": "Iguatu",
       "observacoes": "Companhia atual da estrutura em vigor.",
       "fonte_estrutura": "index.html::distribuicaoOficialAtual",
-      "fonte_coordenadas": "dados/cidades/municipios.json"
+      "fonte_coordenadas": "dados/cidades/municipios.json",
+      "populacao_ibge": 102588.0,
+      "populacao_ano_referencia": 2025,
+      "fonte_populacao": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "efetivo": 44,
+      "tipo_especial": null,
+      "is_fortaleza": false
     },
     {
       "nome": "Independência",
@@ -571,7 +799,13 @@
       "companhia_atual": "Crateús",
       "observacoes": "Pelotão atualmente subordinado a Crateús.",
       "fonte_estrutura": "index.html::distribuicaoOficialAtual",
-      "fonte_coordenadas": "dados/cidades/municipios.json"
+      "fonte_coordenadas": "dados/cidades/municipios.json",
+      "populacao_ibge": 24463.0,
+      "populacao_ano_referencia": 2025,
+      "fonte_populacao": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "efetivo": 0,
+      "tipo_especial": null,
+      "is_fortaleza": false
     },
     {
       "nome": "Ipu",
@@ -587,7 +821,13 @@
       "companhia_atual": "Ipu",
       "observacoes": "Companhia atual da estrutura em vigor.",
       "fonte_estrutura": "index.html::distribuicaoOficialAtual",
-      "fonte_coordenadas": "dados/cidades/municipios.json"
+      "fonte_coordenadas": "dados/cidades/municipios.json",
+      "populacao_ibge": 43084.0,
+      "populacao_ano_referencia": 2025,
+      "fonte_populacao": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "efetivo": 23,
+      "tipo_especial": null,
+      "is_fortaleza": false
     },
     {
       "nome": "Ipueiras",
@@ -603,7 +843,13 @@
       "companhia_atual": "Crateús",
       "observacoes": "Pelotão atualmente subordinado a Crateús.",
       "fonte_estrutura": "index.html::distribuicaoOficialAtual",
-      "fonte_coordenadas": "dados/cidades/municipios.json"
+      "fonte_coordenadas": "dados/cidades/municipios.json",
+      "populacao_ibge": 38287.0,
+      "populacao_ano_referencia": 2025,
+      "fonte_populacao": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "efetivo": 19,
+      "tipo_especial": null,
+      "is_fortaleza": false
     },
     {
       "nome": "Itaitinga",
@@ -619,7 +865,13 @@
       "companhia_atual": "Maracanaú",
       "observacoes": "Pelotão atualmente subordinado a Maracanaú.",
       "fonte_estrutura": "index.html::distribuicaoOficialAtual",
-      "fonte_coordenadas": "dados/cidades/municipios.json"
+      "fonte_coordenadas": "dados/cidades/municipios.json",
+      "populacao_ibge": 72512.0,
+      "populacao_ano_referencia": 2025,
+      "fonte_populacao": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "efetivo": 32,
+      "tipo_especial": null,
+      "is_fortaleza": false
     },
     {
       "nome": "Itapajé",
@@ -635,7 +887,13 @@
       "companhia_atual": "Itapipoca",
       "observacoes": "Pelotão atualmente subordinado a Itapipoca.",
       "fonte_estrutura": "index.html::distribuicaoOficialAtual",
-      "fonte_coordenadas": "dados/cidades/municipios.json"
+      "fonte_coordenadas": "dados/cidades/municipios.json",
+      "populacao_ibge": 49073.0,
+      "populacao_ano_referencia": 2025,
+      "fonte_populacao": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "efetivo": 27,
+      "tipo_especial": null,
+      "is_fortaleza": false
     },
     {
       "nome": "Itapipoca",
@@ -651,7 +909,13 @@
       "companhia_atual": "Itapipoca",
       "observacoes": "Outlier por impacto demográfico e centralidade logística (4º BPRAIO).",
       "fonte_estrutura": "index.html::distribuicaoOficialAtual",
-      "fonte_coordenadas": "dados/cidades/municipios.json"
+      "fonte_coordenadas": "dados/cidades/municipios.json",
+      "populacao_ibge": 138978.0,
+      "populacao_ano_referencia": 2025,
+      "fonte_populacao": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "efetivo": 43,
+      "tipo_especial": null,
+      "is_fortaleza": false
     },
     {
       "nome": "Itarema",
@@ -667,7 +931,13 @@
       "companhia_atual": "Acaraú",
       "observacoes": "Pelotão atualmente subordinado a Acaraú.",
       "fonte_estrutura": "index.html::distribuicaoOficialAtual",
-      "fonte_coordenadas": "dados/cidades/municipios.json"
+      "fonte_coordenadas": "dados/cidades/municipios.json",
+      "populacao_ibge": 45852.0,
+      "populacao_ano_referencia": 2025,
+      "fonte_populacao": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "efetivo": 24,
+      "tipo_especial": null,
+      "is_fortaleza": false
     },
     {
       "nome": "Jaguaribe",
@@ -683,7 +953,13 @@
       "companhia_atual": "Limoeiro do Norte",
       "observacoes": "Pelotão atualmente subordinado a Limoeiro do Norte.",
       "fonte_estrutura": "index.html::distribuicaoOficialAtual",
-      "fonte_coordenadas": "dados/cidades/municipios.json"
+      "fonte_coordenadas": "dados/cidades/municipios.json",
+      "populacao_ibge": 35143.0,
+      "populacao_ano_referencia": 2025,
+      "fonte_populacao": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "efetivo": 24,
+      "tipo_especial": null,
+      "is_fortaleza": false
     },
     {
       "nome": "Jaguaruana",
@@ -699,7 +975,13 @@
       "companhia_atual": "Limoeiro do Norte",
       "observacoes": "Pelotão atualmente subordinado a Limoeiro do Norte.",
       "fonte_estrutura": "index.html::distribuicaoOficialAtual",
-      "fonte_coordenadas": "dados/cidades/municipios.json"
+      "fonte_coordenadas": "dados/cidades/municipios.json",
+      "populacao_ibge": 33115.0,
+      "populacao_ano_referencia": 2025,
+      "fonte_populacao": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "efetivo": 25,
+      "tipo_especial": null,
+      "is_fortaleza": false
     },
     {
       "nome": "Jardim",
@@ -715,7 +997,13 @@
       "companhia_atual": "Barbalha",
       "observacoes": "Pelotão atualmente subordinado a Barbalha.",
       "fonte_estrutura": "index.html::distribuicaoOficialAtual",
-      "fonte_coordenadas": "dados/cidades/municipios.json"
+      "fonte_coordenadas": "dados/cidades/municipios.json",
+      "populacao_ibge": 28801.0,
+      "populacao_ano_referencia": 2025,
+      "fonte_populacao": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "efetivo": 21,
+      "tipo_especial": null,
+      "is_fortaleza": false
     },
     {
       "nome": "Juazeiro do Norte",
@@ -731,7 +1019,13 @@
       "companhia_atual": "Juazeiro do Norte",
       "observacoes": "Sede atual do batalhão.",
       "fonte_estrutura": "index.html::distribuicaoOficialAtual",
-      "fonte_coordenadas": "dados/cidades/municipios.json"
+      "fonte_coordenadas": "dados/cidades/municipios.json",
+      "populacao_ibge": 305531.0,
+      "populacao_ano_referencia": 2025,
+      "fonte_populacao": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "efetivo": 77,
+      "tipo_especial": null,
+      "is_fortaleza": false
     },
     {
       "nome": "Lavras da Mangabeira",
@@ -747,7 +1041,13 @@
       "companhia_atual": "Iguatu",
       "observacoes": "Pelotão atualmente subordinado a Iguatu.",
       "fonte_estrutura": "index.html::distribuicaoOficialAtual",
-      "fonte_coordenadas": "dados/cidades/municipios.json"
+      "fonte_coordenadas": "dados/cidades/municipios.json",
+      "populacao_ibge": 32163.0,
+      "populacao_ano_referencia": 2025,
+      "fonte_populacao": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "efetivo": 22,
+      "tipo_especial": null,
+      "is_fortaleza": false
     },
     {
       "nome": "Limoeiro do Norte",
@@ -763,7 +1063,13 @@
       "companhia_atual": "Limoeiro do Norte",
       "observacoes": "Companhia atual da estrutura em vigor.",
       "fonte_estrutura": "index.html::distribuicaoOficialAtual",
-      "fonte_coordenadas": "dados/cidades/municipios.json"
+      "fonte_coordenadas": "dados/cidades/municipios.json",
+      "populacao_ibge": 62623.0,
+      "populacao_ano_referencia": 2025,
+      "fonte_populacao": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "efetivo": 38,
+      "tipo_especial": null,
+      "is_fortaleza": false
     },
     {
       "nome": "Maracanaú",
@@ -779,7 +1085,13 @@
       "companhia_atual": "Maracanaú",
       "observacoes": "Companhia atual da estrutura em vigor.",
       "fonte_estrutura": "index.html::distribuicaoOficialAtual",
-      "fonte_coordenadas": "dados/cidades/municipios.json"
+      "fonte_coordenadas": "dados/cidades/municipios.json",
+      "populacao_ibge": 251613.0,
+      "populacao_ano_referencia": 2025,
+      "fonte_populacao": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "efetivo": 93,
+      "tipo_especial": null,
+      "is_fortaleza": false
     },
     {
       "nome": "Maranguape",
@@ -795,7 +1107,13 @@
       "companhia_atual": "Maranguape",
       "observacoes": "Companhia atual da estrutura em vigor.",
       "fonte_estrutura": "index.html::distribuicaoOficialAtual",
-      "fonte_coordenadas": "dados/cidades/municipios.json"
+      "fonte_coordenadas": "dados/cidades/municipios.json",
+      "populacao_ibge": 108622.0,
+      "populacao_ano_referencia": 2025,
+      "fonte_populacao": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "efetivo": 48,
+      "tipo_especial": null,
+      "is_fortaleza": false
     },
     {
       "nome": "Marco",
@@ -811,7 +1129,13 @@
       "companhia_atual": "Acaraú",
       "observacoes": "Pelotão atualmente subordinado a Acaraú.",
       "fonte_estrutura": "index.html::distribuicaoOficialAtual",
-      "fonte_coordenadas": "dados/cidades/municipios.json"
+      "fonte_coordenadas": "dados/cidades/municipios.json",
+      "populacao_ibge": 27177.0,
+      "populacao_ano_referencia": 2025,
+      "fonte_populacao": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "efetivo": 21,
+      "tipo_especial": null,
+      "is_fortaleza": false
     },
     {
       "nome": "Massapê",
@@ -827,7 +1151,13 @@
       "companhia_atual": "Sobral",
       "observacoes": "Pelotão atualmente subordinado a Sobral.",
       "fonte_estrutura": "index.html::distribuicaoOficialAtual",
-      "fonte_coordenadas": "dados/cidades/municipios.json"
+      "fonte_coordenadas": "dados/cidades/municipios.json",
+      "populacao_ibge": 39840.0,
+      "populacao_ano_referencia": 2025,
+      "fonte_populacao": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "efetivo": 25,
+      "tipo_especial": null,
+      "is_fortaleza": false
     },
     {
       "nome": "Mauriti",
@@ -843,7 +1173,13 @@
       "companhia_atual": "Brejo Santo",
       "observacoes": "Pelotão atualmente subordinado a Brejo Santo.",
       "fonte_estrutura": "index.html::distribuicaoOficialAtual",
-      "fonte_coordenadas": "dados/cidades/municipios.json"
+      "fonte_coordenadas": "dados/cidades/municipios.json",
+      "populacao_ibge": 47501.0,
+      "populacao_ano_referencia": 2025,
+      "fonte_populacao": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "efetivo": 27,
+      "tipo_especial": null,
+      "is_fortaleza": false
     },
     {
       "nome": "Milagres",
@@ -859,7 +1195,13 @@
       "companhia_atual": "Brejo Santo",
       "observacoes": "Pelotão atualmente subordinado a Brejo Santo.",
       "fonte_estrutura": "index.html::distribuicaoOficialAtual",
-      "fonte_coordenadas": "dados/cidades/municipios.json"
+      "fonte_coordenadas": "dados/cidades/municipios.json",
+      "populacao_ibge": 26819.0,
+      "populacao_ano_referencia": 2025,
+      "fonte_populacao": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "efetivo": 0,
+      "tipo_especial": null,
+      "is_fortaleza": false
     },
     {
       "nome": "Missão Velha",
@@ -875,7 +1217,13 @@
       "companhia_atual": "Barbalha",
       "observacoes": "Pelotão atualmente subordinado a Barbalha.",
       "fonte_estrutura": "index.html::distribuicaoOficialAtual",
-      "fonte_coordenadas": "dados/cidades/municipios.json"
+      "fonte_coordenadas": "dados/cidades/municipios.json",
+      "populacao_ibge": 38997.0,
+      "populacao_ano_referencia": 2025,
+      "fonte_populacao": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "efetivo": 25,
+      "tipo_especial": null,
+      "is_fortaleza": false
     },
     {
       "nome": "Mombaça",
@@ -891,7 +1239,13 @@
       "companhia_atual": "Iguatu",
       "observacoes": "Pelotão atualmente subordinado a Iguatu.",
       "fonte_estrutura": "index.html::distribuicaoOficialAtual",
-      "fonte_coordenadas": "dados/cidades/municipios.json"
+      "fonte_coordenadas": "dados/cidades/municipios.json",
+      "populacao_ibge": 38451.0,
+      "populacao_ano_referencia": 2025,
+      "fonte_populacao": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "efetivo": 26,
+      "tipo_especial": null,
+      "is_fortaleza": false
     },
     {
       "nome": "Morada Nova",
@@ -907,7 +1261,13 @@
       "companhia_atual": "Limoeiro do Norte",
       "observacoes": "Pelotão atualmente subordinado a Limoeiro do Norte.",
       "fonte_estrutura": "index.html::distribuicaoOficialAtual",
-      "fonte_coordenadas": "dados/cidades/municipios.json"
+      "fonte_coordenadas": "dados/cidades/municipios.json",
+      "populacao_ibge": 65390.0,
+      "populacao_ano_referencia": 2025,
+      "fonte_populacao": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "efetivo": 33,
+      "tipo_especial": null,
+      "is_fortaleza": false
     },
     {
       "nome": "Nova Russas",
@@ -923,7 +1283,13 @@
       "companhia_atual": "Crateús",
       "observacoes": "Pelotão atualmente subordinado a Crateús.",
       "fonte_estrutura": "index.html::distribuicaoOficialAtual",
-      "fonte_coordenadas": "dados/cidades/municipios.json"
+      "fonte_coordenadas": "dados/cidades/municipios.json",
+      "populacao_ibge": 32053.0,
+      "populacao_ano_referencia": 2025,
+      "fonte_populacao": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "efetivo": 19,
+      "tipo_especial": null,
+      "is_fortaleza": false
     },
     {
       "nome": "Novo Oriente",
@@ -939,7 +1305,13 @@
       "companhia_atual": "Crateús",
       "observacoes": "Pelotão atualmente subordinado a Crateús.",
       "fonte_estrutura": "index.html::distribuicaoOficialAtual",
-      "fonte_coordenadas": "dados/cidades/municipios.json"
+      "fonte_coordenadas": "dados/cidades/municipios.json",
+      "populacao_ibge": 29097.0,
+      "populacao_ano_referencia": 2025,
+      "fonte_populacao": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "efetivo": 21,
+      "tipo_especial": null,
+      "is_fortaleza": false
     },
     {
       "nome": "Ocara",
@@ -955,7 +1327,13 @@
       "companhia_atual": "Quixadá",
       "observacoes": "Pelotão atualmente subordinado a Quixadá.",
       "fonte_estrutura": "index.html::distribuicaoOficialAtual",
-      "fonte_coordenadas": "dados/cidades/municipios.json"
+      "fonte_coordenadas": "dados/cidades/municipios.json",
+      "populacao_ibge": 25272.0,
+      "populacao_ano_referencia": 2025,
+      "fonte_populacao": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "efetivo": 22,
+      "tipo_especial": null,
+      "is_fortaleza": false
     },
     {
       "nome": "Pacajus",
@@ -971,7 +1349,13 @@
       "companhia_atual": "Pacajus",
       "observacoes": "Companhia atual da estrutura em vigor.",
       "fonte_estrutura": "index.html::distribuicaoOficialAtual",
-      "fonte_coordenadas": "dados/cidades/municipios.json"
+      "fonte_coordenadas": "dados/cidades/municipios.json",
+      "populacao_ibge": 75454.0,
+      "populacao_ano_referencia": 2025,
+      "fonte_populacao": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "efetivo": 33,
+      "tipo_especial": null,
+      "is_fortaleza": false
     },
     {
       "nome": "Pacatuba",
@@ -987,7 +1371,13 @@
       "companhia_atual": "Pacatuba",
       "observacoes": "Companhia atual da estrutura em vigor.",
       "fonte_estrutura": "index.html::distribuicaoOficialAtual",
-      "fonte_coordenadas": "dados/cidades/municipios.json"
+      "fonte_coordenadas": "dados/cidades/municipios.json",
+      "populacao_ibge": 86564.0,
+      "populacao_ano_referencia": 2025,
+      "fonte_populacao": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "efetivo": 32,
+      "tipo_especial": null,
+      "is_fortaleza": false
     },
     {
       "nome": "Paracuru",
@@ -1003,7 +1393,13 @@
       "companhia_atual": "São Gonçalo do Amarante",
       "observacoes": "Pelotão atualmente subordinado a São Gonçalo do Amarante.",
       "fonte_estrutura": "index.html::distribuicaoOficialAtual",
-      "fonte_coordenadas": "dados/cidades/municipios.json"
+      "fonte_coordenadas": "dados/cidades/municipios.json",
+      "populacao_ibge": 41894.0,
+      "populacao_ano_referencia": 2025,
+      "fonte_populacao": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "efetivo": 29,
+      "tipo_especial": null,
+      "is_fortaleza": false
     },
     {
       "nome": "Paraipaba",
@@ -1019,7 +1415,13 @@
       "companhia_atual": "São Gonçalo do Amarante",
       "observacoes": "Pelotão atualmente subordinado a São Gonçalo do Amarante.",
       "fonte_estrutura": "index.html::distribuicaoOficialAtual",
-      "fonte_coordenadas": "dados/cidades/municipios.json"
+      "fonte_coordenadas": "dados/cidades/municipios.json",
+      "populacao_ibge": 34086.0,
+      "populacao_ano_referencia": 2025,
+      "fonte_populacao": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "efetivo": 26,
+      "tipo_especial": null,
+      "is_fortaleza": false
     },
     {
       "nome": "Parambu",
@@ -1035,7 +1437,13 @@
       "companhia_atual": "Tauá",
       "observacoes": "Pelotão atualmente subordinado a Tauá.",
       "fonte_estrutura": "index.html::distribuicaoOficialAtual",
-      "fonte_coordenadas": "dados/cidades/municipios.json"
+      "fonte_coordenadas": "dados/cidades/municipios.json",
+      "populacao_ibge": 32867.0,
+      "populacao_ano_referencia": 2025,
+      "fonte_populacao": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "efetivo": 10,
+      "tipo_especial": null,
+      "is_fortaleza": false
     },
     {
       "nome": "Pedra Branca",
@@ -1051,7 +1459,13 @@
       "companhia_atual": "Quixeramobim",
       "observacoes": "Pelotão atualmente subordinado a Quixeramobim.",
       "fonte_estrutura": "index.html::distribuicaoOficialAtual",
-      "fonte_coordenadas": "dados/cidades/municipios.json"
+      "fonte_coordenadas": "dados/cidades/municipios.json",
+      "populacao_ibge": 42227.0,
+      "populacao_ano_referencia": 2025,
+      "fonte_populacao": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "efetivo": 22,
+      "tipo_especial": null,
+      "is_fortaleza": false
     },
     {
       "nome": "Pentecoste",
@@ -1067,7 +1481,13 @@
       "companhia_atual": "Itapipoca",
       "observacoes": "Pelotão atualmente subordinado a Itapipoca.",
       "fonte_estrutura": "index.html::distribuicaoOficialAtual",
-      "fonte_coordenadas": "dados/cidades/municipios.json"
+      "fonte_coordenadas": "dados/cidades/municipios.json",
+      "populacao_ibge": 39903.0,
+      "populacao_ano_referencia": 2025,
+      "fonte_populacao": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "efetivo": 23,
+      "tipo_especial": null,
+      "is_fortaleza": false
     },
     {
       "nome": "Quixadá",
@@ -1083,7 +1503,13 @@
       "companhia_atual": "Quixadá",
       "observacoes": "Única Cia. Independente do Batalhão. Polo regional com comando autônomo.",
       "fonte_estrutura": "index.html::distribuicaoOficialAtual",
-      "fonte_coordenadas": "dados/cidades/municipios.json"
+      "fonte_coordenadas": "dados/cidades/municipios.json",
+      "populacao_ibge": 88846.0,
+      "populacao_ano_referencia": 2025,
+      "fonte_populacao": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "efetivo": 42,
+      "tipo_especial": null,
+      "is_fortaleza": false
     },
     {
       "nome": "Quixeramobim",
@@ -1099,7 +1525,13 @@
       "companhia_atual": "Quixeramobim",
       "observacoes": "Companhia atual da estrutura em vigor.",
       "fonte_estrutura": "index.html::distribuicaoOficialAtual",
-      "fonte_coordenadas": "dados/cidades/municipios.json"
+      "fonte_coordenadas": "dados/cidades/municipios.json",
+      "populacao_ibge": 86431.0,
+      "populacao_ano_referencia": 2025,
+      "fonte_populacao": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "efetivo": 33,
+      "tipo_especial": null,
+      "is_fortaleza": false
     },
     {
       "nome": "Redenção",
@@ -1115,7 +1547,13 @@
       "companhia_atual": "Quixadá",
       "observacoes": "Pelotão atualmente subordinado a Quixadá.",
       "fonte_estrutura": "index.html::distribuicaoOficialAtual",
-      "fonte_coordenadas": "dados/cidades/municipios.json"
+      "fonte_coordenadas": "dados/cidades/municipios.json",
+      "populacao_ibge": 28382.0,
+      "populacao_ano_referencia": 2025,
+      "fonte_populacao": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "efetivo": 0,
+      "tipo_especial": null,
+      "is_fortaleza": false
     },
     {
       "nome": "Russas",
@@ -1131,7 +1569,13 @@
       "companhia_atual": "Russas",
       "observacoes": "Sede atual do batalhão.",
       "fonte_estrutura": "index.html::distribuicaoOficialAtual",
-      "fonte_coordenadas": "dados/cidades/municipios.json"
+      "fonte_coordenadas": "dados/cidades/municipios.json",
+      "populacao_ibge": 74834.0,
+      "populacao_ano_referencia": 2025,
+      "fonte_populacao": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "efetivo": 58,
+      "tipo_especial": null,
+      "is_fortaleza": false
     },
     {
       "nome": "Santa Quitéria",
@@ -1147,7 +1591,13 @@
       "companhia_atual": "Canindé",
       "observacoes": "Pelotão atualmente subordinado a Canindé.",
       "fonte_estrutura": "index.html::distribuicaoOficialAtual",
-      "fonte_coordenadas": "dados/cidades/municipios.json"
+      "fonte_coordenadas": "dados/cidades/municipios.json",
+      "populacao_ibge": 41569.0,
+      "populacao_ano_referencia": 2025,
+      "fonte_populacao": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "efetivo": 24,
+      "tipo_especial": null,
+      "is_fortaleza": false
     },
     {
       "nome": "Santana do Acaraú",
@@ -1163,7 +1613,13 @@
       "companhia_atual": "Sobral",
       "observacoes": "Pelotão atualmente subordinado a Sobral.",
       "fonte_estrutura": "index.html::distribuicaoOficialAtual",
-      "fonte_coordenadas": "dados/cidades/municipios.json"
+      "fonte_coordenadas": "dados/cidades/municipios.json",
+      "populacao_ibge": 32133.0,
+      "populacao_ano_referencia": 2025,
+      "fonte_populacao": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "efetivo": 17,
+      "tipo_especial": null,
+      "is_fortaleza": false
     },
     {
       "nome": "Senador Pompeu",
@@ -1179,7 +1635,13 @@
       "companhia_atual": "Quixeramobim",
       "observacoes": "Pelotão atualmente subordinado a Quixeramobim.",
       "fonte_estrutura": "index.html::distribuicaoOficialAtual",
-      "fonte_coordenadas": "dados/cidades/municipios.json"
+      "fonte_coordenadas": "dados/cidades/municipios.json",
+      "populacao_ibge": 25108.0,
+      "populacao_ano_referencia": 2025,
+      "fonte_populacao": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "efetivo": 0,
+      "tipo_especial": null,
+      "is_fortaleza": false
     },
     {
       "nome": "Sobral",
@@ -1195,7 +1657,13 @@
       "companhia_atual": "Sobral",
       "observacoes": "Sede com núcleo de apoio tático (Cia Sobral - Apoio).",
       "fonte_estrutura": "index.html::distribuicaoOficialAtual",
-      "fonte_coordenadas": "dados/cidades/municipios.json"
+      "fonte_coordenadas": "dados/cidades/municipios.json",
+      "populacao_ibge": 216519.0,
+      "populacao_ano_referencia": 2025,
+      "fonte_populacao": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "efetivo": 67,
+      "tipo_especial": null,
+      "is_fortaleza": false
     },
     {
       "nome": "São Benedito",
@@ -1211,7 +1679,13 @@
       "companhia_atual": "Tianguá",
       "observacoes": "Pelotão atualmente subordinado a Tianguá.",
       "fonte_estrutura": "index.html::distribuicaoOficialAtual",
-      "fonte_coordenadas": "dados/cidades/municipios.json"
+      "fonte_coordenadas": "dados/cidades/municipios.json",
+      "populacao_ibge": 50058.0,
+      "populacao_ano_referencia": 2025,
+      "fonte_populacao": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "efetivo": 27,
+      "tipo_especial": null,
+      "is_fortaleza": false
     },
     {
       "nome": "São Gonçalo do Amarante",
@@ -1227,7 +1701,13 @@
       "companhia_atual": "São Gonçalo do Amarante",
       "observacoes": "Companhia atual da estrutura em vigor.",
       "fonte_estrutura": "index.html::distribuicaoOficialAtual",
-      "fonte_coordenadas": "dados/cidades/municipios.json"
+      "fonte_coordenadas": "dados/cidades/municipios.json",
+      "populacao_ibge": 58191.0,
+      "populacao_ano_referencia": 2025,
+      "fonte_populacao": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "efetivo": 32,
+      "tipo_especial": null,
+      "is_fortaleza": false
     },
     {
       "nome": "Tabuleiro do Norte",
@@ -1243,7 +1723,13 @@
       "companhia_atual": "Limoeiro do Norte",
       "observacoes": "Pelotão atualmente subordinado a Limoeiro do Norte.",
       "fonte_estrutura": "index.html::distribuicaoOficialAtual",
-      "fonte_coordenadas": "dados/cidades/municipios.json"
+      "fonte_coordenadas": "dados/cidades/municipios.json",
+      "populacao_ibge": 32122.0,
+      "populacao_ano_referencia": 2025,
+      "fonte_populacao": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "efetivo": 26,
+      "tipo_especial": null,
+      "is_fortaleza": false
     },
     {
       "nome": "Tamboril",
@@ -1259,7 +1745,13 @@
       "companhia_atual": "Crateús",
       "observacoes": "Pelotão atualmente subordinado a Crateús.",
       "fonte_estrutura": "index.html::distribuicaoOficialAtual",
-      "fonte_coordenadas": "dados/cidades/municipios.json"
+      "fonte_coordenadas": "dados/cidades/municipios.json",
+      "populacao_ibge": 25287.0,
+      "populacao_ano_referencia": 2025,
+      "fonte_populacao": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "efetivo": 19,
+      "tipo_especial": null,
+      "is_fortaleza": false
     },
     {
       "nome": "Tauá",
@@ -1275,7 +1767,13 @@
       "companhia_atual": "Tauá",
       "observacoes": "Companhia atual da estrutura em vigor.",
       "fonte_estrutura": "index.html::distribuicaoOficialAtual",
-      "fonte_coordenadas": "dados/cidades/municipios.json"
+      "fonte_coordenadas": "dados/cidades/municipios.json",
+      "populacao_ibge": 64655.0,
+      "populacao_ano_referencia": 2025,
+      "fonte_populacao": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "efetivo": 28,
+      "tipo_especial": null,
+      "is_fortaleza": false
     },
     {
       "nome": "Tianguá",
@@ -1291,7 +1789,13 @@
       "companhia_atual": "Tianguá",
       "observacoes": "Companhia atual da estrutura em vigor.",
       "fonte_estrutura": "index.html::distribuicaoOficialAtual",
-      "fonte_coordenadas": "dados/cidades/municipios.json"
+      "fonte_coordenadas": "dados/cidades/municipios.json",
+      "populacao_ibge": 86968.0,
+      "populacao_ano_referencia": 2025,
+      "fonte_populacao": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "efetivo": 28,
+      "tipo_especial": null,
+      "is_fortaleza": false
     },
     {
       "nome": "Trairi",
@@ -1307,7 +1811,13 @@
       "companhia_atual": "São Gonçalo do Amarante",
       "observacoes": "Pelotão atualmente subordinado a São Gonçalo do Amarante.",
       "fonte_estrutura": "index.html::distribuicaoOficialAtual",
-      "fonte_coordenadas": "dados/cidades/municipios.json"
+      "fonte_coordenadas": "dados/cidades/municipios.json",
+      "populacao_ibge": 62004.0,
+      "populacao_ano_referencia": 2025,
+      "fonte_populacao": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "efetivo": 28,
+      "tipo_especial": null,
+      "is_fortaleza": false
     },
     {
       "nome": "Ubajara",
@@ -1323,7 +1833,13 @@
       "companhia_atual": "Tianguá",
       "observacoes": "Pelotão atualmente subordinado a Tianguá.",
       "fonte_estrutura": "index.html::distribuicaoOficialAtual",
-      "fonte_coordenadas": "dados/cidades/municipios.json"
+      "fonte_coordenadas": "dados/cidades/municipios.json",
+      "populacao_ibge": 34424.0,
+      "populacao_ano_referencia": 2025,
+      "fonte_populacao": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "efetivo": 22,
+      "tipo_especial": null,
+      "is_fortaleza": false
     },
     {
       "nome": "Viçosa do Ceará",
@@ -1339,7 +1855,13 @@
       "companhia_atual": "Tianguá",
       "observacoes": "Pelotão atualmente subordinado a Tianguá.",
       "fonte_estrutura": "index.html::distribuicaoOficialAtual",
-      "fonte_coordenadas": "dados/cidades/municipios.json"
+      "fonte_coordenadas": "dados/cidades/municipios.json",
+      "populacao_ibge": 62972.0,
+      "populacao_ano_referencia": 2025,
+      "fonte_populacao": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "efetivo": 25,
+      "tipo_especial": null,
+      "is_fortaleza": false
     },
     {
       "nome": "Várzea Alegre",
@@ -1355,7 +1877,13 @@
       "companhia_atual": "Iguatu",
       "observacoes": "Subordinado operacionalmente à Companhia de Iguatu.",
       "fonte_estrutura": "index.html::distribuicaoOficialAtual",
-      "fonte_coordenadas": "dados/cidades/municipios.json"
+      "fonte_coordenadas": "dados/cidades/municipios.json",
+      "populacao_ibge": 40878.0,
+      "populacao_ano_referencia": 2025,
+      "fonte_populacao": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "efetivo": 25,
+      "tipo_especial": null,
+      "is_fortaleza": false
     }
   ]
 }

@@ -25,6 +25,7 @@ Acaraú,Crato,False,646.9558,628.801667
 Acaraú,Cruz,False,9.803,10.933333
 Acaraú,Eusébio,True,248.0064,236.485
 Acaraú,Forquilha,False,117.6791,110.578333
+Acaraú,Fortaleza,False,234.3671,226.858333
 Acaraú,Granja,False,93.0977,89.281667
 Acaraú,Guaiúba,False,254.0933,237.681667
 Acaraú,Guaraciaba do Norte,False,203.4542,200.043333
@@ -109,6 +110,7 @@ Acopiara,Crato,False,203.2766,176.836667
 Acopiara,Cruz,False,456.8073,478.243333
 Acopiara,Eusébio,True,331.0548,346.076667
 Acopiara,Forquilha,False,335.3626,365.566667
+Acopiara,Fortaleza,False,339.2892,356.95
 Acopiara,Granja,False,458.8623,481.165
 Acopiara,Guaiúba,False,301.6089,320.27
 Acopiara,Guaraciaba do Norte,False,346.6566,339.986667
@@ -193,6 +195,7 @@ Amontada,Crato,False,694.6503,591.071667
 Amontada,Cruz,False,80.6498,75.913333
 Amontada,Eusébio,True,180.2083,172.423333
 Amontada,Forquilha,False,90.5939,85.068333
+Amontada,Fortaleza,False,166.5689,162.796667
 Amontada,Granja,False,163.9444,154.261667
 Amontada,Guaiúba,False,186.2952,173.62
 Amontada,Guaraciaba do Norte,False,176.369,174.533333
@@ -277,6 +280,7 @@ Aquiraz,Crato,False,526.6153,430.153333
 Aquiraz,Cruz,False,264.8803,252.15
 Aquiraz,Eusébio,True,8.9107,12.733333
 Aquiraz,Forquilha,False,236.4038,215.226667
+Aquiraz,Fortaleza,False,29.379,37.785
 Aquiraz,Granja,False,348.1749,330.498333
 Aquiraz,Guaiúba,False,50.1421,48.858333
 Aquiraz,Guaraciaba do Norte,False,323.8468,323.231667
@@ -361,6 +365,7 @@ Aracati,Crato,False,444.3332,349.84
 Aracati,Cruz,False,383.3128,359.486667
 Aracati,Eusébio,True,127.3431,120.07
 Aracati,Forquilha,False,354.8362,322.563333
+Aracati,Fortaleza,False,147.8114,145.121667
 Aracati,Granja,False,466.6074,437.835
 Aracati,Guaiúba,False,152.4085,138.533333
 Aracati,Guaraciaba do Norte,False,399.607,407.276667
@@ -445,6 +450,7 @@ Aracoiaba,Crato,False,415.792,381.205
 Aracoiaba,Cruz,False,307.2862,279.758333
 Aracoiaba,Eusébio,True,86.9373,76.588333
 Aracoiaba,Forquilha,False,215.0203,235.248333
+Aracoiaba,Fortaleza,False,83.3604,79.35
 Aracoiaba,Granja,False,331.5793,352.668333
 Aracoiaba,Guaiúba,False,45.6801,42.67
 Aracoiaba,Guaraciaba do Norte,False,261.0335,273.033333
@@ -529,6 +535,7 @@ Aurora,Crato,False,81.8868,65.905
 Aurora,Cruz,False,695.4273,613.595
 Aurora,Eusébio,True,453.5985,389.823333
 Aurora,Forquilha,False,497.7889,515.416667
+Aurora,Fortaleza,False,462.9372,402.623333
 Aurora,Granja,False,621.2886,631.015
 Aurora,Guaiúba,False,449.7543,387.605
 Aurora,Guaraciaba do Norte,False,509.0829,489.836667
@@ -613,6 +620,7 @@ Barbalha,Crato,False,22.7219,24.456667
 Barbalha,Cruz,False,672.9493,655.853333
 Barbalha,Eusébio,True,529.3485,440.238333
 Barbalha,Forquilha,False,551.5046,543.176667
+Barbalha,Fortaleza,False,538.6873,453.038333
 Barbalha,Granja,False,665.8979,643.045
 Barbalha,Guaiúba,False,462.4446,429.886667
 Barbalha,Guaraciaba do Norte,False,501.3178,490.333333
@@ -697,6 +705,7 @@ Baturité,Crato,False,423.2119,387.96
 Baturité,Cruz,False,319.2396,292.44
 Baturité,Eusébio,True,98.8907,89.27
 Baturité,Forquilha,False,222.4403,242.003333
+Baturité,Fortaleza,False,95.3138,92.031667
 Baturité,Granja,False,338.9993,359.423333
 Baturité,Guaiúba,False,57.6335,55.351667
 Baturité,Guaraciaba do Norte,False,268.4534,279.788333
@@ -781,6 +790,7 @@ Beberibe,Crato,False,476.506,381.656667
 Beberibe,Cruz,False,317.6428,303.028333
 Beberibe,Eusébio,True,61.6732,63.611667
 Beberibe,Forquilha,False,289.1663,266.105
+Beberibe,Fortaleza,False,82.1415,88.663333
 Beberibe,Granja,False,400.9375,381.376667
 Beberibe,Guaiúba,False,84.2787,84.151667
 Beberibe,Guaraciaba do Norte,False,376.6093,374.11
@@ -865,6 +875,7 @@ Bela Cruz,Crato,False,634.9057,618.946667
 Bela Cruz,Cruz,False,17.078,16.878333
 Bela Cruz,Eusébio,True,242.7647,231.933333
 Bela Cruz,Forquilha,False,105.6291,100.723333
+Bela Cruz,Fortaleza,False,229.1254,222.306667
 Bela Cruz,Granja,False,101.1574,97.108333
 Bela Cruz,Guaiúba,False,248.8517,233.13
 Bela Cruz,Guaraciaba do Norte,False,191.4042,190.188333
@@ -949,6 +960,7 @@ Boa Viagem,Crato,False,330.5683,304.38
 Boa Viagem,Cruz,False,322.9726,331.001667
 Boa Viagem,Eusébio,True,232.9217,223.251667
 Boa Viagem,Forquilha,False,201.5278,218.325
+Boa Viagem,Fortaleza,False,219.0472,213.066667
 Boa Viagem,Granja,False,325.0276,333.923333
 Boa Viagem,Guaiúba,False,206.7218,207.148333
 Boa Viagem,Guaraciaba do Norte,False,202.4612,204.128333
@@ -1033,6 +1045,7 @@ Brejo Santo,Crato,False,76.2251,64.216667
 Brejo Santo,Cruz,False,749.7094,646.148333
 Brejo Santo,Eusébio,True,507.8806,422.376667
 Brejo Santo,Forquilha,False,576.6289,552.78
+Brejo Santo,Fortaleza,False,517.2193,435.176667
 Brejo Santo,Granja,False,693.1879,670.2
 Brejo Santo,Guaiúba,False,504.0364,420.158333
 Brejo Santo,Guaraciaba do Norte,False,591.3431,529.955
@@ -1117,6 +1130,7 @@ Camocim,Crato,False,668.9124,639.07
 Camocim,Cruz,False,110.9047,103.016667
 Camocim,Eusébio,True,370.0895,343.065
 Camocim,Forquilha,False,142.5233,139.478333
+Camocim,Fortaleza,False,356.4502,333.438333
 Camocim,Granja,False,27.1051,23.791667
 Camocim,Guaiúba,False,376.1765,344.261667
 Camocim,Guaraciaba do Norte,False,190.405,173.175
@@ -1201,6 +1215,7 @@ Campos Sales,Crato,False,136.268,124.163333
 Campos Sales,Cruz,False,635.5026,585.39
 Campos Sales,Eusébio,True,559.9946,482.648333
 Campos Sales,Forquilha,False,507.7953,474.218333
+Campos Sales,Fortaleza,False,546.1201,472.463333
 Campos Sales,Granja,False,609.2271,556.835
 Campos Sales,Guaiúba,False,533.7948,466.545
 Campos Sales,Guaraciaba do Norte,False,444.6471,404.123333
@@ -1285,6 +1300,7 @@ Canindé,Crato,False,433.7203,402.681667
 Canindé,Cruz,False,260.0598,261.415
 Canindé,Eusébio,True,131.2112,126.31
 Canindé,Forquilha,False,138.615,148.738333
+Canindé,Fortaleza,False,117.3367,116.125
 Canindé,Granja,False,255.174,266.158333
 Canindé,Guaiúba,False,105.0113,110.206667
 Canindé,Guaraciaba do Norte,False,184.6282,186.523333
@@ -1369,6 +1385,7 @@ Caririaçu,Crato,False,38.6952,29.353333
 Caririaçu,Cruz,False,620.6333,623.023333
 Caririaçu,Eusébio,True,489.5946,404.34
 Caririaçu,Forquilha,False,499.1885,510.346667
+Caririaçu,Fortaleza,False,498.9333,417.14
 Caririaçu,Granja,False,622.6883,625.945
 Caririaçu,Guaiúba,False,422.6907,393.988333
 Caririaçu,Guaraciaba do Norte,False,510.4825,484.766667
@@ -1453,6 +1470,7 @@ Cascavel,Crato,False,494.3376,397.863333
 Cascavel,Cruz,False,297.1658,283.668333
 Cascavel,Eusébio,True,41.1962,44.251667
 Cascavel,Forquilha,False,268.6893,246.745
+Cascavel,Fortaleza,False,61.6645,69.303333
 Cascavel,Granja,False,380.4605,362.016667
 Cascavel,Guaiúba,False,63.8017,64.791667
 Cascavel,Guaraciaba do Norte,False,356.1323,354.75
@@ -1537,6 +1555,7 @@ Caucaia,Crato,False,551.4376,456.723333
 Caucaia,Cruz,False,227.8545,211.343333
 Caucaia,Eusébio,True,36.9956,38.075
 Caucaia,Forquilha,False,198.2052,175.086667
+Caucaia,Fortaleza,False,16.437,21.931667
 Caucaia,Granja,False,311.1491,289.691667
 Caucaia,Guaiúba,False,43.0826,39.271667
 Caucaia,Guaraciaba do Norte,False,295.3243,282.851667
@@ -1621,6 +1640,7 @@ Cedro,Crato,False,110.6853,85.976667
 Cedro,Cruz,False,549.0934,567.74
 Cedro,Eusébio,True,412.8641,358.885
 Cedro,Forquilha,False,427.6487,455.063333
+Cedro,Fortaleza,False,422.2028,371.685
 Cedro,Granja,False,551.1485,570.661667
 Cedro,Guaiúba,False,351.1509,338.705
 Cedro,Guaraciaba do Norte,False,438.9428,429.483333
@@ -1705,6 +1725,7 @@ Chorozinho,Crato,False,472.6137,378.771667
 Chorozinho,Cruz,False,298.8903,282.188333
 Chorozinho,Eusébio,True,57.0614,58.416667
 Chorozinho,Forquilha,False,270.4137,245.265
+Chorozinho,Fortaleza,False,66.4001,71.216667
 Chorozinho,Granja,False,382.1849,360.536667
 Chorozinho,Guaiúba,False,54.0333,57.465
 Chorozinho,Guaraciaba do Norte,False,301.2318,326.208333
@@ -1789,6 +1810,7 @@ Crateús,Crato,False,346.2515,343.145
 Crateús,Cruz,False,328.3892,310.116667
 Crateús,Eusébio,True,367.8603,340.571667
 Crateús,Forquilha,False,199.5717,198.236667
+Crateús,Fortaleza,False,353.9858,330.386667
 Crateús,Granja,False,302.1138,281.561667
 Crateús,Guaiúba,False,341.6603,324.468333
 Crateús,Guaraciaba do Norte,False,137.5337,128.85
@@ -1873,6 +1895,7 @@ Crato,Crato,False,0.0,0.0
 Crato,Cruz,False,652.0112,633.905
 Crato,Eusébio,True,527.472,434.22
 Crato,Forquilha,False,530.5664,521.228333
+Crato,Fortaleza,False,536.8108,447.02
 Crato,Granja,False,644.9598,621.096667
 Crato,Guaiúba,False,460.5681,423.868333
 Crato,Guaraciaba do Norte,False,480.3797,468.385
@@ -1957,6 +1980,7 @@ Cruz,Crato,False,651.8801,633.421667
 Cruz,Cruz,False,0.0,0.0
 Cruz,Eusébio,True,256.8242,243.248333
 Cruz,Forquilha,False,122.6034,115.198333
+Cruz,Fortaleza,False,243.1849,233.621667
 Cruz,Granja,False,84.0794,80.23
 Cruz,Guaiúba,False,262.9112,244.445
 Cruz,Guaraciaba do Norte,False,208.3785,204.663333
@@ -2041,6 +2065,7 @@ Eusébio,Crato,False,533.1961,438.108333
 Eusébio,Cruz,False,259.0753,245.783333
 Eusébio,Eusébio,True,0.0,0.0
 Eusébio,Forquilha,False,230.5987,208.86
+Eusébio,Fortaleza,False,23.574,31.418333
 Eusébio,Granja,False,342.3699,324.131667
 Eusébio,Guaiúba,False,44.3371,42.491667
 Eusébio,Guaraciaba do Norte,False,318.0417,316.865
@@ -2125,6 +2150,7 @@ Forquilha,Crato,False,530.4277,520.633333
 Forquilha,Cruz,False,122.5878,115.141667
 Forquilha,Eusébio,True,227.7402,204.086667
 Forquilha,Forquilha,False,0.0,0.0
+Forquilha,Fortaleza,False,214.1008,194.46
 Forquilha,Granja,False,117.7021,119.885
 Forquilha,Guaiúba,False,233.8271,205.283333
 Forquilha,Guaraciaba do Norte,False,97.688,109.59
@@ -2183,6 +2209,91 @@ Forquilha,Trairi,False,156.4238,152.476667
 Forquilha,Ubajara,False,97.0936,97.64
 Forquilha,Viçosa do Ceará,False,134.5555,118.116667
 Forquilha,Várzea Alegre,False,432.6951,467.113333
+Fortaleza,Acaraú,False,235.2759,224.783333
+Fortaleza,Acopiara,False,340.6954,357.705
+Fortaleza,Amontada,False,165.5603,162.578333
+Fortaleza,Aquiraz,False,28.6794,39.918333
+Fortaleza,Aracati,False,148.164,148.703333
+Fortaleza,Aracoiaba,False,84.2779,81.448333
+Fortaleza,Aurora,False,464.3422,406.97
+Fortaleza,Barbalha,False,538.9572,455.211667
+Fortaleza,Baturité,False,96.207,94.098333
+Fortaleza,Beberibe,False,81.9731,91.436667
+Fortaleza,Bela Cruz,False,228.0619,222.153333
+Fortaleza,Boa Viagem,False,219.1984,213.951667
+Fortaleza,Brejo Santo,False,518.6746,439.571667
+Fortaleza,Camocim,False,353.7771,332.316667
+Fortaleza,Campos Sales,False,546.3301,473.506667
+Fortaleza,Canindé,False,117.4836,117.588333
+Fortaleza,Caririaçu,False,500.3494,421.555
+Fortaleza,Cascavel,False,61.2355,71.84
+Fortaleza,Caucaia,True,16.479,22.558333
+Fortaleza,Cedro,False,423.6818,376.098333
+Fortaleza,Chorozinho,False,67.8479,75.55
+Fortaleza,Crateús,True,354.1344,331.95
+Fortaleza,Crato,False,538.9178,450.426667
+Fortaleza,Cruz,False,243.9948,231.491667
+Fortaleza,Eusébio,True,21.2671,30.681667
+Fortaleza,Forquilha,False,213.1729,194.648333
+Fortaleza,Fortaleza,False,0.0,0.0
+Fortaleza,Granja,False,327.2894,309.84
+Fortaleza,Guaiúba,False,39.5707,43.503333
+Fortaleza,Guaraciaba do Norte,False,301.0646,302.998333
+Fortaleza,Horizonte,True,49.5303,67.035
+Fortaleza,Ibiapina,False,302.702,283.54
+Fortaleza,Icapuí,False,200.233,193.508333
+Fortaleza,Icó,False,380.2815,335.3
+Fortaleza,Iguatu,False,358.2363,362.823333
+Fortaleza,Independência,False,304.3726,284.933333
+Fortaleza,Ipu,False,295.2687,285.671667
+Fortaleza,Ipueiras,False,302.6782,292.1
+Fortaleza,Itaitinga,False,30.1408,37.916667
+Fortaleza,Itapajé,False,128.5945,121.486667
+Fortaleza,Itapipoca,True,134.8579,132.938333
+Fortaleza,Itarema,False,210.8265,206.658333
+Fortaleza,Jaguaribe,False,311.3823,282.81
+Fortaleza,Jaguaruana,False,184.7018,184.406667
+Fortaleza,Jardim,False,576.1102,489.921667
+Fortaleza,Juazeiro do Norte,True,527.9445,442.008333
+Fortaleza,Lavras da Mangabeira,False,438.3055,378.233333
+Fortaleza,Limoeiro do Norte,False,197.0019,199.246667
+Fortaleza,Maracanaú,False,23.5862,33.666667
+Fortaleza,Maranguape,False,25.6926,35.838333
+Fortaleza,Marco,False,219.1026,212.376667
+Fortaleza,Massapê,False,252.1473,233.393333
+Fortaleza,Mauriti,False,509.904,435.97
+Fortaleza,Milagres,False,497.3407,423.795
+Fortaleza,Missão Velha,False,524.5106,446.211667
+Fortaleza,Mombaça,False,306.6034,312.06
+Fortaleza,Morada Nova,False,164.3933,175.606667
+Fortaleza,Nova Russas,False,302.5795,293.138333
+Fortaleza,Novo Oriente,False,396.0317,369.75
+Fortaleza,Ocara,False,102.1438,99.165
+Fortaleza,Pacajus,False,53.0737,60.786667
+Fortaleza,Pacatuba,False,31.7363,37.441667
+Fortaleza,Paracuru,False,90.6378,91.206667
+Fortaleza,Paraipaba,False,95.0463,96.156667
+Fortaleza,Parambu,False,403.6928,350.303333
+Fortaleza,Pedra Branca,False,260.8589,260.573333
+Fortaleza,Pentecoste,False,90.7597,92.066667
+Fortaleza,Quixadá,True,165.805,166.405
+Fortaleza,Quixeramobim,False,208.423,210.75
+Fortaleza,Redenção,False,66.2572,65.436667
+Fortaleza,Russas,True,166.0264,168.14
+Fortaleza,Santa Quitéria,False,220.8491,216.636667
+Fortaleza,Santana do Acaraú,False,234.146,226.603333
+Fortaleza,Senador Pompeu,False,262.2209,271.631667
+Fortaleza,Sobral,True,230.8027,213.141667
+Fortaleza,São Benedito,False,317.3393,299.12
+Fortaleza,São Gonçalo do Amarante,False,60.3081,64.25
+Fortaleza,Tabuleiro do Norte,False,208.448,210.23
+Fortaleza,Tamboril,False,286.4644,278.916667
+Fortaleza,Tauá,False,342.9631,304.846667
+Fortaleza,Tianguá,False,317.1692,290.326667
+Fortaleza,Trairi,False,126.9018,127.975
+Fortaleza,Ubajara,False,310.0927,291.708333
+Fortaleza,Viçosa do Ceará,False,347.5545,312.185
+Fortaleza,Várzea Alegre,False,478.4063,412.995
 Granja,Acaraú,False,93.0659,89.226667
 Granja,Acopiara,False,449.9736,479.151667
 Granja,Amontada,False,163.9821,154.228333
@@ -2209,6 +2320,7 @@ Granja,Crato,False,643.0475,619.246667
 Granja,Cruz,False,83.8896,79.918333
 Granja,Eusébio,True,342.938,321.126667
 Granja,Forquilha,False,115.3717,117.54
+Granja,Fortaleza,False,329.2987,311.5
 Granja,Granja,False,0.0,0.0
 Granja,Guaiúba,False,349.025,322.323333
 Granja,Guaraciaba do Norte,False,164.5401,153.351667
@@ -2293,6 +2405,7 @@ Guaiúba,Crato,False,460.7672,422.558333
 Guaiúba,Cruz,False,263.1164,242.24
 Guaiúba,Eusébio,True,42.7675,39.07
 Guaiúba,Forquilha,False,234.6398,205.316667
+Guaiúba,Fortaleza,False,39.1905,41.831667
 Guaiúba,Granja,False,346.411,320.588333
 Guaiúba,Guaiúba,False,0.0,0.0
 Guaiúba,Guaraciaba do Norte,False,288.8223,295.996667
@@ -2377,6 +2490,7 @@ Guaraciaba do Norte,Crato,False,478.9371,466.998333
 Guaraciaba do Norte,Cruz,False,208.6914,204.726667
 Guaraciaba do Norte,Eusébio,True,314.7821,311.726667
 Guaraciaba do Norte,Forquilha,False,97.6486,109.281667
+Guaraciaba do Norte,Fortaleza,False,300.9076,301.541667
 Guaraciaba do Norte,Granja,False,165.5228,154.008333
 Guaraciaba do Norte,Guaiúba,False,288.5821,295.623333
 Guaraciaba do Norte,Guaraciaba do Norte,False,0.0,0.0
@@ -2461,6 +2575,7 @@ Horizonte,Crato,False,499.9527,415.288333
 Horizonte,Cruz,False,280.7083,273.853333
 Horizonte,Eusébio,True,38.8794,50.081667
 Horizonte,Forquilha,False,252.2318,236.93
+Horizonte,Fortaleza,False,48.2181,62.881667
 Horizonte,Granja,False,364.0029,352.201667
 Horizonte,Guaiúba,False,41.3031,50.795
 Horizonte,Guaraciaba do Norte,False,330.2652,341.013333
@@ -2545,6 +2660,7 @@ Ibiapina,Crato,False,515.8721,501.028333
 Ibiapina,Cruz,False,188.3329,180.633333
 Ibiapina,Eusébio,True,317.2494,292.808333
 Ibiapina,Forquilha,False,89.6831,89.221667
+Ibiapina,Fortaleza,False,303.6101,283.181667
 Ibiapina,Granja,False,127.5452,119.081667
 Ibiapina,Guaiúba,False,323.3363,294.005
 Ibiapina,Guaraciaba do Norte,False,37.3647,35.133333
@@ -2629,6 +2745,7 @@ Icapuí,Crato,False,466.2758,366.125
 Icapuí,Cruz,False,436.1641,404.698333
 Icapuí,Eusébio,True,180.1945,165.281667
 Icapuí,Forquilha,False,407.6876,367.775
+Icapuí,Fortaleza,False,200.6628,190.333333
 Icapuí,Granja,False,519.4588,483.046667
 Icapuí,Guaiúba,False,205.2598,183.745
 Icapuí,Guaraciaba do Norte,False,452.4584,452.488333
@@ -2713,6 +2830,7 @@ Icó,Crato,False,160.2381,117.276667
 Icó,Cruz,False,611.3619,542.096667
 Icó,Eusébio,True,369.5331,318.325
 Icó,Forquilha,False,436.5488,446.425
+Icó,Fortaleza,False,378.8718,331.125
 Icó,Granja,False,553.1078,563.845
 Icó,Guaiúba,False,365.6889,316.106667
 Icó,Guaraciaba do Norte,False,451.263,423.6
@@ -2797,6 +2915,7 @@ Iguatu,Crato,False,164.9695,136.485
 Iguatu,Cruz,False,494.4604,516.393333
 Iguatu,Eusébio,True,349.226,349.105
 Iguatu,Forquilha,False,373.0157,403.716667
+Iguatu,Fortaleza,False,357.4604,359.978333
 Iguatu,Granja,False,496.5154,519.315
 Iguatu,Guaiúba,False,319.7801,323.298333
 Iguatu,Guaraciaba do Norte,False,384.3097,378.136667
@@ -2881,6 +3000,7 @@ Independência,Crato,False,319.5521,302.633333
 Independência,Cruz,False,366.075,352.296667
 Independência,Eusébio,True,318.3073,294.62
 Independência,Forquilha,False,244.6303,239.62
+Independência,Fortaleza,False,304.4328,284.435
 Independência,Granja,False,346.5872,324.25
 Independência,Guaiúba,False,292.1074,278.516667
 Independência,Guaraciaba do Norte,False,182.0072,171.538333
@@ -2965,6 +3085,7 @@ Ipu,Crato,False,454.6427,444.301667
 Ipu,Cruz,False,216.0759,205.688333
 Ipu,Eusébio,True,308.7703,294.095
 Ipu,Forquilha,False,105.0332,110.243333
+Ipu,Fortaleza,False,294.8958,283.91
 Ipu,Granja,False,186.7421,178.79
 Ipu,Guaiúba,False,282.5704,277.991667
 Ipu,Guaraciaba do Norte,False,27.7761,26.3
@@ -3049,6 +3170,7 @@ Ipueiras,Crato,False,429.9482,420.708333
 Ipueiras,Cruz,False,240.9423,228.288333
 Ipueiras,Eusébio,True,316.3604,300.875
 Ipueiras,Forquilha,False,129.8996,132.843333
+Ipueiras,Fortaleza,False,302.4859,290.69
 Ipueiras,Granja,False,214.6669,199.733333
 Ipueiras,Guaiúba,False,290.1605,284.771667
 Ipueiras,Guaraciaba do Norte,False,50.0869,47.021667
@@ -3133,6 +3255,7 @@ Itaitinga,Crato,False,512.9641,418.755
 Itaitinga,Cruz,False,267.1513,246.816667
 Itaitinga,Eusébio,True,23.0651,26.006667
 Itaitinga,Forquilha,False,238.6747,209.893333
+Itaitinga,Fortaleza,False,32.4038,38.806667
 Itaitinga,Granja,False,350.4459,325.165
 Itaitinga,Guaiúba,False,20.0858,19.583333
 Itaitinga,Guaraciaba do Norte,False,309.0479,309.801667
@@ -3217,6 +3340,7 @@ Itapajé,Crato,False,561.1531,537.133333
 Itapajé,Cruz,False,152.7296,145.54
 Itapajé,Eusébio,True,143.2092,130.485
 Itapajé,Forquilha,False,86.0729,75.935
+Itapajé,Fortaleza,False,129.5698,120.858333
 Itapajé,Granja,False,203.6011,195.24
 Itapajé,Guaiúba,False,149.2961,131.681667
 Itapajé,Guaraciaba do Norte,False,183.192,183.7
@@ -3301,6 +3425,7 @@ Itapipoca,Crato,False,663.8554,560.42
 Itapipoca,Cruz,False,115.1051,109.501667
 Itapipoca,Eusébio,True,149.4134,141.771667
 Itapipoca,Forquilha,False,108.8602,103.65
+Itapipoca,Fortaleza,False,135.7741,132.145
 Itapipoca,Granja,False,198.3998,187.85
 Itapipoca,Guaiúba,False,155.5004,142.968333
 Itapipoca,Guaraciaba do Norte,False,194.6353,193.115
@@ -3385,6 +3510,7 @@ Itarema,Crato,False,738.4115,633.926667
 Itarema,Cruz,False,33.3539,29.241667
 Itarema,Eusébio,True,223.9696,215.278333
 Itarema,Forquilha,False,141.23,128.886667
+Itarema,Fortaleza,False,210.3303,205.651667
 Itarema,Granja,False,116.6485,107.59
 Itarema,Guaiúba,False,230.0565,216.475
 Itarema,Guaraciaba do Norte,False,227.0051,218.351667
@@ -3469,6 +3595,7 @@ Jaguaribe,Crato,False,227.5355,167.616667
 Jaguaribe,Cruz,False,542.3419,489.35
 Jaguaribe,Eusébio,True,300.513,265.578333
 Jaguaribe,Forquilha,False,409.2443,428.141667
+Jaguaribe,Fortaleza,False,309.8517,278.378333
 Jaguaribe,Granja,False,525.8033,545.561667
 Jaguaribe,Guaiúba,False,296.6688,263.36
 Jaguaribe,Guaraciaba do Norte,False,423.9585,405.316667
@@ -3553,6 +3680,7 @@ Jaguaruana,Crato,False,418.5453,327.223333
 Jaguaruana,Cruz,False,415.6424,391.2
 Jaguaruana,Eusébio,True,173.9826,162.485
 Jaguaruana,Forquilha,False,387.1659,354.276667
+Jaguaruana,Fortaleza,False,183.1523,180.228333
 Jaguaruana,Granja,False,498.9371,469.548333
 Jaguaruana,Guaiúba,False,169.9694,165.21
 Jaguaruana,Guaraciaba do Norte,False,417.1679,433.953333
@@ -3637,6 +3765,7 @@ Jardim,Crato,False,55.8008,57.823333
 Jardim,Cruz,False,710.0239,690.175
 Jardim,Eusébio,True,566.4231,474.56
 Jardim,Forquilha,False,588.5793,577.498333
+Jardim,Fortaleza,False,575.7619,487.36
 Jardim,Granja,False,702.9725,677.366667
 Jardim,Guaiúba,False,499.5193,464.208333
 Jardim,Guaraciaba do Norte,False,538.3925,524.655
@@ -3721,6 +3850,7 @@ Juazeiro do Norte,Crato,False,13.8056,12.041667
 Juazeiro do Norte,Cruz,False,646.9751,642.626667
 Juazeiro do Norte,Eusébio,True,515.9364,423.943333
 Juazeiro do Norte,Forquilha,False,525.5304,529.95
+Juazeiro do Norte,Fortaleza,False,525.2752,436.743333
 Juazeiro do Norte,Granja,False,656.9815,630.63
 Juazeiro do Norte,Guaiúba,False,449.0326,413.591667
 Juazeiro do Norte,Guaraciaba do Norte,False,492.4015,477.918333
@@ -3805,6 +3935,7 @@ Lavras da Mangabeira,Crato,False,100.5738,73.531667
 Lavras da Mangabeira,Cruz,False,669.4026,584.88
 Lavras da Mangabeira,Eusébio,True,427.5737,361.108333
 Lavras da Mangabeira,Forquilha,False,465.0441,486.628333
+Lavras da Mangabeira,Fortaleza,False,436.9124,373.908333
 Lavras da Mangabeira,Granja,False,588.5438,602.226667
 Lavras da Mangabeira,Guaiúba,False,423.7296,358.89
 Lavras da Mangabeira,Guaraciaba do Norte,False,476.3381,461.048333
@@ -3889,6 +4020,7 @@ Limoeiro do Norte,Crato,False,352.5697,267.228333
 Limoeiro do Norte,Cruz,False,427.8641,405.751667
 Limoeiro do Norte,Eusébio,True,186.0353,181.98
 Limoeiro do Norte,Forquilha,False,352.6392,369.143333
+Limoeiro do Norte,Fortaleza,False,195.374,194.78
 Limoeiro do Norte,Granja,False,511.1588,484.1
 Limoeiro do Norte,Guaiúba,False,182.1911,179.761667
 Limoeiro do Norte,Guaraciaba do Norte,False,398.6523,406.928333
@@ -3973,6 +4105,7 @@ Maracanaú,Crato,False,482.8845,439.726667
 Maracanaú,Cruz,False,240.9269,226.675
 Maracanaú,Eusébio,True,24.7519,28.21
 Maracanaú,Forquilha,False,212.4504,189.751667
+Maracanaú,Fortaleza,False,22.7558,31.615
 Maracanaú,Granja,False,324.2215,305.023333
 Maracanaú,Guaiúba,False,22.6732,21.4
 Maracanaú,Guaraciaba do Norte,False,292.2215,296.055
@@ -4057,6 +4190,7 @@ Maranguape,Crato,False,484.1305,441.803333
 Maranguape,Cruz,False,244.5463,230.16
 Maranguape,Eusébio,True,32.4926,34.416667
 Maranguape,Forquilha,False,216.0698,193.236667
+Maranguape,Fortaleza,False,26.0084,35.32
 Maranguape,Granja,False,327.8409,308.508333
 Maranguape,Guaiúba,False,23.9192,23.476667
 Maranguape,Guaraciaba do Norte,False,282.3994,286.216667
@@ -4141,6 +4275,7 @@ Marco,Crato,False,625.9323,609.166667
 Marco,Cruz,False,25.4623,26.565
 Marco,Eusébio,True,233.7913,222.153333
 Marco,Forquilha,False,96.6556,90.943333
+Marco,Fortaleza,False,220.152,212.526667
 Marco,Granja,False,109.5416,106.795
 Marco,Guaiúba,False,239.8783,223.35
 Marco,Guaraciaba do Norte,False,182.4308,180.408333
@@ -4225,6 +4360,7 @@ Massapê,Crato,False,566.0298,554.921667
 Massapê,Cruz,False,99.3444,97.221667
 Massapê,Eusébio,True,264.3195,240.285
 Massapê,Forquilha,False,36.7532,36.698333
+Massapê,Fortaleza,False,250.6802,230.658333
 Massapê,Granja,False,79.3358,82.788333
 Massapê,Guaiúba,False,270.4064,241.481667
 Massapê,Guaraciaba do Norte,False,113.5629,117.798333
@@ -4309,6 +4445,7 @@ Mauriti,Crato,False,86.1117,74.55
 Mauriti,Cruz,False,740.877,642.695
 Mauriti,Eusébio,True,499.0482,418.923333
 Mauriti,Forquilha,False,567.7965,549.326667
+Mauriti,Fortaleza,False,508.3869,431.723333
 Mauriti,Granja,False,684.3555,666.746667
 Mauriti,Guaiúba,False,495.204,416.705
 Mauriti,Guaraciaba do Norte,False,582.5108,526.501667
@@ -4393,6 +4530,7 @@ Milagres,Crato,False,63.2434,54.256667
 Milagres,Cruz,False,728.3788,630.51
 Milagres,Eusébio,True,486.5499,406.738333
 Milagres,Forquilha,False,555.2982,537.141667
+Milagres,Fortaleza,False,495.8886,419.538333
 Milagres,Granja,False,671.8572,654.561667
 Milagres,Guaiúba,False,482.7058,404.52
 Milagres,Guaraciaba do Norte,False,570.0124,514.316667
@@ -4477,6 +4615,7 @@ Missão Velha,Crato,False,36.944,32.908333
 Missão Velha,Cruz,False,755.7779,653.186667
 Missão Velha,Eusébio,True,513.949,429.415
 Missão Velha,Forquilha,False,547.5991,550.196667
+Missão Velha,Fortaleza,False,523.2878,442.215
 Missão Velha,Granja,False,680.12,651.496667
 Missão Velha,Guaiúba,False,510.1049,427.196667
 Missão Velha,Guaraciaba do Norte,False,515.5399,498.785
@@ -4561,6 +4700,7 @@ Mombaça,Crato,False,250.9765,226.028333
 Mombaça,Cruz,False,410.0337,427.8
 Mombaça,Eusébio,True,292.2647,299.771667
 Mombaça,Forquilha,False,288.589,315.123333
+Mombaça,Fortaleza,False,300.4992,310.645
 Mombaça,Granja,False,412.0887,430.721667
 Mombaça,Guaiúba,False,262.8189,273.965
 Mombaça,Guaraciaba do Norte,False,299.883,289.543333
@@ -4645,6 +4785,7 @@ Morada Nova,Crato,False,372.0993,282.75
 Morada Nova,Cruz,False,395.2961,382.13
 Morada Nova,Eusébio,True,153.4672,158.358333
 Morada Nova,Forquilha,False,314.3118,331.178333
+Morada Nova,Fortaleza,False,162.8059,171.158333
 Morada Nova,Granja,False,430.8708,448.598333
 Morada Nova,Guaiúba,False,149.6231,156.14
 Morada Nova,Guaraciaba do Norte,False,360.325,368.963333
@@ -4729,6 +4870,7 @@ Nova Russas,Crato,False,408.0104,401.626667
 Nova Russas,Cruz,False,271.2443,256.696667
 Nova Russas,Eusébio,True,316.317,302.036667
 Nova Russas,Forquilha,False,151.3018,151.62
+Nova Russas,Fortaleza,False,302.4425,291.851667
 Nova Russas,Granja,False,244.9688,228.141667
 Nova Russas,Guaiúba,False,290.1171,285.933333
 Nova Russas,Guaraciaba do Norte,False,80.3888,75.43
@@ -4813,6 +4955,7 @@ Novo Oriente,Crato,False,301.5529,301.24
 Novo Oriente,Cruz,False,369.5657,348.018333
 Novo Oriente,Eusébio,True,409.8222,379.29
 Novo Oriente,Forquilha,False,241.8583,236.846667
+Novo Oriente,Fortaleza,False,395.9477,369.105
 Novo Oriente,Granja,False,343.2903,319.463333
 Novo Oriente,Guaiúba,False,383.6223,363.186667
 Novo Oriente,Guaraciaba do Norte,False,178.7102,166.751667
@@ -4897,6 +5040,7 @@ Ocara,Crato,False,408.8613,369.226667
 Ocara,Cruz,False,325.1342,297.91
 Ocara,Eusébio,True,89.7993,90.646667
 Ocara,Forquilha,False,296.6577,260.986667
+Ocara,Fortaleza,False,101.2083,97.501667
 Ocara,Granja,False,408.4288,376.258333
 Ocara,Guaiúba,False,63.528,60.821667
 Ocara,Guaraciaba do Norte,False,297.1542,309.325
@@ -4981,6 +5125,7 @@ Pacajus,Crato,False,486.5835,391.316667
 Pacajus,Cruz,False,284.0473,267.298333
 Pacajus,Eusébio,True,42.2184,43.526667
 Pacajus,Forquilha,False,255.5708,230.375
+Pacajus,Fortaleza,False,51.5572,56.326667
 Pacajus,Granja,False,367.342,345.646667
 Pacajus,Guaiúba,False,44.6421,44.24
 Pacajus,Guaraciaba do Norte,False,316.9292,332.561667
@@ -5065,6 +5210,7 @@ Pacatuba,Crato,False,469.0915,427.61
 Pacatuba,Cruz,False,254.8293,235.898333
 Pacatuba,Eusébio,True,34.4804,32.728333
 Pacatuba,Forquilha,False,226.3528,198.975
+Pacatuba,Fortaleza,False,30.9034,35.49
 Pacatuba,Granja,False,338.1239,314.246667
 Pacatuba,Guaiúba,False,8.8802,9.283333
 Pacatuba,Guaraciaba do Norte,False,296.726,298.883333
@@ -5149,6 +5295,7 @@ Paracuru,Crato,False,618.2044,518.346667
 Paracuru,Cruz,False,173.5276,165.895
 Paracuru,Eusébio,True,103.7624,99.698333
 Paracuru,Forquilha,False,175.857,153.033333
+Paracuru,Fortaleza,False,90.1231,90.071667
 Paracuru,Granja,False,256.8222,244.243333
 Paracuru,Guaiúba,False,109.8494,100.895
 Paracuru,Guaraciaba do Norte,False,272.9761,260.798333
@@ -5233,6 +5380,7 @@ Paraipaba,Crato,False,622.6815,523.343333
 Paraipaba,Cruz,False,157.783,145.593333
 Paraipaba,Eusébio,True,108.2396,104.695
 Paraipaba,Forquilha,False,162.3948,155.695
+Paraipaba,Fortaleza,False,94.6003,95.068333
 Paraipaba,Granja,False,241.0776,223.941667
 Paraipaba,Guaiúba,False,114.3266,105.891667
 Paraipaba,Guaraciaba do Norte,False,248.1699,245.16
@@ -5317,6 +5465,7 @@ Parambu,Crato,False,272.3854,264.371667
 Parambu,Cruz,False,462.7162,434.346667
 Parambu,Eusébio,True,417.4349,359.541667
 Parambu,Forquilha,False,335.0088,323.175
+Parambu,Fortaleza,False,403.5604,349.356667
 Parambu,Granja,False,436.4408,405.791667
 Parambu,Guaiúba,False,391.235,343.438333
 Parambu,Guaraciaba do Norte,False,271.8607,253.08
@@ -5401,6 +5550,7 @@ Pedra Branca,Crato,False,294.8316,275.165
 Pedra Branca,Cruz,False,364.2187,376.341667
 Pedra Branca,Eusébio,True,274.5812,269.703333
 Pedra Branca,Forquilha,False,242.774,263.665
+Pedra Branca,Fortaleza,False,260.7067,259.518333
 Pedra Branca,Granja,False,366.2738,379.263333
 Pedra Branca,Guaiúba,False,248.3813,253.6
 Pedra Branca,Guaraciaba do Norte,False,254.4058,238.326667
@@ -5485,6 +5635,7 @@ Pentecoste,Crato,False,542.5484,514.173333
 Pentecoste,Cruz,False,171.5054,174.5
 Pentecoste,Eusébio,True,105.181,100.856667
 Pentecoste,Forquilha,False,135.2003,128.908333
+Pentecoste,Fortaleza,False,91.5417,91.23
 Pentecoste,Granja,False,252.7285,248.213333
 Pentecoste,Guaiúba,False,111.268,102.053333
 Pentecoste,Guaraciaba do Norte,False,232.3193,236.673333
@@ -5569,6 +5720,7 @@ Quixadá,Crato,False,334.2258,296.015
 Quixadá,Cruz,False,388.8495,364.803333
 Quixadá,Eusébio,True,156.4518,153.041667
 Quixadá,Forquilha,False,235.0494,256.943333
+Quixadá,Fortaleza,False,164.9237,164.395
 Quixadá,Granja,False,351.6084,374.363333
 Quixadá,Guaiúba,False,127.2434,127.715
 Quixadá,Guaraciaba do Norte,False,281.0625,294.728333
@@ -5653,6 +5805,7 @@ Quixeramobim,Crato,False,333.8185,304.646667
 Quixeramobim,Cruz,False,391.0969,387.068333
 Quixeramobim,Eusébio,True,199.7843,199.388333
 Quixeramobim,Forquilha,False,269.6522,274.391667
+Quixeramobim,Fortaleza,False,208.0187,210.261667
 Quixeramobim,Granja,False,386.2112,391.811667
 Quixeramobim,Guaiúba,False,170.3385,173.581667
 Quixeramobim,Guaraciaba do Norte,False,300.2392,298.45
@@ -5737,6 +5890,7 @@ Redenção,Crato,False,438.85,409.421667
 Redenção,Cruz,False,289.8118,264.681667
 Redenção,Eusébio,True,69.4629,61.511667
 Redenção,Forquilha,False,261.3353,227.758333
+Redenção,Fortaleza,False,65.886,64.273333
 Redenção,Granja,False,373.1064,343.03
 Redenção,Guaiúba,False,28.2057,27.593333
 Redenção,Guaraciaba do Norte,False,284.0914,301.25
@@ -5821,6 +5975,7 @@ Russas,Crato,False,377.5494,289.711667
 Russas,Cruz,False,396.2162,373.718333
 Russas,Eusébio,True,154.3873,149.946667
 Russas,Forquilha,False,367.7396,336.795
+Russas,Fortaleza,False,163.726,162.746667
 Russas,Granja,False,479.5108,452.066667
 Russas,Guaiúba,False,150.5432,147.728333
 Russas,Guaraciaba do Norte,False,397.7417,416.471667
@@ -5905,6 +6060,7 @@ Santa Quitéria,Crato,False,460.8705,446.088333
 Santa Quitéria,Cruz,False,191.0859,187.721667
 Santa Quitéria,Eusébio,True,234.5815,225.381667
 Santa Quitéria,Forquilha,False,69.6411,75.045
+Santa Quitéria,Fortaleza,False,220.707,215.196667
 Santa Quitéria,Granja,False,186.2001,192.465
 Santa Quitéria,Guaiúba,False,208.3816,209.278333
 Santa Quitéria,Guaraciaba do Norte,False,80.1822,86.761667
@@ -5989,6 +6145,7 @@ Santana do Acaraú,Crato,False,575.2823,562.313333
 Santana do Acaraú,Cruz,False,77.6784,73.513333
 Santana do Acaraú,Eusébio,True,248.7995,236.07
 Santana do Acaraú,Forquilha,False,46.0056,44.09
+Santana do Acaraú,Fortaleza,False,235.1602,226.443333
 Santana do Acaraú,Granja,False,101.8672,107.471667
 Santana do Acaraú,Guaiúba,False,254.8864,237.266667
 Santana do Acaraú,Guaraciaba do Norte,False,131.7807,133.555
@@ -6073,6 +6230,7 @@ Senador Pompeu,Crato,False,280.1448,243.058333
 Senador Pompeu,Cruz,False,415.285,427.461667
 Senador Pompeu,Eusébio,True,253.0535,258.58
 Senador Pompeu,Forquilha,False,293.8403,314.785
+Senador Pompeu,Fortaleza,False,261.2879,269.453333
 Senador Pompeu,Granja,False,417.34,430.383333
 Senador Pompeu,Guaiúba,False,223.6076,232.773333
 Senador Pompeu,Guaraciaba do Norte,False,305.1343,289.205
@@ -6157,6 +6315,7 @@ Sobral,Crato,False,547.5005,537.291667
 Sobral,Cruz,False,113.7906,108.911667
 Sobral,Eusébio,True,245.7902,222.655
 Sobral,Forquilha,False,18.2239,19.068333
+Sobral,Fortaleza,False,232.1508,213.028333
 Sobral,Granja,False,98.4635,103.376667
 Sobral,Guaiúba,False,251.8771,223.851667
 Sobral,Guaraciaba do Norte,False,94.9975,99.69
@@ -6241,6 +6400,7 @@ São Benedito,Crato,False,501.7773,489.746667
 São Benedito,Cruz,False,203.0698,195.875
 São Benedito,Eusébio,True,331.9863,308.05
 São Benedito,Forquilha,False,104.42,104.463333
+São Benedito,Fortaleza,False,318.3469,298.423333
 São Benedito,Granja,False,142.7113,133.858333
 São Benedito,Guaiúba,False,338.0732,309.246667
 São Benedito,Guaraciaba do Norte,False,23.2699,23.851667
@@ -6325,6 +6485,7 @@ São Gonçalo do Amarante,Crato,False,589.2299,491.626667
 São Gonçalo do Amarante,Cruz,False,181.6049,168.061667
 São Gonçalo do Amarante,Eusébio,True,74.7879,72.978333
 São Gonçalo do Amarante,Forquilha,False,168.4243,146.798333
+São Gonçalo do Amarante,Fortaleza,False,61.1486,63.351667
 São Gonçalo do Amarante,Granja,False,264.8995,246.41
 São Gonçalo do Amarante,Guaiúba,False,80.8749,74.175
 São Gonçalo do Amarante,Guaraciaba do Norte,False,265.5433,254.563333
@@ -6409,6 +6570,7 @@ Tabuleiro do Norte,Crato,False,337.9808,253.466667
 Tabuleiro do Norte,Cruz,False,439.6448,416.998333
 Tabuleiro do Norte,Eusébio,True,197.8159,193.226667
 Tabuleiro do Norte,Forquilha,False,358.7988,374.04
+Tabuleiro do Norte,Fortaleza,False,207.1546,206.026667
 Tabuleiro do Norte,Granja,False,475.3578,491.46
 Tabuleiro do Norte,Guaiúba,False,193.9718,191.008333
 Tabuleiro do Norte,Guaraciaba do Norte,False,404.812,411.825
@@ -6493,6 +6655,7 @@ Tamboril,Crato,False,409.0554,403.211667
 Tamboril,Cruz,False,256.2353,249.083333
 Tamboril,Eusébio,True,299.8058,286.823333
 Tamboril,Forquilha,False,134.7906,136.406667
+Tamboril,Fortaleza,False,285.9313,276.638333
 Tamboril,Granja,False,258.2904,252.005
 Tamboril,Guaiúba,False,273.6058,270.72
 Tamboril,Guaraciaba do Norte,False,121.2673,113.463333
@@ -6577,6 +6740,7 @@ Tauá,Crato,False,212.5766,219.506667
 Tauá,Cruz,False,445.2504,420.44
 Tauá,Eusébio,True,356.7279,314.293333
 Tauá,Forquilha,False,323.8057,307.763333
+Tauá,Fortaleza,False,342.8534,304.108333
 Tauá,Granja,False,432.7167,402.335
 Tauá,Guaiúba,False,330.528,298.19
 Tauá,Guaraciaba do Norte,False,268.1366,249.623333
@@ -6661,6 +6825,7 @@ Tianguá,Crato,False,541.857,526.118333
 Tianguá,Cruz,False,185.9286,174.336667
 Tianguá,Eusébio,True,331.5985,298.94
 Tianguá,Forquilha,False,104.0322,95.353333
+Tianguá,Fortaleza,False,317.9592,289.313333
 Tianguá,Granja,False,102.1291,95.111667
 Tianguá,Guaiúba,False,337.6854,300.136667
 Tianguá,Guaraciaba do Norte,False,63.3496,60.223333
@@ -6745,6 +6910,7 @@ Trairi,Crato,False,654.5883,555.466667
 Trairi,Cruz,False,141.9669,131.62
 Trairi,Eusébio,True,140.1463,136.818333
 Trairi,Forquilha,False,156.4683,152.255
+Trairi,Fortaleza,False,126.507,127.191667
 Trairi,Granja,False,225.2615,209.968333
 Trairi,Guaiúba,False,146.2333,138.015
 Trairi,Guaraciaba do Norte,False,242.2434,241.72
@@ -6829,6 +6995,7 @@ Ubajara,Crato,False,525.5834,510.811667
 Ubajara,Cruz,False,195.8142,188.828333
 Ubajara,Eusébio,True,324.7306,301.003333
 Ubajara,Forquilha,False,97.1643,97.416667
+Ubajara,Fortaleza,False,311.0913,291.376667
 Ubajara,Granja,False,118.8727,111.04
 Ubajara,Guaiúba,False,330.8176,302.2
 Ubajara,Guaraciaba do Norte,False,47.0759,44.916667
@@ -6913,6 +7080,7 @@ Viçosa do Ceará,Crato,False,572.4698,548.245
 Viçosa do Ceará,Cruz,False,155.1211,151.985
 Viçosa do Ceará,Eusébio,True,362.5108,321.14
 Viçosa do Ceará,Forquilha,False,134.9445,117.553333
+Viçosa do Ceará,Fortaleza,False,348.8714,311.513333
 Viçosa do Ceará,Granja,False,71.3215,72.76
 Viçosa do Ceará,Guaiúba,False,368.5977,322.336667
 Viçosa do Ceará,Guaraciaba do Norte,False,93.9623,82.35
@@ -6997,6 +7165,7 @@ Várzea Alegre,Crato,False,81.1898,75.496667
 Várzea Alegre,Cruz,False,554.1071,580.881667
 Várzea Alegre,Eusébio,True,467.7883,396.256667
 Várzea Alegre,Forquilha,False,432.6623,468.205
+Várzea Alegre,Fortaleza,False,477.127,409.056667
 Várzea Alegre,Granja,False,556.1621,583.803333
 Várzea Alegre,Guaiúba,False,393.5368,379.153333
 Várzea Alegre,Guaraciaba do Norte,False,443.9564,442.625

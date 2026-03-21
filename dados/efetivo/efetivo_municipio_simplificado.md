@@ -1,86 +1,85 @@
-Acaraú — 24
-Acopiara — 29
-Amontada — 29
-Aquiraz — 53
-Aracati — 33
-Aracoiaba — 26
-Aurora — 22
-Barbalha — 38
-Baturité — 31
-Beberibe — 27
-Bela Cruz — 18
-Boa Viagem — 28
-Brejo Santo — 31
-Camocim — 33
-Campos Sales — 18
-Canindé — 49
-Caririaçu — 23
-Cascavel — 35
-Caucaia — 144
-Cedro — 30
-Chorozinho — 24
-Crateús — 31
-Crato — 38
-Cruz — 0
-Eusébio — 40
-Forquilha — 22
-Fortaleza — 433
-Granja — 26
-Guaiúba — 25
-Guaraciaba do Norte — 24
-Horizonte — 40
-Ibiapina — 22
-Icapuí — 18
-Icó — 18
-Iguatu — 34
-Independência — 19
-Ipueiras — 19
-Ipu — 23
-Itaitinga — 32
-Itapajé — 27
-Itapipoca — 43
-Itarema — 24
-Jaguaribe — 24
-Jaguaruana — 23
-Jardim — 19
-Juazeiro do Norte — 75
-Lavras da Mangabeira — 19
-Limoeiro do Norte — 27
-Marco — 21
-Maracanaú — 92
-Maranguape — 48
-Massapê — 25
-Mauriti — 19
-Messejana — 138
-Milagres — 19
-Missão Velha — 19
-Mombaça — 18
-Morada Nova — 22
-Nova Russas — 19
-Novo Oriente — 19
-Ocara — 23
-Pacajus — 33
-Pacatuba — 32
-Paracuru — 29
-Paraipaba — 26
-Parambu — 19
-Pedra Branca — 24
-Pentecoste — 23
-Quixadá — 28
-Quixeramobim — 31
-Redenção — 0
-Russas — 58
-Santana do Acaraú — 17
-Santa Quitéria — 24
-São Benedito — 26
-São Gonçalo do Amarante — 32
-Senador Pompeu — 0
-Sobral — 67
-Tabuleiro do Norte — 27
-Tamboril — 19
-Tauá — 19
-Tianguá — 28
-Trairi — 28
-Ubajara — 23
-Várzea Alegre — 19
-Viçosa do Ceará — 25
+ACARAÚ — 24
+ACOPIARA — 29
+AMONTADA — 29
+AQUIRAZ — 52
+ARACATI — 33
+ARACOIABA — 23
+AURORA — 22
+BARBALHA — 35
+BATURITÉ — 31
+BEBERIBE — 30
+BELA CRUZ — 18
+BOA VIAGEM — 28
+BREJO SANTO — 30
+CAMOCIM — 33
+CAMPOS SALES — 22
+CANINDÉ — 49
+CARIRIAÇU — 23
+CASCAVEL — 36
+CAUCAIA — 144
+CEDRO — 23
+CHOROZINHO — 23
+CRATEÚS — 31
+CRATO — 38
+CRUZ — 0
+EUSÉBIO — 40
+FORQUILHA — 22
+FORTALEZA — 573
+GRANJA — 26
+GUAIÚBA — 25
+GUARACIABA DO NORTE — 24
+HORIZONTE — 40
+IBIAPINA — 22
+ICAPUÍ — 23
+ICÓ — 31
+IGUATU — 44
+INDEPENDÊNCIA — 0
+IPU — 23
+IPUEIRAS — 19
+ITAITINGA — 32
+ITAPAJÉ — 27
+ITAPIPOCA — 43
+ITAREMA — 24
+JAGUARIBE — 24
+JAGUARUANA — 25
+JARDIM — 21
+JUAZEIRO DO NORTE — 77
+LAVRAS DA MANGABEIRA — 22
+LIMOEIRO DO NORTE — 38
+MARACANAÚ — 93
+MARANGUAPE — 48
+MARCO — 21
+MASSAPÊ — 25
+MAURITI — 27
+MILAGRES — 0
+MISSÃO VELHA — 25
+MOMBAÇA — 26
+MORADA NOVA — 33
+NOVA RUSSAS — 19
+NOVO ORIENTE — 21
+OCARA — 22
+PACAJUS — 33
+PACATUBA — 32
+PARACURU — 29
+PARAIPABA — 26
+PARAMBU — 10
+PEDRA BRANCA — 22
+PENTECOSTE — 23
+QUIXADÁ — 42
+QUIXERAMOBIM — 33
+REDENÇÃO — 0
+RUSSAS — 58
+SANTA QUITÉRIA — 24
+SANTANA DO ACARAÚ — 17
+SENADOR POMPEU — 0
+SOBRAL — 67
+SÃO BENEDITO — 27
+SÃO GONÇALO DO AMARANTE — 32
+TABULEIRO DO NORTE — 26
+TAMBORIL — 19
+TAUÁ — 28
+TIANGUÁ — 28
+TRAIRI — 28
+UBAJARA — 22
+VIÇOSA DO CEARÁ — 25
+VÁRZEA ALEGRE — 25

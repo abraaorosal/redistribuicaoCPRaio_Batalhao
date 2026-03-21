@@ -12,7 +12,6 @@ from _config import (
 from _shared import (
     CURRENT_SCENARIO_PATH,
     EUSEBIO_SCENARIO_PATH,
-    HORIZONTE_SCENARIO_PATH,
     MATRIX_JSON_PATH,
     SCENARIO_COMPARISON_CSV_PATH,
     SCENARIO_COMPARISON_JSON_PATH,
@@ -24,6 +23,10 @@ from _shared import (
     ensure_runtime_dirs,
     get_distance_km,
     get_duration_min,
+    get_manual_battalion_override,
+    is_isolated_battalion,
+    is_metropolitan_battalion,
+    is_metropolitan_municipio,
     load_json,
     load_normalized_records,
     load_scenarios,
@@ -42,17 +45,16 @@ from _shared import (
 SCENARIO_OUTPUTS = {
     "cenario_atual": CURRENT_SCENARIO_PATH,
     "cenario_eusebio": EUSEBIO_SCENARIO_PATH,
-    "cenario_horizonte": HORIZONTE_SCENARIO_PATH,
 }
 
 
 def build_candidate_distances(
     municipio: str,
-    active_battalions: list[str],
+    candidate_battalions: list[str],
     matrix_lookup: dict[str, dict[str, dict[str, object]]],
 ) -> list[dict[str, object]]:
     output: list[dict[str, object]] = []
-    for batalhao in active_battalions:
+    for batalhao in candidate_battalions:
         distance_km = get_distance_km(matrix_lookup, municipio, batalhao)
         duration_min = get_duration_min(matrix_lookup, municipio, batalhao)
         if distance_km is None:
@@ -68,17 +70,75 @@ def build_candidate_distances(
     return output
 
 
+def get_eligible_routing_battalions(municipio: str, routing_battalions: list[str]) -> list[str]:
+    if is_metropolitan_municipio(municipio):
+        metro_battalions = [batalhao for batalhao in routing_battalions if is_metropolitan_battalion(batalhao)]
+        return metro_battalions or routing_battalions
+    non_metro_battalions = [batalhao for batalhao in routing_battalions if not is_metropolitan_battalion(batalhao)]
+    return non_metro_battalions or routing_battalions
+
+
+def get_isolated_battalions(records: list[dict[str, object]]) -> list[str]:
+    return sorted(
+        {
+            str(record["nome"])
+            for record in records
+            if record.get("tipo_especial") == "batalhao_isolado" or is_isolated_battalion(record.get("nome"))
+        }
+    )
+
+
+def get_routing_battalions(active_battalions: list[str], isolated_battalions: list[str]) -> list[str]:
+    isolated_set = set(isolated_battalions)
+    return [
+        batalhao
+        for batalhao in active_battalions
+        if batalhao not in isolated_set and not is_isolated_battalion(batalhao)
+    ]
+
+
+def build_self_candidate(municipio: str) -> dict[str, object]:
+    return {
+        "batalhao": municipio,
+        "distance_km": 0.0,
+        "duration_min": 0.0,
+    }
+
+
+def apply_manual_assignment_overrides(
+    assignments: dict[str, str],
+    reasons: dict[str, str],
+    *,
+    mode: str | None,
+    logger,
+) -> None:
+    if mode == "baseline_atual":
+        return
+
+    for municipio, batalhao in sorted(
+        ((name, target) for name, target in ((m, get_manual_battalion_override(m)) for m in assignments) if target),
+        key=lambda item: item[0],
+    ):
+        assignments[municipio] = batalhao
+        reasons[municipio] = "regra_manual_batalhao"
+        logger.info("%s fixado manualmente em %s.", municipio, batalhao)
+
+
 def optimize_assignments(
     records: list[dict[str, object]],
     active_battalions: list[str],
+    routing_battalions: list[str],
+    isolated_battalions: list[str],
     scenario: dict[str, object],
     matrix_lookup: dict[str, dict[str, dict[str, object]]],
     neighbor_map: dict[str, list[str]],
 ) -> tuple[dict[str, str], dict[str, str]]:
-    # Primeiro minimizamos a distância rodoviária; depois aplicamos estabilidade e coerência territorial.
+    # Pelotões flutuam livremente para a sede de batalhão elegível mais próxima.
+    # Companhias preservam a lógica de estabilidade estrutural apenas como critério secundário.
     assignments: dict[str, str] = {}
     reasons: dict[str, str] = {}
-    active_set = set(active_battalions)
+    active_set = set(active_battalions) | set(isolated_battalions)
+    isolated_set = set(isolated_battalions)
     fixed_set = set(scenario.get("batalhoes_fixos", []))
     promoted_set = set(scenario.get("batalhoes_promovidos", []))
     metro_choice = scenario.get("batalhao_metropolitano_escolhido")
@@ -86,7 +146,13 @@ def optimize_assignments(
     for record in records:
         municipio = str(record["nome"])
         current_battalion = str(record["batalhao_atual"])
-        candidate_distances = build_candidate_distances(municipio, active_battalions, matrix_lookup)
+        if municipio in isolated_set:
+            assignments[municipio] = municipio
+            reasons[municipio] = "batalhao_isolado_obrigatorio"
+            continue
+
+        eligible_battalions = get_eligible_routing_battalions(municipio, routing_battalions)
+        candidate_distances = build_candidate_distances(municipio, eligible_battalions, matrix_lookup)
         if not candidate_distances:
             assignments[municipio] = current_battalion
             reasons[municipio] = "sem_matriz_valida"
@@ -110,6 +176,11 @@ def optimize_assignments(
                 reasons[municipio] = "sede_ativa_no_cenario"
             continue
 
+        if record.get("status_atual") == "pelotao":
+            assignments[municipio] = str(best["batalhao"])
+            reasons[municipio] = "menor_distancia_rodoviaria"
+            continue
+
         if current_option and (
             safe_float(current_option["distance_km"]) - safe_float(best["distance_km"]) <= STABILITY_MARGIN_KM
         ):
@@ -127,7 +198,7 @@ def optimize_assignments(
         changed = False
         for record in records:
             municipio = str(record["nome"])
-            if municipio in active_set:
+            if municipio in active_set or record.get("status_atual") == "pelotao":
                 continue
             current_assignment = assignments[municipio]
             neighbors = neighbor_map.get(municipio, [])
@@ -189,6 +260,16 @@ def build_justification(
 
     if reason_code == "batalhao_fixo_obrigatorio":
         return f"{municipality} permanece como sede de batalhão fixo obrigatório."
+    if reason_code == "batalhao_isolado_obrigatorio":
+        return (
+            f"{municipality} permanece como batalhão isolado; entra no mapa e nas métricas, "
+            "mas não participa da redistribuição territorial."
+        )
+    if reason_code == "regra_manual_batalhao":
+        return (
+            f"{municipality} foi mantido em {target_battalion} por regra operacional fixa definida para o estudo, "
+            "independentemente do cálculo automático."
+        )
     if reason_code == "batalhao_promovido_obrigatorio":
         return f"{municipality} torna-se sede de batalhão promovido obrigatório."
     if reason_code == "novo_batalhao_metropolitano":
@@ -196,7 +277,7 @@ def build_justification(
     if reason_code == "estrutura_atual_ja_eficiente":
         return (
             f"A alocação atual em {current_battalion} já é a mais eficiente em distância rodoviária real "
-            f"({target_distance:.1f} km)."
+            f"até a sede do batalhão ({target_distance:.1f} km)."
         )
     if reason_code == "margem_estabilidade":
         return (
@@ -214,7 +295,7 @@ def build_justification(
         gain_text = f" com ganho de {gain:.1f} km" if gain is not None and gain > 0 else ""
         return (
             f"{municipality} foi redistribuído de {current_battalion} para {target_battalion} por menor "
-            f"distância rodoviária real ({target_distance:.1f} km frente a {current_distance:.1f} km){gain_text}."
+            f"distância rodoviária real até a sede do batalhão ({target_distance:.1f} km frente a {current_distance:.1f} km){gain_text}."
         )
     return f"{municipality} foi mantido em {target_battalion} por critério operacional do cenário."
 
@@ -224,6 +305,7 @@ def count_fragmented_cases(
     assignments: dict[str, str],
     neighbor_map: dict[str, list[str]],
     matrix_lookup: dict[str, dict[str, dict[str, object]]],
+    routing_battalions: list[str],
 ) -> int:
     fragmented = 0
     active_set = {row["municipio"] for row in rows if row["municipio"] == row["batalhao_cenario"]}
@@ -239,8 +321,17 @@ def count_fragmented_cases(
         current_assignment = assignments[municipio]
         if majority_battalion == current_assignment or majority_count < 3:
             continue
-        current_distance = get_distance_km(matrix_lookup, municipio, current_assignment)
-        majority_distance = get_distance_km(matrix_lookup, municipio, majority_battalion)
+        eligible_battalions = get_eligible_routing_battalions(municipio, routing_battalions)
+        candidate_lookup = {
+            item["batalhao"]: item
+            for item in build_candidate_distances(
+                municipio,
+                eligible_battalions,
+                matrix_lookup,
+            )
+        }
+        current_distance = safe_float(candidate_lookup.get(current_assignment, {}).get("distance_km"))
+        majority_distance = safe_float(candidate_lookup.get(majority_battalion, {}).get("distance_km"))
         if (
             current_distance is not None
             and majority_distance is not None
@@ -257,9 +348,26 @@ def evaluate_scenario(
     records: list[dict[str, object]],
     matrix_lookup: dict[str, dict[str, dict[str, object]]],
     neighbor_map: dict[str, list[str]],
+    logger=None,
 ) -> dict[str, object]:
-    # O cenário atual é baseline preservado; Eusébio e Horizonte são recalculados com base na matriz OSRM.
+    # O cenário atual é baseline preservado; Eusébio é recalculado com base na matriz OSRM.
+    logger = logger or build_logger("avaliar_cenarios")
     active_battalions = list(scenario.get("batalhoes_ativos", []))
+    isolated_battalions = get_isolated_battalions(records)
+    routing_battalions = get_routing_battalions(active_battalions, isolated_battalions)
+    all_battalions = active_battalions + [
+        batalhao for batalhao in isolated_battalions if batalhao not in active_battalions
+    ]
+    if isolated_battalions:
+        logger.info(
+            "%s: Fortaleza removida da lista de polos de redistribuição; tratada como batalhão isolado.",
+            scenario_id,
+        )
+    if any(is_metropolitan_battalion(batalhao) for batalhao in routing_battalions):
+        logger.info(
+            "%s: restrição metropolitana ativa; Caucaia e Eusébio só recebem municípios da RM.",
+            scenario_id,
+        )
     mode = scenario.get("modo_alocacao")
     assignments: dict[str, str] = {}
     reasons: dict[str, str] = {}
@@ -268,26 +376,51 @@ def evaluate_scenario(
         for record in records:
             municipio = str(record["nome"])
             assignments[municipio] = str(record["batalhao_atual"])
-            reasons[municipio] = "estrutura_atual_preservada"
+            reasons[municipio] = (
+                "batalhao_isolado_obrigatorio" if municipio in isolated_battalions else "estrutura_atual_preservada"
+            )
     else:
         assignments, reasons = optimize_assignments(
             records,
             active_battalions,
+            routing_battalions,
+            isolated_battalions,
             scenario,
             matrix_lookup,
             neighbor_map,
         )
+        apply_manual_assignment_overrides(assignments, reasons, mode=mode, logger=logger)
 
     rows: list[dict[str, object]] = []
+    isolated_set = set(isolated_battalions)
     for record in records:
         municipio = str(record["nome"])
         current_battalion = str(record["batalhao_atual"])
         scenario_battalion = assignments[municipio]
-        candidate_distances = build_candidate_distances(municipio, active_battalions, matrix_lookup)
+        is_isolated = municipio in isolated_set
+        eligible_battalions = get_eligible_routing_battalions(municipio, routing_battalions)
+        candidate_distances = (
+            [build_self_candidate(municipio)]
+            if is_isolated
+            else build_candidate_distances(
+                municipio,
+                eligible_battalions,
+                matrix_lookup,
+            )
+        )
+        candidate_lookup = {item["batalhao"]: item for item in candidate_distances}
         best_option = candidate_distances[0] if candidate_distances else None
-        current_distance = get_distance_km(matrix_lookup, municipio, current_battalion)
-        scenario_distance = get_distance_km(matrix_lookup, municipio, scenario_battalion)
-        duration_min = get_duration_min(matrix_lookup, municipio, scenario_battalion)
+        current_option = next(
+            (item for item in build_candidate_distances(municipio, [current_battalion], matrix_lookup)),
+            None,
+        )
+        scenario_option = next(
+            (item for item in build_candidate_distances(municipio, [scenario_battalion], matrix_lookup)),
+            None,
+        )
+        current_distance = safe_float(current_option.get("distance_km")) if current_option else None
+        scenario_distance = safe_float(scenario_option.get("distance_km")) if scenario_option else None
+        duration_min = safe_float(scenario_option.get("duration_min")) if scenario_option else None
         gain = (
             round(current_distance - scenario_distance, 6)
             if current_distance is not None and scenario_distance is not None
@@ -305,6 +438,8 @@ def evaluate_scenario(
             "batalhao_atual": current_battalion,
             "companhia_atual": record.get("companhia_atual"),
             "batalhao_cenario": scenario_battalion,
+            "base_operacional_atual": current_battalion,
+            "base_operacional_cenario": scenario_battalion,
             "distancia_rodoviaria_ao_batalhao_atual_km": current_distance,
             "distancia_rodoviaria_ao_batalhao_cenario_km": scenario_distance,
             "tempo_estimado_ao_batalhao_cenario_min": duration_min,
@@ -320,6 +455,11 @@ def evaluate_scenario(
             "faixa_distancia": classify_distance_band(scenario_distance),
             "criterio_decisao": reasons.get(municipio),
             "observacoes": record.get("observacoes"),
+            "populacao_ibge": record.get("populacao_ibge"),
+            "populacao_ano_referencia": record.get("populacao_ano_referencia"),
+            "efetivo": record.get("efetivo"),
+            "tipo_especial": record.get("tipo_especial"),
+            "is_fortaleza": bool(record.get("is_fortaleza")),
         }
         label, mal_alocado, ganho_forte = classify_row(
             row,
@@ -354,7 +494,13 @@ def evaluate_scenario(
     compactness = mean(
         [item["desvio_padrao_km"] for item in battalion_summaries if item["desvio_padrao_km"] is not None]
     )
-    fragmented_cases = count_fragmented_cases(rows, assignments, neighbor_map, matrix_lookup)
+    fragmented_cases = count_fragmented_cases(
+        rows,
+        assignments,
+        neighbor_map,
+        matrix_lookup,
+        routing_battalions,
+    )
     gains = [safe_float(row["ganho_km"]) or 0.0 for row in rows]
     total_gain_vs_current = sum(value for value in gains if value > 0)
 
@@ -376,7 +522,7 @@ def evaluate_scenario(
         "titulo": scenario.get("titulo"),
         "descricao": scenario.get("descricao"),
         "modo_alocacao": mode,
-        "batalhoes_ativos": active_battalions,
+        "batalhoes_ativos": all_battalions,
         "batalhao_metropolitano_escolhido": scenario.get("batalhao_metropolitano_escolhido"),
         "total_distance_km": round(distance_summary["total_km"] or 0.0, 3),
         "average_distance_km": round(distance_summary["media_km"] or 0.0, 3),
@@ -439,20 +585,22 @@ def main() -> None:
             records=records,
             matrix_lookup=matrix_lookup,
             neighbor_map=neighbor_map,
+            logger=logger,
         )
         results[scenario_id] = result
         write_json(SCENARIO_OUTPUTS[scenario_id], result)
 
     current_summary = results["cenario_atual"]["scenario"]
+    candidate_ids = [scenario_id for scenario_id in scenario_defs if scenario_id != "cenario_atual"]
     candidate_summaries = {
         scenario_id: results[scenario_id]["scenario"]
-        for scenario_id in ("cenario_eusebio", "cenario_horizonte")
+        for scenario_id in candidate_ids
     }
     ordered_candidates = sorted(candidate_summaries.values(), key=rank_scenario_tuple)
     winner_summary = ordered_candidates[0]
     winner_id = str(winner_summary["scenario_id"])
     winner_meta = scenario_defs[winner_id]
-    alternate_summary = ordered_candidates[1]
+    alternate_summary = ordered_candidates[1] if len(ordered_candidates) > 1 else None
     current_total = safe_float(current_summary["total_distance_km"]) or 0.0
     winner_total = safe_float(winner_summary["total_distance_km"]) or 0.0
     gain_vs_current = current_total - winner_total
@@ -482,18 +630,32 @@ def main() -> None:
         )
 
     winner_centrality = safe_float(winner_summary["centralidade_operacional_km"]) or 0.0
-    alternate_centrality = safe_float(alternate_summary["centralidade_operacional_km"]) or 0.0
     winner_total_distance = safe_float(winner_summary["total_distance_km"]) or 0.0
-    alternate_total_distance = safe_float(alternate_summary["total_distance_km"]) or 0.0
-    total_distance_delta = alternate_total_distance - winner_total_distance
-    centrality_sentence = (
-        f"Centralidade operacional também favoreceu o cenário vencedor ({winner_centrality:.1f} km)."
-        if winner_centrality <= alternate_centrality
-        else (
-            "Centralidade operacional ficou tecnicamente próxima ao cenário alternativo "
-            f"({winner_centrality:.1f} km no vencedor vs {alternate_centrality:.1f} km no cenário concorrente)."
+    if alternate_summary is not None:
+        alternate_centrality = safe_float(alternate_summary["centralidade_operacional_km"]) or 0.0
+        alternate_total_distance = safe_float(alternate_summary["total_distance_km"]) or 0.0
+        total_distance_delta = alternate_total_distance - winner_total_distance
+        centrality_sentence = (
+            f"Centralidade operacional também favoreceu o cenário vencedor ({winner_centrality:.1f} km)."
+            if winner_centrality <= alternate_centrality
+            else (
+                "Centralidade operacional ficou tecnicamente próxima ao cenário alternativo "
+                f"({winner_centrality:.1f} km no vencedor vs {alternate_centrality:.1f} km no cenário concorrente)."
+            )
         )
-    )
+        primary_sentence = (
+            "Menor distância rodoviária total entre os cenários testados: "
+            f"{winner_summary['total_distance_km']:.1f} km, com vantagem de {total_distance_delta:.1f} km "
+            f"sobre {alternate_summary['titulo']}."
+        )
+    else:
+        centrality_sentence = (
+            f"Cenário validado com centralidade operacional média de {winner_centrality:.1f} km."
+        )
+        primary_sentence = (
+            "Cenário metropolitano validado administrativamente em Eusébio, com "
+            f"{winner_summary['total_distance_km']:.1f} km de distância rodoviária total."
+        )
 
     recommendation = {
         "scenario_id": winner_id,
@@ -502,14 +664,10 @@ def main() -> None:
         "ganho_total_vs_atual_km": round(gain_vs_current, 3),
         "ganho_percentual_vs_atual": round(gain_pct, 3),
         "justificativa": [
-            (
-                "Menor distância rodoviária total entre os cenários testados: "
-                f"{winner_summary['total_distance_km']:.1f} km, com vantagem de {total_distance_delta:.1f} km "
-                f"sobre {alternate_summary['titulo']}."
-            ),
+            primary_sentence,
             centrality_sentence,
             f"Menor nível de fragmentação territorial relevante: {winner_summary['casos_fragmentados']} casos.",
-            "Critério de desempate final: preservação estrutural quando o ganho rodoviário foi marginal.",
+            "Restrição administrativa aplicada: Caucaia e Eusébio recebem apenas municípios da Região Metropolitana.",
         ],
     }
 

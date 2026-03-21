@@ -52,8 +52,11 @@ def main() -> None:
         "recomendacao_final": recommendation,
         "totais": {
             "total_km_cenario_atual": comparison["cenarios"]["cenario_atual"]["total_distance_km"],
-            "total_km_cenario_eusebio": comparison["cenarios"]["cenario_eusebio"]["total_distance_km"],
-            "total_km_cenario_horizonte": comparison["cenarios"]["cenario_horizonte"]["total_distance_km"],
+            **{
+                f"total_km_{scenario_key}": summary["total_distance_km"]
+                for scenario_key, summary in comparison["cenarios"].items()
+                if scenario_key != "cenario_atual"
+            },
             "municipios_redistribuidos": len(redistribuidos),
             "municipios_mantidos": len(mantidos),
             "ganho_logistico_total_km": recommendation["ganho_total_vs_atual_km"],
@@ -69,8 +72,11 @@ def main() -> None:
             "preservacao_estrutura": f"{scenario_summary['percentual_manutencao_estrutura']:.1f}% da estrutura atual foi preservada no nível de batalhão.",
         },
         "observacoes_precisao": [
-            "O critério principal de alocação entre batalhões usa distância rodoviária real obtida via OSRM.",
-            "A etapa final de estruturação de companhias utiliza a matriz OSRM município->município para manter coerência interna.",
+            "O critério principal de alocação entre batalhões usa distância rodoviária real obtida via OSRM até a sede do batalhão.",
+            "Pelotões são tratados como nós flutuantes na etapa de roteamento entre batalhões; a reconstrução de companhias ocorre apenas depois da formação do cluster do batalhão.",
+            "A etapa final de estruturação de companhias combina distância rodoviária, população oficial do IBGE e efetivo para manter coerência interna.",
+            "Regras de negócio fixas prevalecem sobre o score automático quando explicitamente definidas, como Paracuru em Caucaia e a preservação das companhias da estrutura atual da unidade usada como referência do estudo.",
+            "Restrição administrativa metropolitana aplicada: Caucaia e Eusébio só recebem municípios da Região Metropolitana.",
             "A precisão final depende da qualidade do grafo OSM disponível no endpoint OSRM utilizado.",
         ],
     }

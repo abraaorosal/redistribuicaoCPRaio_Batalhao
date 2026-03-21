@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "generated_at": "2026-03-20T21:23:02+00:00",
-    "municipios_validos": 84,
+    "generated_at": "2026-03-21T13:53:09+00:00",
+    "municipios_validos": 85,
     "municipios_invalidos": [],
     "candidate_battalions": [
       "Caucaia",
@@ -174,6 +174,12 @@
         "distance_km": 117.6791,
         "duration_s": 6634.7,
         "duration_min": 110.578333
+      },
+      "Fortaleza": {
+        "distance_m": 234367.1,
+        "distance_km": 234.3671,
+        "duration_s": 13611.5,
+        "duration_min": 226.858333
       },
       "Granja": {
         "distance_m": 93097.7,
@@ -681,6 +687,12 @@
         "duration_s": 21934.0,
         "duration_min": 365.566667
       },
+      "Fortaleza": {
+        "distance_m": 339289.2,
+        "distance_km": 339.2892,
+        "duration_s": 21417.0,
+        "duration_min": 356.95
+      },
       "Granja": {
         "distance_m": 458862.3,
         "distance_km": 458.8623,
@@ -1186,6 +1198,12 @@
         "distance_km": 90.5939,
         "duration_s": 5104.1,
         "duration_min": 85.068333
+      },
+      "Fortaleza": {
+        "distance_m": 166568.9,
+        "distance_km": 166.5689,
+        "duration_s": 9767.8,
+        "duration_min": 162.796667
       },
       "Granja": {
         "distance_m": 163944.4,
@@ -1693,6 +1711,12 @@
         "duration_s": 12913.6,
         "duration_min": 215.226667
       },
+      "Fortaleza": {
+        "distance_m": 29379.0,
+        "distance_km": 29.379,
+        "duration_s": 2267.1,
+        "duration_min": 37.785
+      },
       "Granja": {
         "distance_m": 348174.9,
         "distance_km": 348.1749,
@@ -2198,6 +2222,12 @@
         "distance_km": 354.8362,
         "duration_s": 19353.8,
         "duration_min": 322.563333
+      },
+      "Fortaleza": {
+        "distance_m": 147811.4,
+        "distance_km": 147.8114,
+        "duration_s": 8707.3,
+        "duration_min": 145.121667
       },
       "Granja": {
         "distance_m": 466607.4,
@@ -2705,6 +2735,12 @@
         "duration_s": 14114.9,
         "duration_min": 235.248333
       },
+      "Fortaleza": {
+        "distance_m": 83360.4,
+        "distance_km": 83.3604,
+        "duration_s": 4761.0,
+        "duration_min": 79.35
+      },
       "Granja": {
         "distance_m": 331579.3,
         "distance_km": 331.5793,
@@ -3210,6 +3246,12 @@
         "distance_km": 497.7889,
         "duration_s": 30925.0,
         "duration_min": 515.416667
+      },
+      "Fortaleza": {
+        "distance_m": 462937.2,
+        "distance_km": 462.9372,
+        "duration_s": 24157.4,
+        "duration_min": 402.623333
       },
       "Granja": {
         "distance_m": 621288.6,
@@ -3717,6 +3759,12 @@
         "duration_s": 32590.6,
         "duration_min": 543.176667
       },
+      "Fortaleza": {
+        "distance_m": 538687.3,
+        "distance_km": 538.6873,
+        "duration_s": 27182.3,
+        "duration_min": 453.038333
+      },
       "Granja": {
         "distance_m": 665897.9,
         "distance_km": 665.8979,
@@ -4222,6 +4270,12 @@
         "distance_km": 222.4403,
         "duration_s": 14520.2,
         "duration_min": 242.003333
+      },
+      "Fortaleza": {
+        "distance_m": 95313.8,
+        "distance_km": 95.3138,
+        "duration_s": 5521.9,
+        "duration_min": 92.031667
       },
       "Granja": {
         "distance_m": 338999.3,
@@ -4729,6 +4783,12 @@
         "duration_s": 15966.3,
         "duration_min": 266.105
       },
+      "Fortaleza": {
+        "distance_m": 82141.5,
+        "distance_km": 82.1415,
+        "duration_s": 5319.8,
+        "duration_min": 88.663333
+      },
       "Granja": {
         "distance_m": 400937.5,
         "distance_km": 400.9375,
@@ -5234,6 +5294,12 @@
         "distance_km": 105.6291,
         "duration_s": 6043.4,
         "duration_min": 100.723333
+      },
+      "Fortaleza": {
+        "distance_m": 229125.4,
+        "distance_km": 229.1254,
+        "duration_s": 13338.4,
+        "duration_min": 222.306667
       },
       "Granja": {
         "distance_m": 101157.4,
@@ -5741,6 +5807,12 @@
         "duration_s": 13099.5,
         "duration_min": 218.325
       },
+      "Fortaleza": {
+        "distance_m": 219047.2,
+        "distance_km": 219.0472,
+        "duration_s": 12784.0,
+        "duration_min": 213.066667
+      },
       "Granja": {
         "distance_m": 325027.6,
         "distance_km": 325.0276,
@@ -6246,6 +6318,12 @@
         "distance_km": 576.6289,
         "duration_s": 33166.8,
         "duration_min": 552.78
+      },
+      "Fortaleza": {
+        "distance_m": 517219.3,
+        "distance_km": 517.2193,
+        "duration_s": 26110.6,
+        "duration_min": 435.176667
       },
       "Granja": {
         "distance_m": 693187.9,
@@ -6753,6 +6831,12 @@
         "duration_s": 8368.7,
         "duration_min": 139.478333
       },
+      "Fortaleza": {
+        "distance_m": 356450.2,
+        "distance_km": 356.4502,
+        "duration_s": 20006.3,
+        "duration_min": 333.438333
+      },
       "Granja": {
         "distance_m": 27105.1,
         "distance_km": 27.1051,
@@ -7258,6 +7342,12 @@
         "distance_km": 507.7953,
         "duration_s": 28453.1,
         "duration_min": 474.218333
+      },
+      "Fortaleza": {
+        "distance_m": 546120.1,
+        "distance_km": 546.1201,
+        "duration_s": 28347.8,
+        "duration_min": 472.463333
       },
       "Granja": {
         "distance_m": 609227.1,
@@ -7765,6 +7855,12 @@
         "duration_s": 8924.3,
         "duration_min": 148.738333
       },
+      "Fortaleza": {
+        "distance_m": 117336.7,
+        "distance_km": 117.3367,
+        "duration_s": 6967.5,
+        "duration_min": 116.125
+      },
       "Granja": {
         "distance_m": 255174.0,
         "distance_km": 255.174,
@@ -8270,6 +8366,12 @@
         "distance_km": 499.1885,
         "duration_s": 30620.8,
         "duration_min": 510.346667
+      },
+      "Fortaleza": {
+        "distance_m": 498933.3,
+        "distance_km": 498.9333,
+        "duration_s": 25028.4,
+        "duration_min": 417.14
       },
       "Granja": {
         "distance_m": 622688.3,
@@ -8777,6 +8879,12 @@
         "duration_s": 14804.7,
         "duration_min": 246.745
       },
+      "Fortaleza": {
+        "distance_m": 61664.5,
+        "distance_km": 61.6645,
+        "duration_s": 4158.2,
+        "duration_min": 69.303333
+      },
       "Granja": {
         "distance_m": 380460.5,
         "distance_km": 380.4605,
@@ -9282,6 +9390,12 @@
         "distance_km": 198.2052,
         "duration_s": 10505.2,
         "duration_min": 175.086667
+      },
+      "Fortaleza": {
+        "distance_m": 16437.0,
+        "distance_km": 16.437,
+        "duration_s": 1315.9,
+        "duration_min": 21.931667
       },
       "Granja": {
         "distance_m": 311149.1,
@@ -9789,6 +9903,12 @@
         "duration_s": 27303.8,
         "duration_min": 455.063333
       },
+      "Fortaleza": {
+        "distance_m": 422202.8,
+        "distance_km": 422.2028,
+        "duration_s": 22301.1,
+        "duration_min": 371.685
+      },
       "Granja": {
         "distance_m": 551148.5,
         "distance_km": 551.1485,
@@ -10294,6 +10414,12 @@
         "distance_km": 270.4137,
         "duration_s": 14715.9,
         "duration_min": 245.265
+      },
+      "Fortaleza": {
+        "distance_m": 66400.1,
+        "distance_km": 66.4001,
+        "duration_s": 4273.0,
+        "duration_min": 71.216667
       },
       "Granja": {
         "distance_m": 382184.9,
@@ -10801,6 +10927,12 @@
         "duration_s": 11894.2,
         "duration_min": 198.236667
       },
+      "Fortaleza": {
+        "distance_m": 353985.8,
+        "distance_km": 353.9858,
+        "duration_s": 19823.2,
+        "duration_min": 330.386667
+      },
       "Granja": {
         "distance_m": 302113.8,
         "distance_km": 302.1138,
@@ -11306,6 +11438,12 @@
         "distance_km": 530.5664,
         "duration_s": 31273.7,
         "duration_min": 521.228333
+      },
+      "Fortaleza": {
+        "distance_m": 536810.8,
+        "distance_km": 536.8108,
+        "duration_s": 26821.2,
+        "duration_min": 447.02
       },
       "Granja": {
         "distance_m": 644959.8,
@@ -11813,6 +11951,12 @@
         "duration_s": 6911.9,
         "duration_min": 115.198333
       },
+      "Fortaleza": {
+        "distance_m": 243184.9,
+        "distance_km": 243.1849,
+        "duration_s": 14017.3,
+        "duration_min": 233.621667
+      },
       "Granja": {
         "distance_m": 84079.4,
         "distance_km": 84.0794,
@@ -12318,6 +12462,12 @@
         "distance_km": 230.5987,
         "duration_s": 12531.6,
         "duration_min": 208.86
+      },
+      "Fortaleza": {
+        "distance_m": 23574.0,
+        "distance_km": 23.574,
+        "duration_s": 1885.1,
+        "duration_min": 31.418333
       },
       "Granja": {
         "distance_m": 342369.9,
@@ -12825,6 +12975,12 @@
         "duration_s": 0.0,
         "duration_min": 0.0
       },
+      "Fortaleza": {
+        "distance_m": 214100.8,
+        "distance_km": 214.1008,
+        "duration_s": 11667.6,
+        "duration_min": 194.46
+      },
       "Granja": {
         "distance_m": 117702.1,
         "distance_km": 117.7021,
@@ -13174,6 +13330,518 @@
         "duration_min": 467.113333
       }
     },
+    "Fortaleza": {
+      "Acaraú": {
+        "distance_m": 235275.9,
+        "distance_km": 235.2759,
+        "duration_s": 13487.0,
+        "duration_min": 224.783333
+      },
+      "Acopiara": {
+        "distance_m": 340695.4,
+        "distance_km": 340.6954,
+        "duration_s": 21462.3,
+        "duration_min": 357.705
+      },
+      "Amontada": {
+        "distance_m": 165560.3,
+        "distance_km": 165.5603,
+        "duration_s": 9754.7,
+        "duration_min": 162.578333
+      },
+      "Aquiraz": {
+        "distance_m": 28679.4,
+        "distance_km": 28.6794,
+        "duration_s": 2395.1,
+        "duration_min": 39.918333
+      },
+      "Aracati": {
+        "distance_m": 148164.0,
+        "distance_km": 148.164,
+        "duration_s": 8922.2,
+        "duration_min": 148.703333
+      },
+      "Aracoiaba": {
+        "distance_m": 84277.9,
+        "distance_km": 84.2779,
+        "duration_s": 4886.9,
+        "duration_min": 81.448333
+      },
+      "Aurora": {
+        "distance_m": 464342.2,
+        "distance_km": 464.3422,
+        "duration_s": 24418.2,
+        "duration_min": 406.97
+      },
+      "Barbalha": {
+        "distance_m": 538957.2,
+        "distance_km": 538.9572,
+        "duration_s": 27312.7,
+        "duration_min": 455.211667
+      },
+      "Baturité": {
+        "distance_m": 96207.0,
+        "distance_km": 96.207,
+        "duration_s": 5645.9,
+        "duration_min": 94.098333
+      },
+      "Beberibe": {
+        "distance_m": 81973.1,
+        "distance_km": 81.9731,
+        "duration_s": 5486.2,
+        "duration_min": 91.436667
+      },
+      "Bela Cruz": {
+        "distance_m": 228061.9,
+        "distance_km": 228.0619,
+        "duration_s": 13329.2,
+        "duration_min": 222.153333
+      },
+      "Boa Viagem": {
+        "distance_m": 219198.4,
+        "distance_km": 219.1984,
+        "duration_s": 12837.1,
+        "duration_min": 213.951667
+      },
+      "Brejo Santo": {
+        "distance_m": 518674.6,
+        "distance_km": 518.6746,
+        "duration_s": 26374.3,
+        "duration_min": 439.571667
+      },
+      "Camocim": {
+        "distance_m": 353777.1,
+        "distance_km": 353.7771,
+        "duration_s": 19939.0,
+        "duration_min": 332.316667
+      },
+      "Campos Sales": {
+        "distance_m": 546330.1,
+        "distance_km": 546.3301,
+        "duration_s": 28410.4,
+        "duration_min": 473.506667
+      },
+      "Canindé": {
+        "distance_m": 117483.6,
+        "distance_km": 117.4836,
+        "duration_s": 7055.3,
+        "duration_min": 117.588333
+      },
+      "Caririaçu": {
+        "distance_m": 500349.4,
+        "distance_km": 500.3494,
+        "duration_s": 25293.3,
+        "duration_min": 421.555
+      },
+      "Cascavel": {
+        "distance_m": 61235.5,
+        "distance_km": 61.2355,
+        "duration_s": 4310.4,
+        "duration_min": 71.84
+      },
+      "Caucaia": {
+        "distance_m": 16479.0,
+        "distance_km": 16.479,
+        "duration_s": 1353.5,
+        "duration_min": 22.558333
+      },
+      "Cedro": {
+        "distance_m": 423681.8,
+        "distance_km": 423.6818,
+        "duration_s": 22565.9,
+        "duration_min": 376.098333
+      },
+      "Chorozinho": {
+        "distance_m": 67847.9,
+        "distance_km": 67.8479,
+        "duration_s": 4533.0,
+        "duration_min": 75.55
+      },
+      "Crateús": {
+        "distance_m": 354134.4,
+        "distance_km": 354.1344,
+        "duration_s": 19917.0,
+        "duration_min": 331.95
+      },
+      "Crato": {
+        "distance_m": 538917.8,
+        "distance_km": 538.9178,
+        "duration_s": 27025.6,
+        "duration_min": 450.426667
+      },
+      "Cruz": {
+        "distance_m": 243994.8,
+        "distance_km": 243.9948,
+        "duration_s": 13889.5,
+        "duration_min": 231.491667
+      },
+      "Eusébio": {
+        "distance_m": 21267.1,
+        "distance_km": 21.2671,
+        "duration_s": 1840.9,
+        "duration_min": 30.681667
+      },
+      "Forquilha": {
+        "distance_m": 213172.9,
+        "distance_km": 213.1729,
+        "duration_s": 11678.9,
+        "duration_min": 194.648333
+      },
+      "Fortaleza": {
+        "distance_m": 0.0,
+        "distance_km": 0.0,
+        "duration_s": 0.0,
+        "duration_min": 0.0
+      },
+      "Granja": {
+        "distance_m": 327289.4,
+        "distance_km": 327.2894,
+        "duration_s": 18590.4,
+        "duration_min": 309.84
+      },
+      "Guaiúba": {
+        "distance_m": 39570.7,
+        "distance_km": 39.5707,
+        "duration_s": 2610.2,
+        "duration_min": 43.503333
+      },
+      "Guaraciaba do Norte": {
+        "distance_m": 301064.6,
+        "distance_km": 301.0646,
+        "duration_s": 18179.9,
+        "duration_min": 302.998333
+      },
+      "Horizonte": {
+        "distance_m": 49530.3,
+        "distance_km": 49.5303,
+        "duration_s": 4022.1,
+        "duration_min": 67.035
+      },
+      "Ibiapina": {
+        "distance_m": 302702.0,
+        "distance_km": 302.702,
+        "duration_s": 17012.4,
+        "duration_min": 283.54
+      },
+      "Icapuí": {
+        "distance_m": 200233.0,
+        "distance_km": 200.233,
+        "duration_s": 11610.5,
+        "duration_min": 193.508333
+      },
+      "Icó": {
+        "distance_m": 380281.5,
+        "distance_km": 380.2815,
+        "duration_s": 20118.0,
+        "duration_min": 335.3
+      },
+      "Iguatu": {
+        "distance_m": 358236.3,
+        "distance_km": 358.2363,
+        "duration_s": 21769.4,
+        "duration_min": 362.823333
+      },
+      "Independência": {
+        "distance_m": 304372.6,
+        "distance_km": 304.3726,
+        "duration_s": 17096.0,
+        "duration_min": 284.933333
+      },
+      "Ipu": {
+        "distance_m": 295268.7,
+        "distance_km": 295.2687,
+        "duration_s": 17140.3,
+        "duration_min": 285.671667
+      },
+      "Ipueiras": {
+        "distance_m": 302678.2,
+        "distance_km": 302.6782,
+        "duration_s": 17526.0,
+        "duration_min": 292.1
+      },
+      "Itaitinga": {
+        "distance_m": 30140.8,
+        "distance_km": 30.1408,
+        "duration_s": 2275.0,
+        "duration_min": 37.916667
+      },
+      "Itapajé": {
+        "distance_m": 128594.5,
+        "distance_km": 128.5945,
+        "duration_s": 7289.2,
+        "duration_min": 121.486667
+      },
+      "Itapipoca": {
+        "distance_m": 134857.9,
+        "distance_km": 134.8579,
+        "duration_s": 7976.3,
+        "duration_min": 132.938333
+      },
+      "Itarema": {
+        "distance_m": 210826.5,
+        "distance_km": 210.8265,
+        "duration_s": 12399.5,
+        "duration_min": 206.658333
+      },
+      "Jaguaribe": {
+        "distance_m": 311382.3,
+        "distance_km": 311.3823,
+        "duration_s": 16968.6,
+        "duration_min": 282.81
+      },
+      "Jaguaruana": {
+        "distance_m": 184701.8,
+        "distance_km": 184.7018,
+        "duration_s": 11064.4,
+        "duration_min": 184.406667
+      },
+      "Jardim": {
+        "distance_m": 576110.2,
+        "distance_km": 576.1102,
+        "duration_s": 29395.3,
+        "duration_min": 489.921667
+      },
+      "Juazeiro do Norte": {
+        "distance_m": 527944.5,
+        "distance_km": 527.9445,
+        "duration_s": 26520.5,
+        "duration_min": 442.008333
+      },
+      "Lavras da Mangabeira": {
+        "distance_m": 438305.5,
+        "distance_km": 438.3055,
+        "duration_s": 22694.0,
+        "duration_min": 378.233333
+      },
+      "Limoeiro do Norte": {
+        "distance_m": 197001.9,
+        "distance_km": 197.0019,
+        "duration_s": 11954.8,
+        "duration_min": 199.246667
+      },
+      "Maracanaú": {
+        "distance_m": 23586.2,
+        "distance_km": 23.5862,
+        "duration_s": 2020.0,
+        "duration_min": 33.666667
+      },
+      "Maranguape": {
+        "distance_m": 25692.6,
+        "distance_km": 25.6926,
+        "duration_s": 2150.3,
+        "duration_min": 35.838333
+      },
+      "Marco": {
+        "distance_m": 219102.6,
+        "distance_km": 219.1026,
+        "duration_s": 12742.6,
+        "duration_min": 212.376667
+      },
+      "Massapê": {
+        "distance_m": 252147.3,
+        "distance_km": 252.1473,
+        "duration_s": 14003.6,
+        "duration_min": 233.393333
+      },
+      "Mauriti": {
+        "distance_m": 509904.0,
+        "distance_km": 509.904,
+        "duration_s": 26158.2,
+        "duration_min": 435.97
+      },
+      "Milagres": {
+        "distance_m": 497340.7,
+        "distance_km": 497.3407,
+        "duration_s": 25427.7,
+        "duration_min": 423.795
+      },
+      "Missão Velha": {
+        "distance_m": 524510.6,
+        "distance_km": 524.5106,
+        "duration_s": 26772.7,
+        "duration_min": 446.211667
+      },
+      "Mombaça": {
+        "distance_m": 306603.4,
+        "distance_km": 306.6034,
+        "duration_s": 18723.6,
+        "duration_min": 312.06
+      },
+      "Morada Nova": {
+        "distance_m": 164393.3,
+        "distance_km": 164.3933,
+        "duration_s": 10536.4,
+        "duration_min": 175.606667
+      },
+      "Nova Russas": {
+        "distance_m": 302579.5,
+        "distance_km": 302.5795,
+        "duration_s": 17588.3,
+        "duration_min": 293.138333
+      },
+      "Novo Oriente": {
+        "distance_m": 396031.7,
+        "distance_km": 396.0317,
+        "duration_s": 22185.0,
+        "duration_min": 369.75
+      },
+      "Ocara": {
+        "distance_m": 102143.8,
+        "distance_km": 102.1438,
+        "duration_s": 5949.9,
+        "duration_min": 99.165
+      },
+      "Pacajus": {
+        "distance_m": 53073.7,
+        "distance_km": 53.0737,
+        "duration_s": 3647.2,
+        "duration_min": 60.786667
+      },
+      "Pacatuba": {
+        "distance_m": 31736.3,
+        "distance_km": 31.7363,
+        "duration_s": 2246.5,
+        "duration_min": 37.441667
+      },
+      "Paracuru": {
+        "distance_m": 90637.8,
+        "distance_km": 90.6378,
+        "duration_s": 5472.4,
+        "duration_min": 91.206667
+      },
+      "Paraipaba": {
+        "distance_m": 95046.3,
+        "distance_km": 95.0463,
+        "duration_s": 5769.4,
+        "duration_min": 96.156667
+      },
+      "Parambu": {
+        "distance_m": 403692.8,
+        "distance_km": 403.6928,
+        "duration_s": 21018.2,
+        "duration_min": 350.303333
+      },
+      "Pedra Branca": {
+        "distance_m": 260858.9,
+        "distance_km": 260.8589,
+        "duration_s": 15634.4,
+        "duration_min": 260.573333
+      },
+      "Pentecoste": {
+        "distance_m": 90759.7,
+        "distance_km": 90.7597,
+        "duration_s": 5524.0,
+        "duration_min": 92.066667
+      },
+      "Quixadá": {
+        "distance_m": 165805.0,
+        "distance_km": 165.805,
+        "duration_s": 9984.3,
+        "duration_min": 166.405
+      },
+      "Quixeramobim": {
+        "distance_m": 208423.0,
+        "distance_km": 208.423,
+        "duration_s": 12645.0,
+        "duration_min": 210.75
+      },
+      "Redenção": {
+        "distance_m": 66257.2,
+        "distance_km": 66.2572,
+        "duration_s": 3926.2,
+        "duration_min": 65.436667
+      },
+      "Russas": {
+        "distance_m": 166026.4,
+        "distance_km": 166.0264,
+        "duration_s": 10088.4,
+        "duration_min": 168.14
+      },
+      "Santa Quitéria": {
+        "distance_m": 220849.1,
+        "distance_km": 220.8491,
+        "duration_s": 12998.2,
+        "duration_min": 216.636667
+      },
+      "Santana do Acaraú": {
+        "distance_m": 234146.0,
+        "distance_km": 234.146,
+        "duration_s": 13596.2,
+        "duration_min": 226.603333
+      },
+      "Senador Pompeu": {
+        "distance_m": 262220.9,
+        "distance_km": 262.2209,
+        "duration_s": 16297.9,
+        "duration_min": 271.631667
+      },
+      "Sobral": {
+        "distance_m": 230802.7,
+        "distance_km": 230.8027,
+        "duration_s": 12788.5,
+        "duration_min": 213.141667
+      },
+      "São Benedito": {
+        "distance_m": 317339.3,
+        "distance_km": 317.3393,
+        "duration_s": 17947.2,
+        "duration_min": 299.12
+      },
+      "São Gonçalo do Amarante": {
+        "distance_m": 60308.1,
+        "distance_km": 60.3081,
+        "duration_s": 3855.0,
+        "duration_min": 64.25
+      },
+      "Tabuleiro do Norte": {
+        "distance_m": 208448.0,
+        "distance_km": 208.448,
+        "duration_s": 12613.8,
+        "duration_min": 210.23
+      },
+      "Tamboril": {
+        "distance_m": 286464.4,
+        "distance_km": 286.4644,
+        "duration_s": 16735.0,
+        "duration_min": 278.916667
+      },
+      "Tauá": {
+        "distance_m": 342963.1,
+        "distance_km": 342.9631,
+        "duration_s": 18290.8,
+        "duration_min": 304.846667
+      },
+      "Tianguá": {
+        "distance_m": 317169.2,
+        "distance_km": 317.1692,
+        "duration_s": 17419.6,
+        "duration_min": 290.326667
+      },
+      "Trairi": {
+        "distance_m": 126901.8,
+        "distance_km": 126.9018,
+        "duration_s": 7678.5,
+        "duration_min": 127.975
+      },
+      "Ubajara": {
+        "distance_m": 310092.7,
+        "distance_km": 310.0927,
+        "duration_s": 17502.5,
+        "duration_min": 291.708333
+      },
+      "Viçosa do Ceará": {
+        "distance_m": 347554.5,
+        "distance_km": 347.5545,
+        "duration_s": 18731.1,
+        "duration_min": 312.185
+      },
+      "Várzea Alegre": {
+        "distance_m": 478406.3,
+        "distance_km": 478.4063,
+        "duration_s": 24779.7,
+        "duration_min": 412.995
+      }
+    },
     "Granja": {
       "Acaraú": {
         "distance_m": 93065.9,
@@ -13330,6 +13998,12 @@
         "distance_km": 115.3717,
         "duration_s": 7052.4,
         "duration_min": 117.54
+      },
+      "Fortaleza": {
+        "distance_m": 329298.7,
+        "distance_km": 329.2987,
+        "duration_s": 18690.0,
+        "duration_min": 311.5
       },
       "Granja": {
         "distance_m": 0.0,
@@ -13837,6 +14511,12 @@
         "duration_s": 12319.0,
         "duration_min": 205.316667
       },
+      "Fortaleza": {
+        "distance_m": 39190.5,
+        "distance_km": 39.1905,
+        "duration_s": 2509.9,
+        "duration_min": 41.831667
+      },
       "Granja": {
         "distance_m": 346411.0,
         "distance_km": 346.411,
@@ -14342,6 +15022,12 @@
         "distance_km": 97.6486,
         "duration_s": 6556.9,
         "duration_min": 109.281667
+      },
+      "Fortaleza": {
+        "distance_m": 300907.6,
+        "distance_km": 300.9076,
+        "duration_s": 18092.5,
+        "duration_min": 301.541667
       },
       "Granja": {
         "distance_m": 165522.8,
@@ -14849,6 +15535,12 @@
         "duration_s": 14215.8,
         "duration_min": 236.93
       },
+      "Fortaleza": {
+        "distance_m": 48218.1,
+        "distance_km": 48.2181,
+        "duration_s": 3772.9,
+        "duration_min": 62.881667
+      },
       "Granja": {
         "distance_m": 364002.9,
         "distance_km": 364.0029,
@@ -15354,6 +16046,12 @@
         "distance_km": 89.6831,
         "duration_s": 5353.3,
         "duration_min": 89.221667
+      },
+      "Fortaleza": {
+        "distance_m": 303610.1,
+        "distance_km": 303.6101,
+        "duration_s": 16990.9,
+        "duration_min": 283.181667
       },
       "Granja": {
         "distance_m": 127545.2,
@@ -15861,6 +16559,12 @@
         "duration_s": 22066.5,
         "duration_min": 367.775
       },
+      "Fortaleza": {
+        "distance_m": 200662.8,
+        "distance_km": 200.6628,
+        "duration_s": 11420.0,
+        "duration_min": 190.333333
+      },
       "Granja": {
         "distance_m": 519458.8,
         "distance_km": 519.4588,
@@ -16366,6 +17070,12 @@
         "distance_km": 436.5488,
         "duration_s": 26785.5,
         "duration_min": 446.425
+      },
+      "Fortaleza": {
+        "distance_m": 378871.8,
+        "distance_km": 378.8718,
+        "duration_s": 19867.5,
+        "duration_min": 331.125
       },
       "Granja": {
         "distance_m": 553107.8,
@@ -16873,6 +17583,12 @@
         "duration_s": 24223.0,
         "duration_min": 403.716667
       },
+      "Fortaleza": {
+        "distance_m": 357460.4,
+        "distance_km": 357.4604,
+        "duration_s": 21598.7,
+        "duration_min": 359.978333
+      },
       "Granja": {
         "distance_m": 496515.4,
         "distance_km": 496.5154,
@@ -17378,6 +18094,12 @@
         "distance_km": 244.6303,
         "duration_s": 14377.2,
         "duration_min": 239.62
+      },
+      "Fortaleza": {
+        "distance_m": 304432.8,
+        "distance_km": 304.4328,
+        "duration_s": 17066.1,
+        "duration_min": 284.435
       },
       "Granja": {
         "distance_m": 346587.2,
@@ -17885,6 +18607,12 @@
         "duration_s": 6614.6,
         "duration_min": 110.243333
       },
+      "Fortaleza": {
+        "distance_m": 294895.8,
+        "distance_km": 294.8958,
+        "duration_s": 17034.6,
+        "duration_min": 283.91
+      },
       "Granja": {
         "distance_m": 186742.1,
         "distance_km": 186.7421,
@@ -18390,6 +19118,12 @@
         "distance_km": 129.8996,
         "duration_s": 7970.6,
         "duration_min": 132.843333
+      },
+      "Fortaleza": {
+        "distance_m": 302485.9,
+        "distance_km": 302.4859,
+        "duration_s": 17441.4,
+        "duration_min": 290.69
       },
       "Granja": {
         "distance_m": 214666.9,
@@ -18897,6 +19631,12 @@
         "duration_s": 12593.6,
         "duration_min": 209.893333
       },
+      "Fortaleza": {
+        "distance_m": 32403.8,
+        "distance_km": 32.4038,
+        "duration_s": 2328.4,
+        "duration_min": 38.806667
+      },
       "Granja": {
         "distance_m": 350445.9,
         "distance_km": 350.4459,
@@ -19402,6 +20142,12 @@
         "distance_km": 86.0729,
         "duration_s": 4556.1,
         "duration_min": 75.935
+      },
+      "Fortaleza": {
+        "distance_m": 129569.8,
+        "distance_km": 129.5698,
+        "duration_s": 7251.5,
+        "duration_min": 120.858333
       },
       "Granja": {
         "distance_m": 203601.1,
@@ -19909,6 +20655,12 @@
         "duration_s": 6219.0,
         "duration_min": 103.65
       },
+      "Fortaleza": {
+        "distance_m": 135774.1,
+        "distance_km": 135.7741,
+        "duration_s": 7928.7,
+        "duration_min": 132.145
+      },
       "Granja": {
         "distance_m": 198399.8,
         "distance_km": 198.3998,
@@ -20414,6 +21166,12 @@
         "distance_km": 141.23,
         "duration_s": 7733.2,
         "duration_min": 128.886667
+      },
+      "Fortaleza": {
+        "distance_m": 210330.3,
+        "distance_km": 210.3303,
+        "duration_s": 12339.1,
+        "duration_min": 205.651667
       },
       "Granja": {
         "distance_m": 116648.5,
@@ -20921,6 +21679,12 @@
         "duration_s": 25688.5,
         "duration_min": 428.141667
       },
+      "Fortaleza": {
+        "distance_m": 309851.7,
+        "distance_km": 309.8517,
+        "duration_s": 16702.7,
+        "duration_min": 278.378333
+      },
       "Granja": {
         "distance_m": 525803.3,
         "distance_km": 525.8033,
@@ -21426,6 +22190,12 @@
         "distance_km": 387.1659,
         "duration_s": 21256.6,
         "duration_min": 354.276667
+      },
+      "Fortaleza": {
+        "distance_m": 183152.3,
+        "distance_km": 183.1523,
+        "duration_s": 10813.7,
+        "duration_min": 180.228333
       },
       "Granja": {
         "distance_m": 498937.1,
@@ -21933,6 +22703,12 @@
         "duration_s": 34649.9,
         "duration_min": 577.498333
       },
+      "Fortaleza": {
+        "distance_m": 575761.9,
+        "distance_km": 575.7619,
+        "duration_s": 29241.6,
+        "duration_min": 487.36
+      },
       "Granja": {
         "distance_m": 702972.5,
         "distance_km": 702.9725,
@@ -22438,6 +23214,12 @@
         "distance_km": 525.5304,
         "duration_s": 31797.0,
         "duration_min": 529.95
+      },
+      "Fortaleza": {
+        "distance_m": 525275.2,
+        "distance_km": 525.2752,
+        "duration_s": 26204.6,
+        "duration_min": 436.743333
       },
       "Granja": {
         "distance_m": 656981.5,
@@ -22945,6 +23727,12 @@
         "duration_s": 29197.7,
         "duration_min": 486.628333
       },
+      "Fortaleza": {
+        "distance_m": 436912.4,
+        "distance_km": 436.9124,
+        "duration_s": 22434.5,
+        "duration_min": 373.908333
+      },
       "Granja": {
         "distance_m": 588543.8,
         "distance_km": 588.5438,
@@ -23450,6 +24238,12 @@
         "distance_km": 352.6392,
         "duration_s": 22148.6,
         "duration_min": 369.143333
+      },
+      "Fortaleza": {
+        "distance_m": 195374.0,
+        "distance_km": 195.374,
+        "duration_s": 11686.8,
+        "duration_min": 194.78
       },
       "Granja": {
         "distance_m": 511158.8,
@@ -23957,6 +24751,12 @@
         "duration_s": 11385.1,
         "duration_min": 189.751667
       },
+      "Fortaleza": {
+        "distance_m": 22755.8,
+        "distance_km": 22.7558,
+        "duration_s": 1896.9,
+        "duration_min": 31.615
+      },
       "Granja": {
         "distance_m": 324221.5,
         "distance_km": 324.2215,
@@ -24462,6 +25262,12 @@
         "distance_km": 216.0698,
         "duration_s": 11594.2,
         "duration_min": 193.236667
+      },
+      "Fortaleza": {
+        "distance_m": 26008.4,
+        "distance_km": 26.0084,
+        "duration_s": 2119.2,
+        "duration_min": 35.32
       },
       "Granja": {
         "distance_m": 327840.9,
@@ -24969,6 +25775,12 @@
         "duration_s": 5456.6,
         "duration_min": 90.943333
       },
+      "Fortaleza": {
+        "distance_m": 220152.0,
+        "distance_km": 220.152,
+        "duration_s": 12751.6,
+        "duration_min": 212.526667
+      },
       "Granja": {
         "distance_m": 109541.6,
         "distance_km": 109.5416,
@@ -25474,6 +26286,12 @@
         "distance_km": 36.7532,
         "duration_s": 2201.9,
         "duration_min": 36.698333
+      },
+      "Fortaleza": {
+        "distance_m": 250680.2,
+        "distance_km": 250.6802,
+        "duration_s": 13839.5,
+        "duration_min": 230.658333
       },
       "Granja": {
         "distance_m": 79335.8,
@@ -25981,6 +26799,12 @@
         "duration_s": 32959.6,
         "duration_min": 549.326667
       },
+      "Fortaleza": {
+        "distance_m": 508386.9,
+        "distance_km": 508.3869,
+        "duration_s": 25903.4,
+        "duration_min": 431.723333
+      },
       "Granja": {
         "distance_m": 684355.5,
         "distance_km": 684.3555,
@@ -26486,6 +27310,12 @@
         "distance_km": 555.2982,
         "duration_s": 32228.5,
         "duration_min": 537.141667
+      },
+      "Fortaleza": {
+        "distance_m": 495888.6,
+        "distance_km": 495.8886,
+        "duration_s": 25172.3,
+        "duration_min": 419.538333
       },
       "Granja": {
         "distance_m": 671857.2,
@@ -26993,6 +27823,12 @@
         "duration_s": 33011.8,
         "duration_min": 550.196667
       },
+      "Fortaleza": {
+        "distance_m": 523287.8,
+        "distance_km": 523.2878,
+        "duration_s": 26532.9,
+        "duration_min": 442.215
+      },
       "Granja": {
         "distance_m": 680120.0,
         "distance_km": 680.12,
@@ -27498,6 +28334,12 @@
         "distance_km": 288.589,
         "duration_s": 18907.4,
         "duration_min": 315.123333
+      },
+      "Fortaleza": {
+        "distance_m": 300499.2,
+        "distance_km": 300.4992,
+        "duration_s": 18638.7,
+        "duration_min": 310.645
       },
       "Granja": {
         "distance_m": 412088.7,
@@ -28005,6 +28847,12 @@
         "duration_s": 19870.7,
         "duration_min": 331.178333
       },
+      "Fortaleza": {
+        "distance_m": 162805.9,
+        "distance_km": 162.8059,
+        "duration_s": 10269.5,
+        "duration_min": 171.158333
+      },
       "Granja": {
         "distance_m": 430870.8,
         "distance_km": 430.8708,
@@ -28510,6 +29358,12 @@
         "distance_km": 151.3018,
         "duration_s": 9097.2,
         "duration_min": 151.62
+      },
+      "Fortaleza": {
+        "distance_m": 302442.5,
+        "distance_km": 302.4425,
+        "duration_s": 17511.1,
+        "duration_min": 291.851667
       },
       "Granja": {
         "distance_m": 244968.8,
@@ -29017,6 +29871,12 @@
         "duration_s": 14210.8,
         "duration_min": 236.846667
       },
+      "Fortaleza": {
+        "distance_m": 395947.7,
+        "distance_km": 395.9477,
+        "duration_s": 22146.3,
+        "duration_min": 369.105
+      },
       "Granja": {
         "distance_m": 343290.3,
         "distance_km": 343.2903,
@@ -29522,6 +30382,12 @@
         "distance_km": 296.6577,
         "duration_s": 15659.2,
         "duration_min": 260.986667
+      },
+      "Fortaleza": {
+        "distance_m": 101208.3,
+        "distance_km": 101.2083,
+        "duration_s": 5850.1,
+        "duration_min": 97.501667
       },
       "Granja": {
         "distance_m": 408428.8,
@@ -30029,6 +30895,12 @@
         "duration_s": 13822.5,
         "duration_min": 230.375
       },
+      "Fortaleza": {
+        "distance_m": 51557.2,
+        "distance_km": 51.5572,
+        "duration_s": 3379.6,
+        "duration_min": 56.326667
+      },
       "Granja": {
         "distance_m": 367342.0,
         "distance_km": 367.342,
@@ -30534,6 +31406,12 @@
         "distance_km": 226.3528,
         "duration_s": 11938.5,
         "duration_min": 198.975
+      },
+      "Fortaleza": {
+        "distance_m": 30903.4,
+        "distance_km": 30.9034,
+        "duration_s": 2129.4,
+        "duration_min": 35.49
       },
       "Granja": {
         "distance_m": 338123.9,
@@ -31041,6 +31919,12 @@
         "duration_s": 9182.0,
         "duration_min": 153.033333
       },
+      "Fortaleza": {
+        "distance_m": 90123.1,
+        "distance_km": 90.1231,
+        "duration_s": 5404.3,
+        "duration_min": 90.071667
+      },
       "Granja": {
         "distance_m": 256822.2,
         "distance_km": 256.8222,
@@ -31546,6 +32430,12 @@
         "distance_km": 162.3948,
         "duration_s": 9341.7,
         "duration_min": 155.695
+      },
+      "Fortaleza": {
+        "distance_m": 94600.3,
+        "distance_km": 94.6003,
+        "duration_s": 5704.1,
+        "duration_min": 95.068333
       },
       "Granja": {
         "distance_m": 241077.6,
@@ -32053,6 +32943,12 @@
         "duration_s": 19390.5,
         "duration_min": 323.175
       },
+      "Fortaleza": {
+        "distance_m": 403560.4,
+        "distance_km": 403.5604,
+        "duration_s": 20961.4,
+        "duration_min": 349.356667
+      },
       "Granja": {
         "distance_m": 436440.8,
         "distance_km": 436.4408,
@@ -32558,6 +33454,12 @@
         "distance_km": 242.774,
         "duration_s": 15819.9,
         "duration_min": 263.665
+      },
+      "Fortaleza": {
+        "distance_m": 260706.7,
+        "distance_km": 260.7067,
+        "duration_s": 15571.1,
+        "duration_min": 259.518333
       },
       "Granja": {
         "distance_m": 366273.8,
@@ -33065,6 +33967,12 @@
         "duration_s": 7734.5,
         "duration_min": 128.908333
       },
+      "Fortaleza": {
+        "distance_m": 91541.7,
+        "distance_km": 91.5417,
+        "duration_s": 5473.8,
+        "duration_min": 91.23
+      },
       "Granja": {
         "distance_m": 252728.5,
         "distance_km": 252.7285,
@@ -33570,6 +34478,12 @@
         "distance_km": 235.0494,
         "duration_s": 15416.6,
         "duration_min": 256.943333
+      },
+      "Fortaleza": {
+        "distance_m": 164923.7,
+        "distance_km": 164.9237,
+        "duration_s": 9863.7,
+        "duration_min": 164.395
       },
       "Granja": {
         "distance_m": 351608.4,
@@ -34077,6 +34991,12 @@
         "duration_s": 16463.5,
         "duration_min": 274.391667
       },
+      "Fortaleza": {
+        "distance_m": 208018.7,
+        "distance_km": 208.0187,
+        "duration_s": 12615.7,
+        "duration_min": 210.261667
+      },
       "Granja": {
         "distance_m": 386211.2,
         "distance_km": 386.2112,
@@ -34582,6 +35502,12 @@
         "distance_km": 261.3353,
         "duration_s": 13665.5,
         "duration_min": 227.758333
+      },
+      "Fortaleza": {
+        "distance_m": 65886.0,
+        "distance_km": 65.886,
+        "duration_s": 3856.4,
+        "duration_min": 64.273333
       },
       "Granja": {
         "distance_m": 373106.4,
@@ -35089,6 +36015,12 @@
         "duration_s": 20207.7,
         "duration_min": 336.795
       },
+      "Fortaleza": {
+        "distance_m": 163726.0,
+        "distance_km": 163.726,
+        "duration_s": 9764.8,
+        "duration_min": 162.746667
+      },
       "Granja": {
         "distance_m": 479510.8,
         "distance_km": 479.5108,
@@ -35594,6 +36526,12 @@
         "distance_km": 69.6411,
         "duration_s": 4502.7,
         "duration_min": 75.045
+      },
+      "Fortaleza": {
+        "distance_m": 220707.0,
+        "distance_km": 220.707,
+        "duration_s": 12911.8,
+        "duration_min": 215.196667
       },
       "Granja": {
         "distance_m": 186200.1,
@@ -36101,6 +37039,12 @@
         "duration_s": 2645.4,
         "duration_min": 44.09
       },
+      "Fortaleza": {
+        "distance_m": 235160.2,
+        "distance_km": 235.1602,
+        "duration_s": 13586.6,
+        "duration_min": 226.443333
+      },
       "Granja": {
         "distance_m": 101867.2,
         "distance_km": 101.8672,
@@ -36606,6 +37550,12 @@
         "distance_km": 293.8403,
         "duration_s": 18887.1,
         "duration_min": 314.785
+      },
+      "Fortaleza": {
+        "distance_m": 261287.9,
+        "distance_km": 261.2879,
+        "duration_s": 16167.2,
+        "duration_min": 269.453333
       },
       "Granja": {
         "distance_m": 417340.0,
@@ -37113,6 +38063,12 @@
         "duration_s": 1144.1,
         "duration_min": 19.068333
       },
+      "Fortaleza": {
+        "distance_m": 232150.8,
+        "distance_km": 232.1508,
+        "duration_s": 12781.7,
+        "duration_min": 213.028333
+      },
       "Granja": {
         "distance_m": 98463.5,
         "distance_km": 98.4635,
@@ -37618,6 +38574,12 @@
         "distance_km": 104.42,
         "duration_s": 6267.8,
         "duration_min": 104.463333
+      },
+      "Fortaleza": {
+        "distance_m": 318346.9,
+        "distance_km": 318.3469,
+        "duration_s": 17905.4,
+        "duration_min": 298.423333
       },
       "Granja": {
         "distance_m": 142711.3,
@@ -38125,6 +39087,12 @@
         "duration_s": 8807.9,
         "duration_min": 146.798333
       },
+      "Fortaleza": {
+        "distance_m": 61148.6,
+        "distance_km": 61.1486,
+        "duration_s": 3801.1,
+        "duration_min": 63.351667
+      },
       "Granja": {
         "distance_m": 264899.5,
         "distance_km": 264.8995,
@@ -38630,6 +39598,12 @@
         "distance_km": 358.7988,
         "duration_s": 22442.4,
         "duration_min": 374.04
+      },
+      "Fortaleza": {
+        "distance_m": 207154.6,
+        "distance_km": 207.1546,
+        "duration_s": 12361.6,
+        "duration_min": 206.026667
       },
       "Granja": {
         "distance_m": 475357.8,
@@ -39137,6 +40111,12 @@
         "duration_s": 8184.4,
         "duration_min": 136.406667
       },
+      "Fortaleza": {
+        "distance_m": 285931.3,
+        "distance_km": 285.9313,
+        "duration_s": 16598.3,
+        "duration_min": 276.638333
+      },
       "Granja": {
         "distance_m": 258290.4,
         "distance_km": 258.2904,
@@ -39642,6 +40622,12 @@
         "distance_km": 323.8057,
         "duration_s": 18465.8,
         "duration_min": 307.763333
+      },
+      "Fortaleza": {
+        "distance_m": 342853.4,
+        "distance_km": 342.8534,
+        "duration_s": 18246.5,
+        "duration_min": 304.108333
       },
       "Granja": {
         "distance_m": 432716.7,
@@ -40149,6 +41135,12 @@
         "duration_s": 5721.2,
         "duration_min": 95.353333
       },
+      "Fortaleza": {
+        "distance_m": 317959.2,
+        "distance_km": 317.9592,
+        "duration_s": 17358.8,
+        "duration_min": 289.313333
+      },
       "Granja": {
         "distance_m": 102129.1,
         "distance_km": 102.1291,
@@ -40654,6 +41646,12 @@
         "distance_km": 156.4683,
         "duration_s": 9135.3,
         "duration_min": 152.255
+      },
+      "Fortaleza": {
+        "distance_m": 126507.0,
+        "distance_km": 126.507,
+        "duration_s": 7631.5,
+        "duration_min": 127.191667
       },
       "Granja": {
         "distance_m": 225261.5,
@@ -41161,6 +42159,12 @@
         "duration_s": 5845.0,
         "duration_min": 97.416667
       },
+      "Fortaleza": {
+        "distance_m": 311091.3,
+        "distance_km": 311.0913,
+        "duration_s": 17482.6,
+        "duration_min": 291.376667
+      },
       "Granja": {
         "distance_m": 118872.7,
         "distance_km": 118.8727,
@@ -41667,6 +42671,12 @@
         "duration_s": 7053.2,
         "duration_min": 117.553333
       },
+      "Fortaleza": {
+        "distance_m": 348871.4,
+        "distance_km": 348.8714,
+        "duration_s": 18690.8,
+        "duration_min": 311.513333
+      },
       "Granja": {
         "distance_m": 71321.5,
         "distance_km": 71.3215,
@@ -42172,6 +43182,12 @@
         "distance_km": 432.6623,
         "duration_s": 28092.3,
         "duration_min": 468.205
+      },
+      "Fortaleza": {
+        "distance_m": 477127.0,
+        "distance_km": 477.127,
+        "duration_s": 24543.4,
+        "duration_min": 409.056667
       },
       "Granja": {
         "distance_m": 556162.1,

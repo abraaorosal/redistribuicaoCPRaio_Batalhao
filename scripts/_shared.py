@@ -17,6 +17,8 @@ from typing import Any, Iterable
 import requests
 
 from _config import (
+    IBGE_POPULATION_STATE_CODE,
+    IBGE_POPULATION_YEAR,
     LOCAL_OSRM_BASE_URL,
     NOMINATIM_USER_AGENT,
     OSRM_BASE_URL,
@@ -36,6 +38,12 @@ CITIES_SOURCE_PATH = DATA_DIR / "cidades" / "municipios.json"
 STRUCTURE_SOURCE_PATH = DATA_DIR / "estrutura" / "proposta1.json"
 SCENARIOS_PATH = DATA_DIR / "cenarios_batalhoes.json"
 MUNICIPIOS_BASE_PATH = DATA_DIR / "municipios_base.json"
+# O nome do arquivo foi mantido por compatibilidade, mas ele representa
+# a estrutura atual da unidade usada como referência de preservação.
+CURRENT_STRUCTURE_STATUS_SOURCE_PATH = DATA_DIR / "estrutura" / "status_municipio_antigo.json"
+EFETIVO_JSON_PATH = DATA_DIR / "efetivo" / f"efetivo_21_03_2026.json"
+POPULATION_DIR = DATA_DIR / "populacao"
+IBGE_POPULATION_JSON_PATH = POPULATION_DIR / f"ibge_estimativa_populacao_ce_{IBGE_POPULATION_YEAR}.json"
 
 NORMALIZED_JSON_PATH = OUTPUT_DIR / "municipios_normalizados.json"
 NORMALIZED_CSV_PATH = OUTPUT_DIR / "municipios_normalizados.csv"
@@ -44,7 +52,6 @@ MATRIX_JSON_PATH = OUTPUT_DIR / "matriz_distancias_municipios.json"
 MATRIX_CSV_PATH = OUTPUT_DIR / "matriz_distancias_municipios.csv"
 CURRENT_SCENARIO_PATH = OUTPUT_DIR / "cenario_atual_avaliado.json"
 EUSEBIO_SCENARIO_PATH = OUTPUT_DIR / "cenario_eusebio_avaliado.json"
-HORIZONTE_SCENARIO_PATH = OUTPUT_DIR / "cenario_horizonte_avaliado.json"
 SCENARIO_COMPARISON_JSON_PATH = OUTPUT_DIR / "comparativo_cenarios.json"
 SCENARIO_COMPARISON_CSV_PATH = OUTPUT_DIR / "comparativo_cenarios.csv"
 FINAL_STRUCTURE_JSON_PATH = OUTPUT_DIR / "estrutura_sugerida_final.json"
@@ -54,6 +61,44 @@ ANALYTICAL_REPORT_CSV_PATH = OUTPUT_DIR / "relatorio_analitico.csv"
 
 
 LOGGER_INITIALIZED = False
+ISOLATED_BATTALION_NAME = "Fortaleza"
+ISOLATED_BATTALION_KEY = "FORTALEZA"
+ISOLATED_BATTALION_TYPE = "batalhao_isolado"
+ISOLATED_BATTALION_NOTE = (
+    "Batalhão isolado com atuação própria; não participa da redistribuição territorial "
+    "e não vincula outros municípios."
+)
+MANUAL_BATTALION_OVERRIDE_BY_KEY = {
+    "PARACURU": "Caucaia",
+}
+MANUAL_COMPANY_OVERRIDE_BY_BATTALION_KEY = {
+    "CAUCAIA": {"PARACURU"},
+}
+METROPOLITAN_BATTALION_KEYS = {
+    "CAUCAIA",
+    "EUSEBIO",
+}
+METROPOLITAN_MUNICIPALITY_KEYS = {
+    "FORTALEZA",
+    "AQUIRAZ",
+    "CASCAVEL",
+    "CAUCAIA",
+    "CHOROZINHO",
+    "EUSEBIO",
+    "GUAIUBA",
+    "HORIZONTE",
+    "ITAITINGA",
+    "MARACANAU",
+    "MARANGUAPE",
+    "PACAJUS",
+    "PACATUBA",
+    "PARACURU",
+    "PARAIPABA",
+    "PINDORETAMA",
+    "SAO GONCALO DO AMARANTE",
+    "SAO LUIS DO CURU",
+    "TRAIRI",
+}
 
 
 def build_logger(name: str) -> logging.Logger:
@@ -88,6 +133,26 @@ def normalize_name(value: str | None) -> str:
 
 def title_key(name: str) -> str:
     return normalize_name(name)
+
+
+def is_isolated_battalion(name: str | None) -> bool:
+    return title_key(name or "") == ISOLATED_BATTALION_KEY
+
+
+def get_manual_battalion_override(municipio: str | None) -> str | None:
+    return MANUAL_BATTALION_OVERRIDE_BY_KEY.get(title_key(municipio))
+
+
+def is_metropolitan_battalion(name: str | None) -> bool:
+    return title_key(name or "") in METROPOLITAN_BATTALION_KEYS
+
+
+def is_metropolitan_municipio(name: str | None) -> bool:
+    return title_key(name or "") in METROPOLITAN_MUNICIPALITY_KEYS
+
+
+def get_manual_company_overrides_for_battalion(batalhao: str | None) -> set[str]:
+    return set(MANUAL_COMPANY_OVERRIDE_BY_BATTALION_KEY.get(title_key(batalhao), set()))
 
 
 def load_json(path: Path | str) -> Any:
@@ -300,6 +365,49 @@ def load_complementary_coordinates() -> dict[str, dict[str, Any]]:
     return output
 
 
+def load_population_by_municipio() -> dict[str, dict[str, Any]]:
+    if not IBGE_POPULATION_JSON_PATH.exists():
+        return {}
+
+    payload = load_json(IBGE_POPULATION_JSON_PATH)
+    municipios = payload.get("municipios", [])
+    output: dict[str, dict[str, Any]] = {}
+    for item in municipios:
+        key = title_key(item.get("municipio"))
+        if key:
+            output[key] = item
+    return output
+
+
+def load_efetivo_by_municipio() -> dict[str, int]:
+    if not EFETIVO_JSON_PATH.exists():
+        return {}
+
+    payload = load_json(EFETIVO_JSON_PATH)
+    output: dict[str, int] = {}
+    for item in payload:
+        key = title_key(item.get("municipio"))
+        if not key:
+            continue
+        try:
+            output[key] = int(item.get("efetivo") or 0)
+        except (TypeError, ValueError):
+            output[key] = 0
+    return output
+
+
+def load_current_structure_company_keys() -> set[str]:
+    if not CURRENT_STRUCTURE_STATUS_SOURCE_PATH.exists():
+        return set()
+
+    payload = load_json(CURRENT_STRUCTURE_STATUS_SOURCE_PATH)
+    return {
+        title_key(item.get("municipio"))
+        for item in payload
+        if title_key(item.get("municipio")) and title_key(item.get("status")) == "COMPANHIA"
+    }
+
+
 def _make_record(
     *,
     nome: str,
@@ -312,8 +420,13 @@ def _make_record(
     observacoes: str,
     coord_index: dict[str, dict[str, Any]],
     source_hint: str,
+    population_index: dict[str, dict[str, Any]] | None = None,
+    efetivo_index: dict[str, int] | None = None,
+    tipo_especial: str | None = None,
+    is_fortaleza: bool = False,
 ) -> dict[str, Any]:
     coord_data = coord_index.get(title_key(nome), {})
+    population_data = (population_index or {}).get(title_key(nome), {})
     return {
         "nome": nome,
         "nome_normalizado": title_key(nome),
@@ -329,7 +442,70 @@ def _make_record(
         "observacoes": observacoes.strip(),
         "fonte_estrutura": source_hint,
         "fonte_coordenadas": coord_data.get("origem"),
+        "populacao_ibge": safe_float(population_data.get("populacao_estimada")),
+        "populacao_ano_referencia": population_data.get("ano_referencia"),
+        "fonte_populacao": population_data.get("fonte_api"),
+        "efetivo": (efetivo_index or {}).get(title_key(nome), 0),
+        "tipo_especial": tipo_especial,
+        "is_fortaleza": is_fortaleza,
     }
+
+
+def ensure_isolated_battalion_records(
+    records: dict[str, dict[str, Any]],
+    *,
+    coord_index: dict[str, dict[str, Any]],
+    population_index: dict[str, dict[str, Any]],
+    efetivo_index: dict[str, int],
+    logger: logging.Logger,
+) -> None:
+    existing = records.get(ISOLATED_BATTALION_KEY)
+    if existing:
+        existing.update(
+            {
+                "status_atual": "batalhao",
+                "tipo_atual": "batalhao",
+                "batalhao_codigo_atual": existing.get("batalhao_codigo_atual") or "BATALHAO ISOLADO",
+                "batalhao_atual": ISOLATED_BATTALION_NAME,
+                "companhia_atual": ISOLATED_BATTALION_NAME,
+                "subordinacao_atual": ISOLATED_BATTALION_NAME,
+                "observacoes": ISOLATED_BATTALION_NOTE,
+                "tipo_especial": ISOLATED_BATTALION_TYPE,
+                "is_fortaleza": True,
+                "populacao_ibge": safe_float(
+                    population_index.get(ISOLATED_BATTALION_KEY, {}).get("populacao_estimada")
+                ),
+                "populacao_ano_referencia": population_index.get(ISOLATED_BATTALION_KEY, {}).get("ano_referencia"),
+                "fonte_populacao": population_index.get(ISOLATED_BATTALION_KEY, {}).get("fonte_api"),
+                "efetivo": efetivo_index.get(ISOLATED_BATTALION_KEY, 0),
+            }
+        )
+        logger.info("Fortaleza carregada com sucesso na base operacional existente.")
+        return
+
+    if ISOLATED_BATTALION_KEY not in coord_index:
+        logger.warning(
+            "Fortaleza não foi encontrada na base de coordenadas; batalhão isolado não pôde ser injetado."
+        )
+        return
+
+    records[ISOLATED_BATTALION_KEY] = _make_record(
+        nome=ISOLATED_BATTALION_NAME,
+        status_atual="batalhao",
+        tipo_atual="batalhao",
+        batalhao_codigo_atual="BATALHAO ISOLADO",
+        batalhao_atual=ISOLATED_BATTALION_NAME,
+        companhia_atual=ISOLATED_BATTALION_NAME,
+        subordinacao_atual=ISOLATED_BATTALION_NAME,
+        observacoes=ISOLATED_BATTALION_NOTE,
+        coord_index=coord_index,
+        source_hint="dados/cidades/municipios.json::fortaleza_batalhao_isolado",
+        population_index=population_index,
+        efetivo_index=efetivo_index,
+        tipo_especial=ISOLATED_BATTALION_TYPE,
+        is_fortaleza=True,
+    )
+    logger.info("Fortaleza carregada com sucesso na base operacional como batalhão isolado.")
 
 
 def build_base_records(logger: logging.Logger | None = None) -> list[dict[str, Any]]:
@@ -337,6 +513,8 @@ def build_base_records(logger: logging.Logger | None = None) -> list[dict[str, A
     current_structure = load_current_structure_from_index()
     coord_index = load_coordinates_sources()
     coord_index.update(load_complementary_coordinates())
+    population_index = load_population_by_municipio()
+    efetivo_index = load_efetivo_by_municipio()
 
     records: dict[str, dict[str, Any]] = {}
 
@@ -358,6 +536,8 @@ def build_base_records(logger: logging.Logger | None = None) -> list[dict[str, A
             observacoes=observacoes.get(sede, "Sede atual do batalhão."),
             coord_index=coord_index,
             source_hint="index.html::distribuicaoOficialAtual",
+            population_index=population_index,
+            efetivo_index=efetivo_index,
         )
 
         for companhia in bloco.get("companhias", []):
@@ -372,6 +552,8 @@ def build_base_records(logger: logging.Logger | None = None) -> list[dict[str, A
                 observacoes=observacoes.get(companhia, "Companhia atual da estrutura em vigor."),
                 coord_index=coord_index,
                 source_hint="index.html::distribuicaoOficialAtual",
+                population_index=population_index,
+                efetivo_index=efetivo_index,
             )
 
         for independente in bloco.get("independentes", []):
@@ -389,6 +571,8 @@ def build_base_records(logger: logging.Logger | None = None) -> list[dict[str, A
                 ),
                 coord_index=coord_index,
                 source_hint="index.html::distribuicaoOficialAtual",
+                population_index=population_index,
+                efetivo_index=efetivo_index,
             )
 
         subordinacao = bloco.get("subordinacao", {})
@@ -411,6 +595,8 @@ def build_base_records(logger: logging.Logger | None = None) -> list[dict[str, A
                     ),
                     coord_index=coord_index,
                     source_hint="index.html::distribuicaoOficialAtual",
+                    population_index=population_index,
+                    efetivo_index=efetivo_index,
                 )
 
         for pelotao in bloco.get("pelotoes", []):
@@ -431,8 +617,17 @@ def build_base_records(logger: logging.Logger | None = None) -> list[dict[str, A
                 ),
                 coord_index=coord_index,
                 source_hint="index.html::distribuicaoOficialAtual",
+                population_index=population_index,
+                efetivo_index=efetivo_index,
             )
 
+    ensure_isolated_battalion_records(
+        records,
+        coord_index=coord_index,
+        population_index=population_index,
+        efetivo_index=efetivo_index,
+        logger=logger,
+    )
     output = sorted(records.values(), key=lambda item: item["nome"])
     return output
 
@@ -445,14 +640,16 @@ def persist_normalized_records(
     metadata = {
         "generated_at": now_iso(),
         "total_municipios": len(records),
-        "fontes": {
-            "estrutura_atual": "index.html::distribuicaoOficialAtual",
-            "coordenadas_base": str(CITIES_SOURCE_PATH.relative_to(PROJECT_ROOT)),
-            "coordenadas_complementares": str(
-                COMPLEMENTARY_COORDS_PATH.relative_to(PROJECT_ROOT)
-            ),
-        },
-    }
+            "fontes": {
+                "estrutura_atual": "index.html::distribuicaoOficialAtual",
+                "coordenadas_base": str(CITIES_SOURCE_PATH.relative_to(PROJECT_ROOT)),
+                "coordenadas_complementares": str(
+                    COMPLEMENTARY_COORDS_PATH.relative_to(PROJECT_ROOT)
+                ),
+                "populacao_ibge": str(IBGE_POPULATION_JSON_PATH.relative_to(PROJECT_ROOT)),
+                "efetivo": str(EFETIVO_JSON_PATH.relative_to(PROJECT_ROOT)),
+            },
+        }
     if metadata_extra:
         metadata.update(metadata_extra)
 
@@ -477,6 +674,12 @@ def persist_normalized_records(
             "observacoes",
             "fonte_estrutura",
             "fonte_coordenadas",
+            "populacao_ibge",
+            "populacao_ano_referencia",
+            "fonte_populacao",
+            "efetivo",
+            "tipo_especial",
+            "is_fortaleza",
         ],
     )
 

@@ -1,0 +1,1853 @@
+{
+  "metadata": {
+    "generated_at": "2026-03-21T12:58:08+00:00",
+    "estado_ibge": "23",
+    "ano_referencia": 2025,
+    "data_referencia": "2025-07-01",
+    "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+    "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025",
+    "descricao": "Estimativas oficiais da população residente dos municípios do Ceará, com data de referência em 1º de julho, obtidas no SIDRA/IBGE."
+  },
+  "municipios": [
+    {
+      "municipio": "Abaiara",
+      "municipio_normalizado": "ABAIARA",
+      "codigo_ibge": "2300101",
+      "populacao_estimada": 10269,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Acarape",
+      "municipio_normalizado": "ACARAPE",
+      "codigo_ibge": "2300150",
+      "populacao_estimada": 14340,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Acaraú",
+      "municipio_normalizado": "ACARAU",
+      "codigo_ibge": "2300200",
+      "populacao_estimada": 69317,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Acopiara",
+      "municipio_normalizado": "ACOPIARA",
+      "codigo_ibge": "2300309",
+      "populacao_estimada": 45937,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Aiuaba",
+      "municipio_normalizado": "AIUABA",
+      "codigo_ibge": "2300408",
+      "populacao_estimada": 14115,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Alcântaras",
+      "municipio_normalizado": "ALCANTARAS",
+      "codigo_ibge": "2300507",
+      "populacao_estimada": 11795,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Altaneira",
+      "municipio_normalizado": "ALTANEIRA",
+      "codigo_ibge": "2300606",
+      "populacao_estimada": 6974,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Alto Santo",
+      "municipio_normalizado": "ALTO SANTO",
+      "codigo_ibge": "2300705",
+      "populacao_estimada": 14372,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Amontada",
+      "municipio_normalizado": "AMONTADA",
+      "codigo_ibge": "2300754",
+      "populacao_estimada": 44584,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Antonina do Norte",
+      "municipio_normalizado": "ANTONINA DO NORTE",
+      "codigo_ibge": "2300804",
+      "populacao_estimada": 7507,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Apuiarés",
+      "municipio_normalizado": "APUIARES",
+      "codigo_ibge": "2300903",
+      "populacao_estimada": 13193,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Aquiraz",
+      "municipio_normalizado": "AQUIRAZ",
+      "codigo_ibge": "2301000",
+      "populacao_estimada": 85316,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Aracati",
+      "municipio_normalizado": "ARACATI",
+      "codigo_ibge": "2301109",
+      "populacao_estimada": 79205,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Aracoiaba",
+      "municipio_normalizado": "ARACOIABA",
+      "codigo_ibge": "2301208",
+      "populacao_estimada": 26752,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Ararendá",
+      "municipio_normalizado": "ARARENDA",
+      "codigo_ibge": "2301257",
+      "populacao_estimada": 11532,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Araripe",
+      "municipio_normalizado": "ARARIPE",
+      "codigo_ibge": "2301307",
+      "populacao_estimada": 20194,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Aratuba",
+      "municipio_normalizado": "ARATUBA",
+      "codigo_ibge": "2301406",
+      "populacao_estimada": 11427,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Arneiroz",
+      "municipio_normalizado": "ARNEIROZ",
+      "codigo_ibge": "2301505",
+      "populacao_estimada": 7615,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Assaré",
+      "municipio_normalizado": "ASSARE",
+      "codigo_ibge": "2301604",
+      "populacao_estimada": 22195,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Aurora",
+      "municipio_normalizado": "AURORA",
+      "codigo_ibge": "2301703",
+      "populacao_estimada": 24244,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Baixio",
+      "municipio_normalizado": "BAIXIO",
+      "codigo_ibge": "2301802",
+      "populacao_estimada": 5821,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Banabuiú",
+      "municipio_normalizado": "BANABUIU",
+      "codigo_ibge": "2301851",
+      "populacao_estimada": 17667,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Barbalha",
+      "municipio_normalizado": "BARBALHA",
+      "codigo_ibge": "2301901",
+      "populacao_estimada": 81441,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Barreira",
+      "municipio_normalizado": "BARREIRA",
+      "codigo_ibge": "2301950",
+      "populacao_estimada": 23474,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Barro",
+      "municipio_normalizado": "BARRO",
+      "codigo_ibge": "2302008",
+      "populacao_estimada": 19569,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Barroquinha",
+      "municipio_normalizado": "BARROQUINHA",
+      "codigo_ibge": "2302057",
+      "populacao_estimada": 14998,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Baturité",
+      "municipio_normalizado": "BATURITE",
+      "codigo_ibge": "2302107",
+      "populacao_estimada": 37147,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Beberibe",
+      "municipio_normalizado": "BEBERIBE",
+      "codigo_ibge": "2302206",
+      "populacao_estimada": 55977,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Bela Cruz",
+      "municipio_normalizado": "BELA CRUZ",
+      "codigo_ibge": "2302305",
+      "populacao_estimada": 34613,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Boa Viagem",
+      "municipio_normalizado": "BOA VIAGEM",
+      "codigo_ibge": "2302404",
+      "populacao_estimada": 52133,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Brejo Santo",
+      "municipio_normalizado": "BREJO SANTO",
+      "codigo_ibge": "2302503",
+      "populacao_estimada": 54192,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Camocim",
+      "municipio_normalizado": "CAMOCIM",
+      "codigo_ibge": "2302602",
+      "populacao_estimada": 65251,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Campos Sales",
+      "municipio_normalizado": "CAMPOS SALES",
+      "codigo_ibge": "2302701",
+      "populacao_estimada": 26049,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Canindé",
+      "municipio_normalizado": "CANINDE",
+      "codigo_ibge": "2302800",
+      "populacao_estimada": 77376,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Capistrano",
+      "municipio_normalizado": "CAPISTRANO",
+      "codigo_ibge": "2302909",
+      "populacao_estimada": 17795,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Caridade",
+      "municipio_normalizado": "CARIDADE",
+      "codigo_ibge": "2303006",
+      "populacao_estimada": 16234,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Caririaçu",
+      "municipio_normalizado": "CARIRIACU",
+      "codigo_ibge": "2303204",
+      "populacao_estimada": 27532,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Cariré",
+      "municipio_normalizado": "CARIRE",
+      "codigo_ibge": "2303105",
+      "populacao_estimada": 18074,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Cariús",
+      "municipio_normalizado": "CARIUS",
+      "codigo_ibge": "2303303",
+      "populacao_estimada": 17277,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Carnaubal",
+      "municipio_normalizado": "CARNAUBAL",
+      "codigo_ibge": "2303402",
+      "populacao_estimada": 17815,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Cascavel",
+      "municipio_normalizado": "CASCAVEL",
+      "codigo_ibge": "2303501",
+      "populacao_estimada": 76866,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Catarina",
+      "municipio_normalizado": "CATARINA",
+      "codigo_ibge": "2303600",
+      "populacao_estimada": 9110,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Catunda",
+      "municipio_normalizado": "CATUNDA",
+      "codigo_ibge": "2303659",
+      "populacao_estimada": 10864,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Caucaia",
+      "municipio_normalizado": "CAUCAIA",
+      "codigo_ibge": "2303709",
+      "populacao_estimada": 378406,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Cedro",
+      "municipio_normalizado": "CEDRO",
+      "codigo_ibge": "2303808",
+      "populacao_estimada": 22564,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Chaval",
+      "municipio_normalizado": "CHAVAL",
+      "codigo_ibge": "2303907",
+      "populacao_estimada": 12811,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Chorozinho",
+      "municipio_normalizado": "CHOROZINHO",
+      "codigo_ibge": "2303956",
+      "populacao_estimada": 20808,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Choró",
+      "municipio_normalizado": "CHORO",
+      "codigo_ibge": "2303931",
+      "populacao_estimada": 12352,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Coreaú",
+      "municipio_normalizado": "COREAU",
+      "codigo_ibge": "2304004",
+      "populacao_estimada": 21417,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Crateús",
+      "municipio_normalizado": "CRATEUS",
+      "codigo_ibge": "2304103",
+      "populacao_estimada": 80130,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Crato",
+      "municipio_normalizado": "CRATO",
+      "codigo_ibge": "2304202",
+      "populacao_estimada": 139027,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Croatá",
+      "municipio_normalizado": "CROATA",
+      "codigo_ibge": "2304236",
+      "populacao_estimada": 18050,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Cruz",
+      "municipio_normalizado": "CRUZ",
+      "codigo_ibge": "2304251",
+      "populacao_estimada": 32288,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Deputado Irapuan Pinheiro",
+      "municipio_normalizado": "DEPUTADO IRAPUAN PINHEIRO",
+      "codigo_ibge": "2304269",
+      "populacao_estimada": 9173,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Ereré",
+      "municipio_normalizado": "ERERE",
+      "codigo_ibge": "2304277",
+      "populacao_estimada": 6381,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Eusébio",
+      "municipio_normalizado": "EUSEBIO",
+      "codigo_ibge": "2304285",
+      "populacao_estimada": 82016,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Farias Brito",
+      "municipio_normalizado": "FARIAS BRITO",
+      "codigo_ibge": "2304301",
+      "populacao_estimada": 18498,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Forquilha",
+      "municipio_normalizado": "FORQUILHA",
+      "codigo_ibge": "2304350",
+      "populacao_estimada": 25298,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Fortaleza",
+      "municipio_normalizado": "FORTALEZA",
+      "codigo_ibge": "2304400",
+      "populacao_estimada": 2578483,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Fortim",
+      "municipio_normalizado": "FORTIM",
+      "codigo_ibge": "2304459",
+      "populacao_estimada": 18213,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Frecheirinha",
+      "municipio_normalizado": "FRECHEIRINHA",
+      "codigo_ibge": "2304509",
+      "populacao_estimada": 16516,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "General Sampaio",
+      "municipio_normalizado": "GENERAL SAMPAIO",
+      "codigo_ibge": "2304608",
+      "populacao_estimada": 6929,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Granja",
+      "municipio_normalizado": "GRANJA",
+      "codigo_ibge": "2304707",
+      "populacao_estimada": 55809,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Granjeiro",
+      "municipio_normalizado": "GRANJEIRO",
+      "codigo_ibge": "2304806",
+      "populacao_estimada": 4955,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Graça",
+      "municipio_normalizado": "GRACA",
+      "codigo_ibge": "2304657",
+      "populacao_estimada": 14176,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Groaíras",
+      "municipio_normalizado": "GROAIRAS",
+      "codigo_ibge": "2304905",
+      "populacao_estimada": 11369,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Guaiúba",
+      "municipio_normalizado": "GUAIUBA",
+      "codigo_ibge": "2304954",
+      "populacao_estimada": 25158,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Guaraciaba do Norte",
+      "municipio_normalizado": "GUARACIABA DO NORTE",
+      "codigo_ibge": "2305001",
+      "populacao_estimada": 44565,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Guaramiranga",
+      "municipio_normalizado": "GUARAMIRANGA",
+      "codigo_ibge": "2305100",
+      "populacao_estimada": 5826,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Hidrolândia",
+      "municipio_normalizado": "HIDROLANDIA",
+      "codigo_ibge": "2305209",
+      "populacao_estimada": 18186,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Horizonte",
+      "municipio_normalizado": "HORIZONTE",
+      "codigo_ibge": "2305233",
+      "populacao_estimada": 81161,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Ibaretama",
+      "municipio_normalizado": "IBARETAMA",
+      "codigo_ibge": "2305266",
+      "populacao_estimada": 12149,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Ibiapina",
+      "municipio_normalizado": "IBIAPINA",
+      "codigo_ibge": "2305308",
+      "populacao_estimada": 24689,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Ibicuitinga",
+      "municipio_normalizado": "IBICUITINGA",
+      "codigo_ibge": "2305332",
+      "populacao_estimada": 12008,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Icapuí",
+      "municipio_normalizado": "ICAPUI",
+      "codigo_ibge": "2305357",
+      "populacao_estimada": 22562,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Icó",
+      "municipio_normalizado": "ICO",
+      "codigo_ibge": "2305407",
+      "populacao_estimada": 64745,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Iguatu",
+      "municipio_normalizado": "IGUATU",
+      "codigo_ibge": "2305506",
+      "populacao_estimada": 102588,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Independência",
+      "municipio_normalizado": "INDEPENDENCIA",
+      "codigo_ibge": "2305605",
+      "populacao_estimada": 24463,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Ipaporanga",
+      "municipio_normalizado": "IPAPORANGA",
+      "codigo_ibge": "2305654",
+      "populacao_estimada": 11963,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Ipaumirim",
+      "municipio_normalizado": "IPAUMIRIM",
+      "codigo_ibge": "2305704",
+      "populacao_estimada": 12459,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Ipu",
+      "municipio_normalizado": "IPU",
+      "codigo_ibge": "2305803",
+      "populacao_estimada": 43084,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Ipueiras",
+      "municipio_normalizado": "IPUEIRAS",
+      "codigo_ibge": "2305902",
+      "populacao_estimada": 38287,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Iracema",
+      "municipio_normalizado": "IRACEMA",
+      "codigo_ibge": "2306009",
+      "populacao_estimada": 14440,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Irauçuba",
+      "municipio_normalizado": "IRAUCUBA",
+      "codigo_ibge": "2306108",
+      "populacao_estimada": 24867,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Itaitinga",
+      "municipio_normalizado": "ITAITINGA",
+      "codigo_ibge": "2306256",
+      "populacao_estimada": 72512,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Itaiçaba",
+      "municipio_normalizado": "ITAICABA",
+      "codigo_ibge": "2306207",
+      "populacao_estimada": 7801,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Itapajé",
+      "municipio_normalizado": "ITAPAJE",
+      "codigo_ibge": "2306306",
+      "populacao_estimada": 49073,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Itapipoca",
+      "municipio_normalizado": "ITAPIPOCA",
+      "codigo_ibge": "2306405",
+      "populacao_estimada": 138978,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Itapiúna",
+      "municipio_normalizado": "ITAPIUNA",
+      "codigo_ibge": "2306504",
+      "populacao_estimada": 18197,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Itarema",
+      "municipio_normalizado": "ITAREMA",
+      "codigo_ibge": "2306553",
+      "populacao_estimada": 45852,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Itatira",
+      "municipio_normalizado": "ITATIRA",
+      "codigo_ibge": "2306603",
+      "populacao_estimada": 21160,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Jaguaretama",
+      "municipio_normalizado": "JAGUARETAMA",
+      "codigo_ibge": "2306702",
+      "populacao_estimada": 17604,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Jaguaribara",
+      "municipio_normalizado": "JAGUARIBARA",
+      "codigo_ibge": "2306801",
+      "populacao_estimada": 10668,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Jaguaribe",
+      "municipio_normalizado": "JAGUARIBE",
+      "codigo_ibge": "2306900",
+      "populacao_estimada": 35143,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Jaguaruana",
+      "municipio_normalizado": "JAGUARUANA",
+      "codigo_ibge": "2307007",
+      "populacao_estimada": 33115,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Jardim",
+      "municipio_normalizado": "JARDIM",
+      "codigo_ibge": "2307106",
+      "populacao_estimada": 28801,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Jati",
+      "municipio_normalizado": "JATI",
+      "codigo_ibge": "2307205",
+      "populacao_estimada": 8114,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Jijoca de Jericoacoara",
+      "municipio_normalizado": "JIJOCA DE JERICOACOARA",
+      "codigo_ibge": "2307254",
+      "populacao_estimada": 28198,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Juazeiro do Norte",
+      "municipio_normalizado": "JUAZEIRO DO NORTE",
+      "codigo_ibge": "2307304",
+      "populacao_estimada": 305531,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Jucás",
+      "municipio_normalizado": "JUCAS",
+      "codigo_ibge": "2307403",
+      "populacao_estimada": 24624,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Lavras da Mangabeira",
+      "municipio_normalizado": "LAVRAS DA MANGABEIRA",
+      "codigo_ibge": "2307502",
+      "populacao_estimada": 32163,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Limoeiro do Norte",
+      "municipio_normalizado": "LIMOEIRO DO NORTE",
+      "codigo_ibge": "2307601",
+      "populacao_estimada": 62623,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Madalena",
+      "municipio_normalizado": "MADALENA",
+      "codigo_ibge": "2307635",
+      "populacao_estimada": 17235,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Maracanaú",
+      "municipio_normalizado": "MARACANAU",
+      "codigo_ibge": "2307650",
+      "populacao_estimada": 251613,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Maranguape",
+      "municipio_normalizado": "MARANGUAPE",
+      "codigo_ibge": "2307700",
+      "populacao_estimada": 108622,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Marco",
+      "municipio_normalizado": "MARCO",
+      "codigo_ibge": "2307809",
+      "populacao_estimada": 27177,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Martinópole",
+      "municipio_normalizado": "MARTINOPOLE",
+      "codigo_ibge": "2307908",
+      "populacao_estimada": 11280,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Massapê",
+      "municipio_normalizado": "MASSAPE",
+      "codigo_ibge": "2308005",
+      "populacao_estimada": 39840,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Mauriti",
+      "municipio_normalizado": "MAURITI",
+      "codigo_ibge": "2308104",
+      "populacao_estimada": 47501,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Meruoca",
+      "municipio_normalizado": "MERUOCA",
+      "codigo_ibge": "2308203",
+      "populacao_estimada": 15853,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Milagres",
+      "municipio_normalizado": "MILAGRES",
+      "codigo_ibge": "2308302",
+      "populacao_estimada": 26819,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Milhã",
+      "municipio_normalizado": "MILHA",
+      "codigo_ibge": "2308351",
+      "populacao_estimada": 14713,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Miraíma",
+      "municipio_normalizado": "MIRAIMA",
+      "codigo_ibge": "2308377",
+      "populacao_estimada": 14826,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Missão Velha",
+      "municipio_normalizado": "MISSAO VELHA",
+      "codigo_ibge": "2308401",
+      "populacao_estimada": 38997,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Mombaça",
+      "municipio_normalizado": "MOMBACA",
+      "codigo_ibge": "2308500",
+      "populacao_estimada": 38451,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Monsenhor Tabosa",
+      "municipio_normalizado": "MONSENHOR TABOSA",
+      "codigo_ibge": "2308609",
+      "populacao_estimada": 17705,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Morada Nova",
+      "municipio_normalizado": "MORADA NOVA",
+      "codigo_ibge": "2308708",
+      "populacao_estimada": 65390,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Moraújo",
+      "municipio_normalizado": "MORAUJO",
+      "codigo_ibge": "2308807",
+      "populacao_estimada": 8537,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Morrinhos",
+      "municipio_normalizado": "MORRINHOS",
+      "codigo_ibge": "2308906",
+      "populacao_estimada": 23747,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Mucambo",
+      "municipio_normalizado": "MUCAMBO",
+      "codigo_ibge": "2309003",
+      "populacao_estimada": 13999,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Mulungu",
+      "municipio_normalizado": "MULUNGU",
+      "codigo_ibge": "2309102",
+      "populacao_estimada": 11064,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Nova Olinda",
+      "municipio_normalizado": "NOVA OLINDA",
+      "codigo_ibge": "2309201",
+      "populacao_estimada": 16045,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Nova Russas",
+      "municipio_normalizado": "NOVA RUSSAS",
+      "codigo_ibge": "2309300",
+      "populacao_estimada": 32053,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Novo Oriente",
+      "municipio_normalizado": "NOVO ORIENTE",
+      "codigo_ibge": "2309409",
+      "populacao_estimada": 29097,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Ocara",
+      "municipio_normalizado": "OCARA",
+      "codigo_ibge": "2309458",
+      "populacao_estimada": 25272,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Orós",
+      "municipio_normalizado": "OROS",
+      "codigo_ibge": "2309508",
+      "populacao_estimada": 19943,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Pacajus",
+      "municipio_normalizado": "PACAJUS",
+      "codigo_ibge": "2309607",
+      "populacao_estimada": 75454,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Pacatuba",
+      "municipio_normalizado": "PACATUBA",
+      "codigo_ibge": "2309706",
+      "populacao_estimada": 86564,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Pacoti",
+      "municipio_normalizado": "PACOTI",
+      "codigo_ibge": "2309805",
+      "populacao_estimada": 11421,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Pacujá",
+      "municipio_normalizado": "PACUJA",
+      "codigo_ibge": "2309904",
+      "populacao_estimada": 6348,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Palhano",
+      "municipio_normalizado": "PALHANO",
+      "codigo_ibge": "2310001",
+      "populacao_estimada": 9709,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Palmácia",
+      "municipio_normalizado": "PALMACIA",
+      "codigo_ibge": "2310100",
+      "populacao_estimada": 10252,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Paracuru",
+      "municipio_normalizado": "PARACURU",
+      "codigo_ibge": "2310209",
+      "populacao_estimada": 41894,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Paraipaba",
+      "municipio_normalizado": "PARAIPABA",
+      "codigo_ibge": "2310258",
+      "populacao_estimada": 34086,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Parambu",
+      "municipio_normalizado": "PARAMBU",
+      "codigo_ibge": "2310308",
+      "populacao_estimada": 32867,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Paramoti",
+      "municipio_normalizado": "PARAMOTI",
+      "codigo_ibge": "2310407",
+      "populacao_estimada": 10462,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Pedra Branca",
+      "municipio_normalizado": "PEDRA BRANCA",
+      "codigo_ibge": "2310506",
+      "populacao_estimada": 42227,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Penaforte",
+      "municipio_normalizado": "PENAFORTE",
+      "codigo_ibge": "2310605",
+      "populacao_estimada": 9357,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Pentecoste",
+      "municipio_normalizado": "PENTECOSTE",
+      "codigo_ibge": "2310704",
+      "populacao_estimada": 39903,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Pereiro",
+      "municipio_normalizado": "PEREIRO",
+      "codigo_ibge": "2310803",
+      "populacao_estimada": 15858,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Pindoretama",
+      "municipio_normalizado": "PINDORETAMA",
+      "codigo_ibge": "2310852",
+      "populacao_estimada": 24919,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Piquet Carneiro",
+      "municipio_normalizado": "PIQUET CARNEIRO",
+      "codigo_ibge": "2310902",
+      "populacao_estimada": 17285,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Pires Ferreira",
+      "municipio_normalizado": "PIRES FERREIRA",
+      "codigo_ibge": "2310951",
+      "populacao_estimada": 10984,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Poranga",
+      "municipio_normalizado": "PORANGA",
+      "codigo_ibge": "2311009",
+      "populacao_estimada": 12441,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Porteiras",
+      "municipio_normalizado": "PORTEIRAS",
+      "codigo_ibge": "2311108",
+      "populacao_estimada": 17877,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Potengi",
+      "municipio_normalizado": "POTENGI",
+      "codigo_ibge": "2311207",
+      "populacao_estimada": 8854,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Potiretama",
+      "municipio_normalizado": "POTIRETAMA",
+      "codigo_ibge": "2311231",
+      "populacao_estimada": 6128,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Quiterianópolis",
+      "municipio_normalizado": "QUITERIANOPOLIS",
+      "codigo_ibge": "2311264",
+      "populacao_estimada": 20545,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Quixadá",
+      "municipio_normalizado": "QUIXADA",
+      "codigo_ibge": "2311306",
+      "populacao_estimada": 88846,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Quixelô",
+      "municipio_normalizado": "QUIXELO",
+      "codigo_ibge": "2311355",
+      "populacao_estimada": 16998,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Quixeramobim",
+      "municipio_normalizado": "QUIXERAMOBIM",
+      "codigo_ibge": "2311405",
+      "populacao_estimada": 86431,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Quixeré",
+      "municipio_normalizado": "QUIXERE",
+      "codigo_ibge": "2311504",
+      "populacao_estimada": 21659,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Redenção",
+      "municipio_normalizado": "REDENCAO",
+      "codigo_ibge": "2311603",
+      "populacao_estimada": 28382,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Reriutaba",
+      "municipio_normalizado": "RERIUTABA",
+      "codigo_ibge": "2311702",
+      "populacao_estimada": 19051,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Russas",
+      "municipio_normalizado": "RUSSAS",
+      "codigo_ibge": "2311801",
+      "populacao_estimada": 74834,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Saboeiro",
+      "municipio_normalizado": "SABOEIRO",
+      "codigo_ibge": "2311900",
+      "populacao_estimada": 13943,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Salitre",
+      "municipio_normalizado": "SALITRE",
+      "codigo_ibge": "2311959",
+      "populacao_estimada": 17303,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Santa Quitéria",
+      "municipio_normalizado": "SANTA QUITERIA",
+      "codigo_ibge": "2312205",
+      "populacao_estimada": 41569,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Santana do Acaraú",
+      "municipio_normalizado": "SANTANA DO ACARAU",
+      "codigo_ibge": "2312007",
+      "populacao_estimada": 32133,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Santana do Cariri",
+      "municipio_normalizado": "SANTANA DO CARIRI",
+      "codigo_ibge": "2312106",
+      "populacao_estimada": 17391,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Senador Pompeu",
+      "municipio_normalizado": "SENADOR POMPEU",
+      "codigo_ibge": "2312700",
+      "populacao_estimada": 25108,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Senador Sá",
+      "municipio_normalizado": "SENADOR SA",
+      "codigo_ibge": "2312809",
+      "populacao_estimada": 7551,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Sobral",
+      "municipio_normalizado": "SOBRAL",
+      "codigo_ibge": "2312908",
+      "populacao_estimada": 216519,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Solonópole",
+      "municipio_normalizado": "SOLONOPOLE",
+      "codigo_ibge": "2313005",
+      "populacao_estimada": 18785,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "São Benedito",
+      "municipio_normalizado": "SAO BENEDITO",
+      "codigo_ibge": "2312304",
+      "populacao_estimada": 50058,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "São Gonçalo do Amarante",
+      "municipio_normalizado": "SAO GONCALO DO AMARANTE",
+      "codigo_ibge": "2312403",
+      "populacao_estimada": 58191,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "São João do Jaguaribe",
+      "municipio_normalizado": "SAO JOAO DO JAGUARIBE",
+      "codigo_ibge": "2312502",
+      "populacao_estimada": 5683,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "São Luís do Curu",
+      "municipio_normalizado": "SAO LUIS DO CURU",
+      "codigo_ibge": "2312601",
+      "populacao_estimada": 10888,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Tabuleiro do Norte",
+      "municipio_normalizado": "TABULEIRO DO NORTE",
+      "codigo_ibge": "2313104",
+      "populacao_estimada": 32122,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Tamboril",
+      "municipio_normalizado": "TAMBORIL",
+      "codigo_ibge": "2313203",
+      "populacao_estimada": 25287,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Tarrafas",
+      "municipio_normalizado": "TARRAFAS",
+      "codigo_ibge": "2313252",
+      "populacao_estimada": 7574,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Tauá",
+      "municipio_normalizado": "TAUA",
+      "codigo_ibge": "2313302",
+      "populacao_estimada": 64655,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Tejuçuoca",
+      "municipio_normalizado": "TEJUCUOCA",
+      "codigo_ibge": "2313351",
+      "populacao_estimada": 17646,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Tianguá",
+      "municipio_normalizado": "TIANGUA",
+      "codigo_ibge": "2313401",
+      "populacao_estimada": 86968,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Trairi",
+      "municipio_normalizado": "TRAIRI",
+      "codigo_ibge": "2313500",
+      "populacao_estimada": 62004,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Tururu",
+      "municipio_normalizado": "TURURU",
+      "codigo_ibge": "2313559",
+      "populacao_estimada": 15524,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Ubajara",
+      "municipio_normalizado": "UBAJARA",
+      "codigo_ibge": "2313609",
+      "populacao_estimada": 34424,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Umari",
+      "municipio_normalizado": "UMARI",
+      "codigo_ibge": "2313708",
+      "populacao_estimada": 6963,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Umirim",
+      "municipio_normalizado": "UMIRIM",
+      "codigo_ibge": "2313757",
+      "populacao_estimada": 17751,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Uruburetama",
+      "municipio_normalizado": "URUBURETAMA",
+      "codigo_ibge": "2313807",
+      "populacao_estimada": 21331,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Uruoca",
+      "municipio_normalizado": "URUOCA",
+      "codigo_ibge": "2313906",
+      "populacao_estimada": 14308,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Varjota",
+      "municipio_normalizado": "VARJOTA",
+      "codigo_ibge": "2313955",
+      "populacao_estimada": 18708,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Viçosa do Ceará",
+      "municipio_normalizado": "VICOSA DO CEARA",
+      "codigo_ibge": "2314102",
+      "populacao_estimada": 62972,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    },
+    {
+      "municipio": "Várzea Alegre",
+      "municipio_normalizado": "VARZEA ALEGRE",
+      "codigo_ibge": "2314003",
+      "populacao_estimada": 40878,
+      "ano_referencia": 2025,
+      "data_referencia": "2025-07-01",
+      "fonte_api": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/2025?formato=json",
+      "fonte_noticia": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44305-populacao-estimada-do-pais-chega-a-213-4-milhoes-de-habitantes-em-2025"
+    }
+  ]
+}
