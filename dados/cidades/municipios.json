@@ -1,0 +1,506 @@
+[
+    {
+      "nome": "Acaraú",
+      "id_municipio": 622,
+      "latitude": -2.887689,
+      "longitude": -40.118306
+    },
+    {
+      "nome": "Acopiara",
+      "id_municipio": 623,
+      "latitude": -6.089114,
+      "longitude": -39.448042
+    },
+    {
+      "nome": "Amontada",
+      "id_municipio": 629,
+      "latitude": -3.360166,
+      "longitude": -39.830743
+    },
+    {
+      "nome": "Aquiraz",
+      "id_municipio": 631,
+      "latitude": -3.899293,
+      "longitude": -38.389563
+    },
+    {
+      "nome": "Aracati",
+      "id_municipio": 632,
+      "latitude": -4.558259,
+      "longitude": -37.767894
+    },
+    {
+      "nome": "Aracoiaba",
+      "id_municipio": 633,
+      "latitude": -4.371805,
+      "longitude": -38.812471
+    },
+    {
+      "nome": "Aurora",
+      "id_municipio": 638,
+      "latitude": -6.942651,
+      "longitude": -38.967633
+    },
+    {
+      "nome": "Barbalha",
+      "id_municipio": 641,
+      "latitude": -7.311391,
+      "longitude": -39.302506
+    },
+    {
+      "nome": "Baturité",
+      "id_municipio": 646,
+      "latitude": -4.328526,
+      "longitude": -38.884358
+    },
+    {
+      "nome": "Beberibe",
+      "id_municipio": 647,
+      "latitude": -4.177415,
+      "longitude": -38.127075
+    },
+    {
+      "nome": "Bela Cruz",
+      "id_municipio": 648,
+      "latitude": -3.050514,
+      "longitude": -40.167126
+    },
+    {
+      "nome": "Boa Viagem",
+      "id_municipio": 649,
+      "latitude": -5.122413,
+      "longitude": -39.732217
+    },
+    {
+      "nome": "Brejo Santo",
+      "id_municipio": 651,
+      "latitude": -7.493608,
+      "longitude": -38.986519
+    },
+    {
+      "nome": "Camocim",
+      "id_municipio": 655,
+      "latitude": -2.900501,
+      "longitude": -40.841281
+    },
+    {
+      "nome": "Campos Sales",
+      "id_municipio": 656,
+      "latitude": -7.074116,
+      "longitude": -40.376407
+    },
+    {
+      "nome": "Canindé",
+      "id_municipio": 657,
+      "latitude": -4.358796,
+      "longitude": -39.311762
+    },
+    {
+      "nome": "Caririaçu",
+      "id_municipio": 658,
+      "latitude": -7.042029,
+      "longitude": -39.28423
+    },
+    {
+      "nome": "Cascavel",
+      "id_municipio": 660,
+      "latitude": -4.129666,
+      "longitude": -38.241178
+    },
+    {
+      "nome": "Caucaia",
+      "id_municipio": 663,
+      "latitude": -3.727966,
+      "longitude": -38.661931
+    },
+    {
+      "nome": "Cedro",
+      "id_municipio": 662,
+      "latitude": -6.600049,
+      "longitude": -39.06087
+    },
+    {
+      "nome": "Chorozinho",
+      "id_municipio": 667,
+      "latitude": -4.28873,
+      "longitude": -38.498572
+    },
+    {
+      "nome": "Crateús",
+      "id_municipio": 668,
+      "latitude": -5.176437,
+      "longitude": -40.677893
+    },
+    {
+      "nome": "Crato",
+      "id_municipio": 669,
+      "latitude": -7.23114,
+      "longitude": -39.41071
+    },
+    {
+      "nome": "Cruz",
+      "id_municipio": 670,
+      "latitude": -2.918137,
+      "longitude": -40.17514
+    },
+    {
+      "nome": "Eusébio",
+      "id_municipio": 675,
+      "latitude": -3.892501,
+      "longitude": -38.455875
+    },
+    {
+      "nome": "Forquilha",
+      "id_municipio": 681,
+      "latitude": -3.799445,
+      "longitude": -40.263733
+    },
+    {
+      "nome": "Granja",
+      "id_municipio": 684,
+      "latitude": -3.120289,
+      "longitude": -40.826804
+    },
+    {
+      "nome": "Guaiúba",
+      "id_municipio": 686,
+      "latitude": -4.040571,
+      "longitude": -38.640372
+    },
+    {
+      "nome": "Guaraciaba do Norte",
+      "id_municipio": 685,
+      "latitude": -4.166942,
+      "longitude": -40.747498
+    },
+    {
+      "nome": "Horizonte",
+      "id_municipio": 690,
+      "latitude": -4.120896,
+      "longitude": -38.470674
+    },
+    {
+      "nome": "Ibiapina",
+      "id_municipio": 691,
+      "latitude": -3.924003,
+      "longitude": -40.889523
+    },
+    {
+      "nome": "Icapuí",
+      "id_municipio": 692,
+      "latitude": -4.712783,
+      "longitude": -37.355437
+    },
+    {
+      "nome": "Icó",
+      "id_municipio": 694,
+      "latitude": -6.405281,
+      "longitude": -38.861938
+    },
+    {
+      "nome": "Iguatu",
+      "id_municipio": 693,
+      "latitude": -6.362805,
+      "longitude": -39.298236
+    },
+    {
+      "nome": "Independência",
+      "id_municipio": 695,
+      "latitude": -5.3963,
+      "longitude": -40.308586
+    },
+    {
+      "nome": "Ipu",
+      "id_municipio": 700,
+      "latitude": -4.322958,
+      "longitude": -40.710903
+    },
+    {
+      "nome": "Ipueiras",
+      "id_municipio": 701,
+      "latitude": -4.541938,
+      "longitude": -40.718247
+    },
+    {
+      "nome": "Itaitinga",
+      "id_municipio": 705,
+      "latitude": -3.965768,
+      "longitude": -38.529763
+    },
+    {
+      "nome": "Itapajé",
+      "id_municipio": 706,
+      "latitude": -3.68444,
+      "longitude": -39.585194
+    },
+    {
+      "nome": "Itapipoca",
+      "id_municipio": 707,
+      "latitude": -3.499333,
+      "longitude": -39.583645
+    },
+    {
+      "nome": "Itarema",
+      "id_municipio": 708,
+      "latitude": -2.924804,
+      "longitude": -39.916417
+    },
+    {
+      "nome": "Jaguaribe",
+      "id_municipio": 713,
+      "latitude": -5.902134,
+      "longitude": -38.622653
+    },
+    {
+      "nome": "Jaguaruana",
+      "id_municipio": 714,
+      "latitude": -4.831508,
+      "longitude": -37.780997
+    },
+    {
+      "nome": "Jardim",
+      "id_municipio": 715,
+      "latitude": -7.586786,
+      "longitude": -39.280878
+    },
+    {
+      "nome": "Juazeiro do Norte",
+      "id_municipio": 716,
+      "latitude": -7.213068,
+      "longitude": -39.315173
+    },
+    {
+      "nome": "Lavras da Mangabeira",
+      "id_municipio": 718,
+      "latitude": -6.753622,
+      "longitude": -38.970991
+    },
+    {
+      "nome": "Limoeiro do Norte",
+      "id_municipio": 721,
+      "latitude": -5.143921,
+      "longitude": -38.084693
+    },
+    {
+      "nome": "Maracanaú",
+      "id_municipio": 723,
+      "latitude": -3.86699,
+      "longitude": -38.625901
+    },
+    {
+      "nome": "Maranguape",
+      "id_municipio": 724,
+      "latitude": -3.891432,
+      "longitude": -38.682911
+    },
+    {
+      "nome": "Marco",
+      "id_municipio": 722,
+      "latitude": -3.123902,
+      "longitude": -40.146398
+    },
+    {
+      "nome": "Massapê",
+      "id_municipio": 727,
+      "latitude": -3.522294,
+      "longitude": -40.341098
+    },
+    {
+      "nome": "Mauriti",
+      "id_municipio": 728,
+      "latitude": -7.385697,
+      "longitude": -38.773867
+    },
+    {
+      "nome": "Milagres",
+      "id_municipio": 732,
+      "latitude": -7.305949,
+      "longitude": -38.937858
+    },
+    {
+      "nome": "Missão Velha",
+      "id_municipio": 733,
+      "latitude": -7.244638,
+      "longitude": -39.143057
+    },
+    {
+      "nome": "Mombaça",
+      "id_municipio": 734,
+      "latitude": -5.738445,
+      "longitude": -39.63065
+    },
+    {
+      "nome": "Morada Nova",
+      "id_municipio": 736,
+      "latitude": -5.09736,
+      "longitude": -38.370158
+    },
+    {
+      "nome": "Nova Russas",
+      "id_municipio": 740,
+      "latitude": -4.705687,
+      "longitude": -40.562136
+    },
+    {
+      "nome": "Novo Oriente",
+      "id_municipio": 741,
+      "latitude": -5.534036,
+      "longitude": -40.771316
+    },
+    {
+      "nome": "Ocara",
+      "id_municipio": 744,
+      "latitude": -4.490135,
+      "longitude": -38.596978
+    },
+    {
+      "nome": "Pacajus",
+      "id_municipio": 746,
+      "latitude": -4.171073,
+      "longitude": -38.464988
+    },
+    {
+      "nome": "Pacatuba",
+      "id_municipio": 747,
+      "latitude": -3.978396,
+      "longitude": -38.618296
+    },
+    {
+      "nome": "Paracuru",
+      "id_municipio": 752,
+      "latitude": -3.41436,
+      "longitude": -39.030028
+    },
+    {
+      "nome": "Paraipaba",
+      "id_municipio": 753,
+      "latitude": -3.437987,
+      "longitude": -39.147868
+    },
+    {
+      "nome": "Parambu",
+      "id_municipio": 754,
+      "latitude": -6.211784,
+      "longitude": -40.694871
+    },
+    {
+      "nome": "Pedra Branca",
+      "id_municipio": 758,
+      "latitude": -5.454334,
+      "longitude": -39.715165
+    },
+    {
+      "nome": "Pentecoste",
+      "id_municipio": 760,
+      "latitude": -3.792745,
+      "longitude": -39.269229
+    },
+    {
+      "nome": "Quixadá",
+      "id_municipio": 768,
+      "latitude": -4.966301,
+      "longitude": -39.015474
+    },
+    {
+      "nome": "Quixeramobim",
+      "id_municipio": 770,
+      "latitude": -5.190672,
+      "longitude": -39.288947
+    },
+    {
+      "nome": "Redenção",
+      "id_municipio": 772,
+      "latitude": -4.215873,
+      "longitude": -38.727719
+    },
+    {
+      "nome": "Russas",
+      "id_municipio": 774,
+      "latitude": -4.926727,
+      "longitude": -37.972086
+    },
+    {
+      "nome": "Santa Quitéria",
+      "id_municipio": 779,
+      "latitude": -4.326081,
+      "longitude": -40.152305
+    },
+    {
+      "nome": "Santana do Acaraú",
+      "id_municipio": 777,
+      "latitude": -3.461435,
+      "longitude": -40.211827
+    },
+    {
+      "nome": "Senador Pompeu",
+      "id_municipio": 784,
+      "latitude": -5.582444,
+      "longitude": -39.370369
+    },
+    {
+      "nome": "Sobral",
+      "id_municipio": 786,
+      "latitude": -3.689133,
+      "longitude": -40.34821
+    },
+    {
+      "nome": "São Benedito",
+      "id_municipio": 780,
+      "latitude": -4.047131,
+      "longitude": -40.859572
+    },
+    {
+      "nome": "São Gonçalo do Amarante",
+      "id_municipio": 781,
+      "latitude": -3.605149,
+      "longitude": -38.972646
+    },
+    {
+      "nome": "Tabuleiro do Norte",
+      "id_municipio": 788,
+      "latitude": -5.243527,
+      "longitude": -38.128175
+    },
+    {
+      "nome": "Tamboril",
+      "id_municipio": 789,
+      "latitude": -4.831364,
+      "longitude": -40.319593
+    },
+    {
+      "nome": "Tauá",
+      "id_municipio": 791,
+      "latitude": -5.985853,
+      "longitude": -40.296802
+    },
+    {
+      "nome": "Tianguá",
+      "id_municipio": 793,
+      "latitude": -3.729645,
+      "longitude": -40.992286
+    },
+    {
+      "nome": "Trairi",
+      "id_municipio": 794,
+      "latitude": -3.269323,
+      "longitude": -39.268126
+    },
+    {
+      "nome": "Ubajara",
+      "id_municipio": 796,
+      "latitude": -3.854479,
+      "longitude": -40.920437
+    },
+    {
+      "nome": "Viçosa do Ceará",
+      "id_municipio": 803,
+      "latitude": -3.566703,
+      "longitude": -41.091554
+    },
+    {
+      "nome": "Várzea Alegre",
+      "id_municipio": 802,
+      "latitude": -6.782642,
+      "longitude": -39.294155
+    }
+  ]

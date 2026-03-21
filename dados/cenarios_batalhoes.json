@@ -1,0 +1,95 @@
+{
+  "metadata": {
+    "descricao": "Cenários operacionais para avaliação da redistribuição territorial com distância rodoviária real via OSRM.",
+    "fonte_base": "index.html::distribuicaoOficialAtual"
+  },
+  "batalhoes_fixos_obrigatorios": [
+    "Caucaia",
+    "Russas",
+    "Sobral",
+    "Juazeiro do Norte"
+  ],
+  "batalhoes_promovidos_obrigatorios": [
+    "Quixadá",
+    "Itapipoca",
+    "Crateús"
+  ],
+  "cenarios": {
+    "cenario_atual": {
+      "id": "cenario_atual",
+      "titulo": "Cenário Atual",
+      "descricao": "Base atual preservada para comparação operacional.",
+      "modo_alocacao": "baseline_atual",
+      "batalhoes_ativos": [
+        "Caucaia",
+        "Russas",
+        "Sobral",
+        "Juazeiro do Norte"
+      ],
+      "batalhoes_fixos": [
+        "Caucaia",
+        "Russas",
+        "Sobral",
+        "Juazeiro do Norte"
+      ],
+      "batalhoes_promovidos": [],
+      "batalhao_metropolitano_escolhido": null
+    },
+    "cenario_eusebio": {
+      "id": "cenario_eusebio",
+      "titulo": "Cenário com Batalhão em Eusébio",
+      "descricao": "Cria novo batalhão metropolitano em Eusébio, mantendo batalhões fixos e promovidos obrigatórios.",
+      "modo_alocacao": "otimizado_rodoviario",
+      "batalhoes_ativos": [
+        "Caucaia",
+        "Russas",
+        "Sobral",
+        "Juazeiro do Norte",
+        "Quixadá",
+        "Itapipoca",
+        "Crateús",
+        "Eusébio"
+      ],
+      "batalhoes_fixos": [
+        "Caucaia",
+        "Russas",
+        "Sobral",
+        "Juazeiro do Norte"
+      ],
+      "batalhoes_promovidos": [
+        "Quixadá",
+        "Itapipoca",
+        "Crateús"
+      ],
+      "batalhao_metropolitano_escolhido": "Eusébio"
+    },
+    "cenario_horizonte": {
+      "id": "cenario_horizonte",
+      "titulo": "Cenário com Batalhão em Horizonte",
+      "descricao": "Cria novo batalhão metropolitano em Horizonte, mantendo batalhões fixos e promovidos obrigatórios.",
+      "modo_alocacao": "otimizado_rodoviario",
+      "batalhoes_ativos": [
+        "Caucaia",
+        "Russas",
+        "Sobral",
+        "Juazeiro do Norte",
+        "Quixadá",
+        "Itapipoca",
+        "Crateús",
+        "Horizonte"
+      ],
+      "batalhoes_fixos": [
+        "Caucaia",
+        "Russas",
+        "Sobral",
+        "Juazeiro do Norte"
+      ],
+      "batalhoes_promovidos": [
+        "Quixadá",
+        "Itapipoca",
+        "Crateús"
+      ],
+      "batalhao_metropolitano_escolhido": "Horizonte"
+    }
+  }
+}

@@ -1,0 +1,605 @@
+{
+  "fonte_coordenadas": "latitude-longitude-cidades.csv (alanwillms/geoinfo)",
+  "uf": "CE",
+  "bpraios": [
+    {
+      "nome": "2º BPRAIO",
+      "sede": {
+        "nome": "Caucaia",
+        "latitude": -3.727966,
+        "longitude": -38.661931,
+        "id_municipio": 663
+      },
+      "companhias": [
+        {
+          "nome": "Caucaia",
+          "tipo": "COMPANHIA",
+          "latitude": -3.727966,
+          "longitude": -38.661931,
+          "id_municipio": 663,
+          "pelotoes": [
+            {
+              "nome": "São Gonçalo do Amarante",
+              "latitude": -3.605149,
+              "longitude": -38.972646,
+              "id_municipio": 781
+            },
+            {
+              "nome": "Trairi",
+              "latitude": -3.269323,
+              "longitude": -39.268126,
+              "id_municipio": 794
+            },
+            {
+              "nome": "Paracuru",
+              "latitude": -3.41436,
+              "longitude": -39.030028,
+              "id_municipio": 752
+            },
+            {
+              "nome": "Paraipaba",
+              "latitude": -3.437987,
+              "longitude": -39.147868,
+              "id_municipio": 753
+            }
+          ]
+        },
+        {
+          "nome": "Maracanaú",
+          "tipo": "COMPANHIA",
+          "latitude": -3.86699,
+          "longitude": -38.625901,
+          "id_municipio": 723,
+          "pelotoes": [
+            {
+              "nome": "Maranguape",
+              "latitude": -3.891432,
+              "longitude": -38.682911,
+              "id_municipio": 724
+            },
+            {
+              "nome": "Pacatuba",
+              "latitude": -3.978396,
+              "longitude": -38.618296,
+              "id_municipio": 747
+            },
+            {
+              "nome": "Guaiúba",
+              "latitude": -4.040571,
+              "longitude": -38.640372,
+              "id_municipio": 686
+            }
+          ]
+        },
+        {
+          "nome": "Eusébio",
+          "tipo": "COMPANHIA",
+          "latitude": -3.892501,
+          "longitude": -38.455875,
+          "id_municipio": 675,
+          "pelotoes": [
+            {
+              "nome": "Aquiraz",
+              "latitude": -3.899293,
+              "longitude": -38.389563,
+              "id_municipio": 631
+            },
+            {
+              "nome": "Cascavel",
+              "latitude": -4.129666,
+              "longitude": -38.241178,
+              "id_municipio": 660
+            }
+          ]
+        },
+        {
+          "nome": "Horizonte",
+          "tipo": "COMPANHIA",
+          "latitude": -4.120896,
+          "longitude": -38.470674,
+          "id_municipio": 690,
+          "pelotoes": [
+            {
+              "nome": "Pacajus",
+              "latitude": -4.171073,
+              "longitude": -38.464988,
+              "id_municipio": 746
+            },
+            {
+              "nome": "Itaitinga",
+              "latitude": -3.965768,
+              "longitude": -38.529763,
+              "id_municipio": 705
+            },
+            {
+              "nome": "Chorozinho",
+              "latitude": -4.28873,
+              "longitude": -38.498572,
+              "id_municipio": 667
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nome": "3º BPRAIO",
+      "sede": {
+        "nome": "Russas",
+        "latitude": -4.926727,
+        "longitude": -37.972086,
+        "id_municipio": 774
+      },
+      "companhias": [
+        {
+          "nome": "Russas",
+          "tipo": "COMPANHIA",
+          "latitude": -4.926727,
+          "longitude": -37.972086,
+          "id_municipio": 774,
+          "pelotoes": [
+            {
+              "nome": "Limoeiro do Norte",
+              "latitude": -5.143921,
+              "longitude": -38.084693,
+              "id_municipio": 721
+            },
+            {
+              "nome": "Morada Nova",
+              "latitude": -5.09736,
+              "longitude": -38.370158,
+              "id_municipio": 736
+            },
+            {
+              "nome": "Jaguaribe",
+              "latitude": -5.902134,
+              "longitude": -38.622653,
+              "id_municipio": 713
+            },
+            {
+              "nome": "Tabuleiro do Norte",
+              "latitude": -5.243527,
+              "longitude": -38.128175,
+              "id_municipio": 788
+            }
+          ]
+        },
+        {
+          "nome": "Aracati",
+          "tipo": "COMPANHIA",
+          "latitude": -4.558259,
+          "longitude": -37.767894,
+          "id_municipio": 632,
+          "pelotoes": [
+            {
+              "nome": "Beberibe",
+              "latitude": -4.177415,
+              "longitude": -38.127075,
+              "id_municipio": 647
+            },
+            {
+              "nome": "Jaguaruana",
+              "latitude": -4.831508,
+              "longitude": -37.780997,
+              "id_municipio": 714
+            },
+            {
+              "nome": "Icapuí",
+              "latitude": -4.712783,
+              "longitude": -37.355437,
+              "id_municipio": 692
+            }
+          ]
+        },
+        {
+          "nome": "Quixadá",
+          "tipo": "CIA_INDEPENDENTE",
+          "latitude": -4.966301,
+          "longitude": -39.015474,
+          "id_municipio": 768,
+          "pelotoes": [
+            {
+              "nome": "Quixeramobim",
+              "latitude": -5.190672,
+              "longitude": -39.288947,
+              "id_municipio": 770
+            },
+            {
+              "nome": "Baturité",
+              "latitude": -4.328526,
+              "longitude": -38.884358,
+              "id_municipio": 646
+            },
+            {
+              "nome": "Boa Viagem",
+              "latitude": -5.122413,
+              "longitude": -39.732217,
+              "id_municipio": 649
+            },
+            {
+              "nome": "Pedra Branca",
+              "latitude": -5.454334,
+              "longitude": -39.715165,
+              "id_municipio": 758
+            },
+            {
+              "nome": "Ocara",
+              "latitude": -4.490135,
+              "longitude": -38.596978,
+              "id_municipio": 744
+            },
+            {
+              "nome": "Aracoiaba",
+              "latitude": -4.371805,
+              "longitude": -38.812471,
+              "id_municipio": 633
+            },
+            {
+              "nome": "Redenção",
+              "latitude": -4.215873,
+              "longitude": -38.727719,
+              "id_municipio": 772
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nome": "4º BPRAIO",
+      "sede": {
+        "nome": "Sobral",
+        "latitude": -3.689133,
+        "longitude": -40.34821,
+        "id_municipio": 786
+      },
+      "companhias": [
+        {
+          "nome": "Sobral",
+          "tipo": "COMPANHIA",
+          "latitude": -3.689133,
+          "longitude": -40.34821,
+          "id_municipio": 786,
+          "pelotoes": [
+            {
+              "nome": "Massapê",
+              "latitude": -3.522294,
+              "longitude": -40.341098,
+              "id_municipio": 727
+            },
+            {
+              "nome": "Santana do Acaraú",
+              "latitude": -3.461435,
+              "longitude": -40.211827,
+              "id_municipio": 777
+            },
+            {
+              "nome": "Forquilha",
+              "latitude": -3.799445,
+              "longitude": -40.263733,
+              "id_municipio": 681
+            }
+          ]
+        },
+        {
+          "nome": "Tianguá",
+          "tipo": "COMPANHIA",
+          "latitude": -3.729645,
+          "longitude": -40.992286,
+          "id_municipio": 793,
+          "pelotoes": [
+            {
+              "nome": "Viçosa do Ceará",
+              "latitude": -3.566703,
+              "longitude": -41.091554,
+              "id_municipio": 803
+            },
+            {
+              "nome": "São Benedito",
+              "latitude": -4.047131,
+              "longitude": -40.859572,
+              "id_municipio": 780
+            },
+            {
+              "nome": "Guaraciaba do Norte",
+              "latitude": -4.166942,
+              "longitude": -40.747498,
+              "id_municipio": 685
+            },
+            {
+              "nome": "Ipu",
+              "latitude": -4.322958,
+              "longitude": -40.710903,
+              "id_municipio": 700
+            },
+            {
+              "nome": "Ubajara",
+              "latitude": -3.854479,
+              "longitude": -40.920437,
+              "id_municipio": 796
+            },
+            {
+              "nome": "Ibiapina",
+              "latitude": -3.924003,
+              "longitude": -40.889523,
+              "id_municipio": 691
+            }
+          ]
+        },
+        {
+          "nome": "Canindé",
+          "tipo": "COMPANHIA",
+          "latitude": -4.358796,
+          "longitude": -39.311762,
+          "id_municipio": 657,
+          "pelotoes": [
+            {
+              "nome": "Santa Quitéria",
+              "latitude": -4.326081,
+              "longitude": -40.152305,
+              "id_municipio": 779
+            }
+          ]
+        },
+        {
+          "nome": "Camocim",
+          "tipo": "COMPANHIA",
+          "latitude": -2.900501,
+          "longitude": -40.841281,
+          "id_municipio": 655,
+          "pelotoes": [
+            {
+              "nome": "Granja",
+              "latitude": -3.120289,
+              "longitude": -40.826804,
+              "id_municipio": 684
+            },
+            {
+              "nome": "Bela Cruz",
+              "latitude": -3.050514,
+              "longitude": -40.167126,
+              "id_municipio": 648
+            },
+            {
+              "nome": "Marco",
+              "latitude": -3.123902,
+              "longitude": -40.146398,
+              "id_municipio": 722
+            },
+            {
+              "nome": "Cruz",
+              "latitude": -2.918137,
+              "longitude": -40.17514,
+              "id_municipio": 670
+            }
+          ]
+        },
+        {
+          "nome": "Itapipoca",
+          "tipo": "CIA_INDEPENDENTE",
+          "latitude": -3.499333,
+          "longitude": -39.583645,
+          "id_municipio": 707,
+          "pelotoes": [
+            {
+              "nome": "Itapajé",
+              "latitude": -3.68444,
+              "longitude": -39.585194,
+              "id_municipio": 706
+            },
+            {
+              "nome": "Acaraú",
+              "latitude": -2.887689,
+              "longitude": -40.118306,
+              "id_municipio": 622
+            },
+            {
+              "nome": "Itarema",
+              "latitude": -2.924804,
+              "longitude": -39.916417,
+              "id_municipio": 708
+            },
+            {
+              "nome": "Amontada",
+              "latitude": -3.360166,
+              "longitude": -39.830743,
+              "id_municipio": 629
+            },
+            {
+              "nome": "Pentecoste",
+              "latitude": -3.792745,
+              "longitude": -39.269229,
+              "id_municipio": 760
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nome": "5º BPRAIO",
+      "sede": {
+        "nome": "Juazeiro do Norte",
+        "latitude": -7.213068,
+        "longitude": -39.315173,
+        "id_municipio": 716
+      },
+      "companhias": [
+        {
+          "nome": "Juazeiro do Norte",
+          "tipo": "COMPANHIA",
+          "latitude": -7.213068,
+          "longitude": -39.315173,
+          "id_municipio": 716,
+          "pelotoes": [
+            {
+              "nome": "Crato",
+              "latitude": -7.23114,
+              "longitude": -39.41071,
+              "id_municipio": 669
+            },
+            {
+              "nome": "Barbalha",
+              "latitude": -7.311391,
+              "longitude": -39.302506,
+              "id_municipio": 641
+            },
+            {
+              "nome": "Lavras da Mangabeira",
+              "latitude": -6.753622,
+              "longitude": -38.970991,
+              "id_municipio": 718
+            },
+            {
+              "nome": "Aurora",
+              "latitude": -6.942651,
+              "longitude": -38.967633,
+              "id_municipio": 638
+            },
+            {
+              "nome": "Missão Velha",
+              "latitude": -7.244638,
+              "longitude": -39.143057,
+              "id_municipio": 733
+            },
+            {
+              "nome": "Campos Sales",
+              "latitude": -7.074116,
+              "longitude": -40.376407,
+              "id_municipio": 656
+            },
+            {
+              "nome": "Caririaçu",
+              "latitude": -7.042029,
+              "longitude": -39.28423,
+              "id_municipio": 658
+            },
+            {
+              "nome": "Milagres",
+              "latitude": -7.305949,
+              "longitude": -38.937858,
+              "id_municipio": 732
+            }
+          ]
+        },
+        {
+          "nome": "Iguatu",
+          "tipo": "COMPANHIA",
+          "latitude": -6.362805,
+          "longitude": -39.298236,
+          "id_municipio": 693,
+          "pelotoes": [
+            {
+              "nome": "Acopiara",
+              "latitude": -6.089114,
+              "longitude": -39.448042,
+              "id_municipio": 623
+            },
+            {
+              "nome": "Icó",
+              "latitude": -6.405281,
+              "longitude": -38.861938,
+              "id_municipio": 694
+            },
+            {
+              "nome": "Várzea Alegre",
+              "latitude": -6.782642,
+              "longitude": -39.294155,
+              "id_municipio": 802
+            },
+            {
+              "nome": "Cedro",
+              "latitude": -6.600049,
+              "longitude": -39.06087,
+              "id_municipio": 662
+            }
+          ]
+        },
+        {
+          "nome": "Tauá",
+          "tipo": "COMPANHIA",
+          "latitude": -5.985853,
+          "longitude": -40.296802,
+          "id_municipio": 791,
+          "pelotoes": [
+            {
+              "nome": "Parambu",
+              "latitude": -6.211784,
+              "longitude": -40.694871,
+              "id_municipio": 754
+            },
+            {
+              "nome": "Mombaça",
+              "latitude": -5.738445,
+              "longitude": -39.63065,
+              "id_municipio": 734
+            },
+            {
+              "nome": "Senador Pompeu",
+              "latitude": -5.582444,
+              "longitude": -39.370369,
+              "id_municipio": 784
+            }
+          ]
+        },
+        {
+          "nome": "Crateús",
+          "tipo": "CIA_INDEPENDENTE",
+          "latitude": -5.176437,
+          "longitude": -40.677893,
+          "id_municipio": 668,
+          "pelotoes": [
+            {
+              "nome": "Tamboril",
+              "latitude": -4.831364,
+              "longitude": -40.319593,
+              "id_municipio": 789
+            },
+            {
+              "nome": "Nova Russas",
+              "latitude": -4.705687,
+              "longitude": -40.562136,
+              "id_municipio": 740
+            },
+            {
+              "nome": "Novo Oriente",
+              "latitude": -5.534036,
+              "longitude": -40.771316,
+              "id_municipio": 741
+            },
+            {
+              "nome": "Ipueiras",
+              "latitude": -4.541938,
+              "longitude": -40.718247,
+              "id_municipio": 701
+            },
+            {
+              "nome": "Independência",
+              "latitude": -5.3963,
+              "longitude": -40.308586,
+              "id_municipio": 695
+            }
+          ]
+        },
+        {
+          "nome": "Brejo Santo",
+          "tipo": "COMPANHIA",
+          "latitude": -7.493608,
+          "longitude": -38.986519,
+          "id_municipio": 651,
+          "pelotoes": [
+            {
+              "nome": "Mauriti",
+              "latitude": -7.385697,
+              "longitude": -38.773867,
+              "id_municipio": 728
+            },
+            {
+              "nome": "Jardim",
+              "latitude": -7.586786,
+              "longitude": -39.280878,
+              "id_municipio": 715
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
