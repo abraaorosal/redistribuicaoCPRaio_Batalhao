@@ -52,6 +52,8 @@ window.CPRaioDashboard = (() => {
     activeSideTab: "comparativo",
     sidePanelOpen: false,
     sidePanelBound: false,
+    viewportBucket: null,
+    resizeBound: false,
   };
 
   function normalizeName(value) {
@@ -321,6 +323,20 @@ window.CPRaioDashboard = (() => {
     }, 180);
   }
 
+  function getViewportBucket() {
+    if (window.innerWidth <= 780) return "mobile";
+    if (window.innerWidth <= 1250) return "tablet";
+    return "desktop";
+  }
+
+  function syncResponsiveState() {
+    const nextBucket = getViewportBucket();
+    if (state.viewportBucket === nextBucket) return false;
+    state.viewportBucket = nextBucket;
+    state.sidePanelOpen = nextBucket !== "desktop";
+    return true;
+  }
+
   function setText(id, value) {
     const node = document.getElementById(id);
     if (node) node.textContent = value;
@@ -386,6 +402,17 @@ window.CPRaioDashboard = (() => {
     });
 
     state.sidePanelBound = true;
+  }
+
+  function bindViewportResize() {
+    if (state.resizeBound) return;
+    window.addEventListener("resize", () => {
+      if (syncResponsiveState()) {
+        renderSidePanelShell();
+        refreshMapViewport();
+      }
+    });
+    state.resizeBound = true;
   }
 
   async function fetchJson(url) {
@@ -1895,8 +1922,9 @@ window.CPRaioDashboard = (() => {
     state.batalhaoLayers = batalhaoLayers;
     state.lineLayer = L.layerGroup().addTo(map);
     state.markerLayer = L.layerGroup().addTo(map);
-    state.sidePanelOpen = window.innerWidth <= 1250;
+    syncResponsiveState();
     bindSidePanelControls();
+    bindViewportResize();
 
     try {
       await loadAllData();

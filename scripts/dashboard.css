@@ -650,3 +650,88 @@
 .leaflet-control-layers {
   display: none;
 }
+
+@media (max-width: 780px) {
+  .comparison-card {
+    padding: 14px;
+    border-radius: 18px;
+  }
+
+  .comparison-card-head {
+    gap: 10px;
+  }
+
+  .comparison-card-head h3 {
+    font-size: 0.98rem;
+  }
+
+  .comparison-card-lead,
+  .comparison-footer {
+    font-size: 0.78rem;
+  }
+
+  .comparison-metrics {
+    grid-template-columns: 1fr;
+  }
+
+  .proposal-breakdown-row {
+    grid-template-columns: 64px minmax(0, 1fr) auto;
+    font-size: 0.74rem;
+  }
+
+  .popup-shell {
+    min-width: 0;
+    width: min(300px, calc(100vw - 36px));
+  }
+
+  .popup-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .municipio-hover-card {
+    min-width: 0;
+    width: min(240px, calc(100vw - 42px));
+  }
+
+  .hierarchy-card {
+    padding: 14px;
+    border-radius: 18px;
+  }
+
+  .hierarchy-head {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hierarchy-stats {
+    gap: 6px;
+  }
+
+  .hierarchy-line,
+  .insight-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3px;
+  }
+
+  .inline-spark {
+    width: 72px;
+  }
+}
+
+@media (max-width: 560px) {
+  .comparison-card-tag,
+  .hierarchy-pill,
+  .batalhao-chip,
+  .structure-badge {
+    max-width: 100%;
+  }
+
+  .comparison-card-tag {
+    min-width: 0;
+  }
+
+  .inline-spark {
+    width: 60px;
+  }
+}

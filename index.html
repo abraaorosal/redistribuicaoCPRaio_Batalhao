@@ -2794,19 +2794,39 @@
         @media (max-width: 1250px) {
             .dashboard-shell {
                 min-height: 100%;
+                padding: 16px 18px 22px;
+                gap: 14px;
             }
 
             .dashboard-top {
                 grid-template-columns: 1fr;
+                padding: 16px 18px;
             }
 
             .dashboard-main {
                 grid-template-columns: 1fr;
-                grid-template-rows: minmax(520px, 64vh) auto;
+                grid-template-rows: auto auto;
+                gap: 14px;
             }
 
-            .side-panel {
-                width: auto;
+            .map-panel {
+                grid-template-rows: auto auto;
+                padding: 12px;
+            }
+
+            .map-toolbar {
+                grid-template-columns: minmax(180px, 0.84fr) minmax(0, 1.16fr);
+                gap: 14px 16px;
+            }
+
+            .map-wrap {
+                min-height: clamp(440px, 62vh, 760px);
+            }
+
+            .side-panel,
+            .side-panel.is-open,
+            .side-panel.is-collapsed {
+                width: 100%;
                 min-width: 0;
                 grid-template-columns: 1fr;
                 overflow: visible;
@@ -2814,10 +2834,18 @@
 
             .side-panel-rail {
                 flex-direction: row;
-                flex-wrap: wrap;
+                flex-wrap: nowrap;
                 justify-content: flex-start;
+                overflow-x: auto;
+                padding: 12px;
+                gap: 10px;
                 border-right: 0;
                 border-bottom: 1px solid rgba(21, 48, 71, 0.08);
+                scrollbar-width: none;
+            }
+
+            .side-panel-rail::-webkit-scrollbar {
+                display: none;
             }
 
             .side-panel-toggle,
@@ -2825,25 +2853,32 @@
                 display: none;
             }
 
-            .side-panel-content {
+            .side-panel-content,
+            .side-panel.is-open .side-panel-content,
+            .side-panel.is-collapsed .side-panel-content {
+                display: block;
                 opacity: 1;
                 pointer-events: auto;
-                padding: 16px;
+                padding: 14px;
+                overflow: visible;
             }
 
-            .scenario-caption {
-                grid-template-columns: 1fr;
+            .side-panel-tab {
+                flex: 0 0 132px;
+                min-height: 50px;
             }
 
-            .scenario-summary-head,
-            .scenario-summary-stats,
-            .scenario-summary-footer,
-            .scenario-summary-note {
-                grid-column: auto;
+            .effective-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
             }
 
             .scenario-summary-stats {
                 grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+
+            .distance-full-wrap,
+            .city-list-wrap {
+                max-height: 380px;
             }
         }
 
@@ -2855,16 +2890,32 @@
 
             .dashboard-top {
                 grid-template-columns: 1fr;
-                padding: 16px;
+                padding: 14px;
             }
 
             .institution-header {
-                grid-template-columns: 1fr;
+                grid-template-columns: 72px minmax(0, 1fr);
+                gap: 12px;
             }
 
             .institution-logo-wrap {
-                width: 84px;
-                height: 84px;
+                width: 72px;
+                height: 72px;
+            }
+
+            .institution-logo {
+                width: 54px;
+                height: 54px;
+            }
+
+            .title-block h1 {
+                font-size: clamp(1.08rem, 4.8vw, 1.42rem);
+                line-height: 1.08;
+            }
+
+            .title-block .subtitle {
+                font-size: 0.8rem;
+                max-width: none;
             }
 
             .institution-meta {
@@ -2875,44 +2926,176 @@
             .top-kpis {
                 width: 100%;
                 grid-template-columns: repeat(2, 1fr);
+                gap: 8px;
+            }
+
+            .top-kpis .kpi-mini:last-child {
+                grid-column: 1 / -1;
+            }
+
+            .kpi-mini {
+                padding: 10px 8px 9px;
+            }
+
+            .kpi-mini span {
+                font-size: 1.06rem;
             }
 
             .kpi-disclaimer {
                 text-align: left;
             }
 
+            .map-panel {
+                padding: 10px;
+                gap: 10px;
+                border-radius: 22px;
+            }
+
             .map-toolbar {
                 grid-template-columns: 1fr;
                 gap: 12px;
-                padding: 14px;
+                padding: 12px;
             }
 
             .toolbar-actions {
                 width: 100%;
             }
 
-            .scenario-summary-stats {
-                grid-template-columns: 1fr;
+            .toolbar-title {
+                font-size: 1.08rem;
+            }
+
+            .toolbar-subtitle {
+                max-width: none;
+            }
+
+            .filters {
+                flex-wrap: nowrap;
+                overflow-x: auto;
+                padding-bottom: 4px;
+                scrollbar-width: none;
+            }
+
+            .filters::-webkit-scrollbar {
+                display: none;
+            }
+
+            .chip-btn,
+            .dashboard-filter-button {
+                flex: 0 0 auto;
+                white-space: nowrap;
             }
 
             .scenario-caption {
-                grid-template-columns: 1fr;
+                padding: 12px;
+            }
+
+            .scenario-summary-stats {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
             }
 
             .scenario-summary-footer {
                 justify-content: flex-start;
+                flex-wrap: nowrap;
+                overflow-x: auto;
+                padding-bottom: 4px;
+                scrollbar-width: none;
+            }
+
+            .scenario-summary-footer::-webkit-scrollbar {
+                display: none;
+            }
+
+            .scenario-summary-foot-item {
+                flex: 0 0 auto;
+                white-space: nowrap;
+            }
+
+            .map-wrap {
+                min-height: clamp(320px, 54vh, 500px);
+                border-radius: 18px;
+            }
+
+            .side-panel,
+            .side-panel.is-open,
+            .side-panel.is-collapsed {
+                border-radius: 22px;
             }
 
             .side-panel-rail {
                 display: grid;
-                grid-template-columns: repeat(2, minmax(0, 1fr));
+                grid-template-columns: repeat(4, minmax(0, 1fr));
+                overflow: visible;
+                gap: 8px;
+                padding: 10px;
             }
 
-            .scenario-summary-head,
-            .scenario-summary-stats,
-            .scenario-summary-footer,
-            .scenario-summary-note {
-                grid-column: auto;
+            .side-panel-tab {
+                min-height: 46px;
+                min-width: 0;
+                border-radius: 14px;
+                flex: 1 1 auto;
+            }
+
+            .side-panel-tab-content {
+                gap: 4px;
+            }
+
+            .side-panel-tab-content span {
+                font-size: 0.62rem;
+            }
+
+            .side-panel-content {
+                padding: 10px;
+            }
+
+            .side-panel-section {
+                padding: 12px 12px 14px;
+                border-radius: 18px;
+            }
+
+            .section-title {
+                font-size: 0.98rem;
+            }
+
+            .muted-text {
+                font-size: 0.78rem;
+                margin-bottom: 8px;
+            }
+
+            .distance-head {
+                display: grid;
+                gap: 4px;
+            }
+
+            .distance-head span {
+                white-space: normal;
+            }
+
+            .distance-metrics {
+                grid-template-columns: 1fr;
+            }
+
+            .distance-bar-row {
+                grid-template-columns: 74px minmax(0, 1fr) 58px;
+                gap: 6px;
+            }
+
+            .distance-list-item {
+                align-items: flex-start;
+                flex-direction: column;
+                gap: 4px;
+            }
+
+            .distance-list-item-tail {
+                width: 100%;
+                justify-content: space-between;
+            }
+
+            .distance-full-wrap,
+            .city-list-wrap {
+                max-height: none;
+                min-height: 0;
             }
 
             .tree-polo-title {
@@ -2922,9 +3105,53 @@
             .tree-pelotao-item {
                 align-items: baseline;
             }
+        }
 
-            .scenario-caption {
-                width: 100%;
+        @media (max-width: 560px) {
+            .dashboard-shell {
+                padding: 8px;
+            }
+
+            .institution-header {
+                grid-template-columns: 1fr;
+            }
+
+            .institution-logo-wrap {
+                width: 68px;
+                height: 68px;
+            }
+
+            .top-kpis {
+                grid-template-columns: 1fr;
+            }
+
+            .top-kpis .kpi-mini:last-child {
+                grid-column: auto;
+            }
+
+            .scenario-summary-stats {
+                grid-template-columns: 1fr;
+            }
+
+            .side-panel-rail {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+
+            .comparison-metrics {
+                grid-template-columns: 1fr;
+            }
+
+            .proposal-breakdown-row {
+                grid-template-columns: 64px minmax(0, 1fr) auto;
+            }
+
+            .distance-full-table thead th:last-child,
+            .distance-full-table tbody td:last-child {
+                display: none;
+            }
+
+            .distance-full-table {
+                font-size: 0.75rem;
             }
         }
     </style>
