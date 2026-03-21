@@ -20,6 +20,7 @@ from _shared import (
     FINAL_STRUCTURE_CSV_PATH,
     FINAL_STRUCTURE_JSON_PATH,
     ISOLATED_BATTALION_TYPE,
+    ISOLATED_BATTALION_FORMAL_COMPANIES,
     MATRIX_JSON_PATH,
     OUTPUT_DIR,
     SCENARIO_COMPARISON_JSON_PATH,
@@ -532,22 +533,32 @@ def main() -> None:
         subordinados = sorted(
             pelotao for pelotoes in companies_map.values() for pelotao in pelotoes
         )
+        companhias_output = [
+            {
+                "companhia": companhia,
+                "origem_sugestao": company_seed_origin[(batalhao, companhia)],
+                "pelotoes": sorted(
+                    companies_map.get(companhia, []),
+                    key=lambda pelotao: pelotao_sort_key(companhia, pelotao, matrix_lookup),
+                ),
+            }
+            for companhia in ordered_company_seeds
+        ]
+        if batalhao_isolado:
+            companhias_output = [
+                {
+                    "companhia": item["companhia"],
+                    "origem_sugestao": item["origem_sugestao"],
+                    "pelotoes": [],
+                }
+                for item in ISOLATED_BATTALION_FORMAL_COMPANIES
+            ]
         batalhoes_output.append(
             {
                 "batalhao": batalhao,
                 "municipio_sede": batalhao,
                 "tipo_especial": ISOLATED_BATTALION_TYPE if batalhao_isolado else None,
-                "companhias": [
-                    {
-                        "companhia": companhia,
-                        "origem_sugestao": company_seed_origin[(batalhao, companhia)],
-                        "pelotoes": sorted(
-                            companies_map.get(companhia, []),
-                            key=lambda pelotao: pelotao_sort_key(companhia, pelotao, matrix_lookup),
-                        ),
-                    }
-                    for companhia in ordered_company_seeds
-                ],
+                "companhias": companhias_output,
                 "pelotoes_diretos_batalhao": sorted(pelotoes_diretos),
                 "subordinados": subordinados,
                 "municipios_total": len(battalion_rows),

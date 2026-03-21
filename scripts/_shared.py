@@ -68,6 +68,11 @@ ISOLATED_BATTALION_NOTE = (
     "Batalhão isolado com atuação própria; não participa da redistribuição territorial "
     "e não vincula outros municípios."
 )
+ISOLATED_BATTALION_FORMAL_COMPANIES = (
+    {"companhia": "Fortaleza", "origem_sugestao": "sede_batalhao"},
+    {"companhia": "Motopoliciamento Ordinário", "origem_sugestao": "companhia_preservada_orientacao_gestao"},
+    {"companhia": "Messejana", "origem_sugestao": "companhia_preservada_orientacao_gestao"},
+)
 MANUAL_BATTALION_OVERRIDE_BY_KEY = {
     "PARACURU": "Caucaia",
 }
